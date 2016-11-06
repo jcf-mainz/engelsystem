@@ -14,7 +14,7 @@ function logout_title() {
 
 // Engel registrieren
 function guest_register() {
-  global $tshirt_sizes, $enable_tshirt_size, $default_theme, $user;
+  global $tshirt_sizes, $enable_tshirt_size, $enable_dect, $enable_jabber, $enable_emailcheckbox, $enable_planned_arrival_date, $enable_First_Last_Name, $enable_Hometown, $enable_description_jobs, $enable_age, $enable_phone, $enable_angeltypedescription, $default_theme, $user;
   
   $event_config = EventConfig();
   if ($event_config === false) {
@@ -103,14 +103,14 @@ function guest_register() {
       $valid = false;
       $msg .= error(sprintf(_("Your password is too short (please use at least %s characters)."), MIN_PASSWORD_LENGTH), true);
     }
-    
+    if ($enable_planned_arrival_date) {
     if (isset($_REQUEST['planned_arrival_date']) && DateTime::createFromFormat("Y-m-d", trim($_REQUEST['planned_arrival_date']))) {
       $planned_arrival_date = DateTime::createFromFormat("Y-m-d", trim($_REQUEST['planned_arrival_date']))->getTimestamp();
     } else {
       $valid = false;
       $msg .= error(_("Please enter your planned date of arrival."), true);
     }
-    
+    }
     $selected_angel_types = [];
     foreach (array_keys($angel_types) as $angel_type_id) {
       if (isset($_REQUEST['angel_types_' . $angel_type_id])) {
@@ -197,7 +197,7 @@ function guest_register() {
   }
   
   return page_with_title(register_title(), [
-      _("By completing this form you're registering as a Chaos-Angel. This script will create you an account in the helper task sheduler."),
+      _("Bitte fülle die Felder aus um dich als Helfer für das JCF-Frühjahrsymposium zu registrieren."), // Text geändert!!!
       $msg,
       msg(),
       form([
@@ -205,16 +205,16 @@ function guest_register() {
               div('col-md-6', [
                   div('row', [
                       div('col-sm-4', [
-                          form_text('nick', _("Nick") . ' ' . entry_required(), $nick) 
+                          form_text('nick', _("Login-Name") . ' ' . entry_required(), $nick) 
                       ]),
                       div('col-sm-8', [
                           form_email('mail', _("E-Mail") . ' ' . entry_required(), $mail),
-                          form_checkbox('email_shiftinfo', _("Please send me an email if my shifts change"), $email_shiftinfo) 
+                          $enable_emailcheckbox ? form_checkbox('email_shiftinfo', _("Please send me an email if my shifts change"), $email_shiftinfo) : ''
                       ]) 
                   ]),
                   div('row', [
                       div('col-sm-6', [
-                          form_date('planned_arrival_date', _("Planned date of arrival") . ' ' . entry_required(), $planned_arrival_date, time()) 
+                          $enable_planned_arrival_date ? form_date('planned_arrival_date', _("Planned date of arrival") . ' ' . entry_required(), $planned_arrival_date, time()) : ''
                       ]),
                       div('col-sm-6', [
                           $enable_tshirt_size ? form_select('tshirt_size', _("Shirt size") . ' ' . entry_required(), $tshirt_sizes, $tshirt_size) : '' 
@@ -228,36 +228,36 @@ function guest_register() {
                           form_password('password2', _("Confirm password") . ' ' . entry_required()) 
                       ]) 
                   ]),
-                  form_checkboxes('angel_types', _("What do you want to do?") . sprintf(" (<a href=\"%s\">%s</a>)", page_link_to('angeltypes') . '&action=about', _("Description of job types")), $angel_types, $selected_angel_types),
-                  form_info("", _("Restricted helper types need will be confirmed later by an archangel. You can change your selection in the options section.")) 
+                  form_checkboxes('angel_types', _($enable_description_jobs ? "What do you want to do?" : 'Wann hast du Zeit?') . sprintf($enable_description_jobs ? " (<a href=\"%s\">%s</a>)" : '', page_link_to('angeltypes') . '&action=about', _($enable_description_jobs ? "Description of job types" : '')), $angel_types, $selected_angel_types),
+                  form_info($enable_description_jobs ? "" : '', _($enable_description_jobs ? "Restricted angel types need will be confirmed later by an archangel. You can change your selection in the options section." : 'Hast du ein Gesundheitszeugnis? Dann bitte das Kästchen ankreuzen!'))
               ]),
               div('col-md-6', [
                   div('row', [
                       div('col-sm-4', [
-                          form_text('dect', _("DECT"), $dect) 
+                        form_text('mobile', _("Handy (für Whatsapp-Helfer-Gruppe)"), $mobile)  
                       ]),
                       div('col-sm-4', [
-                          form_text('mobile', _("Mobile"), $mobile) 
+                        $enable_phone ? form_text('tel', _("Phone"), $tel) : ''	
                       ]),
                       div('col-sm-4', [
-                          form_text('tel', _("Phone"), $tel) 
+                          $enable_dect ? form_text('dect', _("DECT"), $dect) : ''   					  
                       ]) 
                   ]),
-                  form_text('jabber', _("Jabber"), $jabber),
+                  $enable_jabber ? form_text('jabber', _("Jabber"), $jabber) : '' ,
                   div('row', [
                       div('col-sm-6', [
-                          form_text('prename', _("First name"), $prename) 
+                          $enable_First_Last_Name ? form_text('prename', _("First name"), $prename) : '' 
                       ]),
                       div('col-sm-6', [
-                          form_text('lastname', _("Last name"), $lastname) 
+                          $enable_First_Last_Name ? form_text('lastname', _("Last name"), $lastname) : ''
                       ]) 
                   ]),
                   div('row', [
                       div('col-sm-3', [
-                          form_text('age', _("Age"), $age) 
+                          $enable_age ? form_text('age', _("Age"), $age) : '' 
                       ]),
                       div('col-sm-9', [
-                          form_text('hometown', _("Hometown"), $hometown) 
+                          $enable_Hometown ? form_text('hometown', _("Hometown"), $hometown) : '' 
                       ]) 
                   ]),
                   form_info(entry_required() . ' = ' . _("Entry required!")) 
@@ -326,13 +326,13 @@ function guest_login() {
       div('col-md-12', [
           div('row', [
               div('col-md-4', [
-                  EventConfig_countdown_page($event_config) 
+					EventConfig_countdown_page($event_config)
               ]),
               div('col-md-4', [
                   heading(login_title(), 2),
                   msg(),
                   form([
-                      form_text('nick', _("Nick"), $nick),
+                      form_text('nick', _("Login-Name"), $nick),
                       form_password('password', _("Password")),
                       form_submit('submit', _("Login")),
                       buttons([
@@ -344,11 +344,12 @@ function guest_login() {
               div('col-md-4', [
                   heading(register_title(), 2),
                   get_register_hint(),
-                  heading(_("What can I do?"), 2),
-                  '<p>' . _("Please read about the jobs you can do to help us.") . '</p>',
-                  buttons([
-                      button(page_link_to('angeltypes') . '&action=about', _("Teams/Job description") . ' &raquo;') 
-                  ]) 
+				  // !!! WURDE MANUELL ENTFERNT !!
+                  //heading(_("What can I do?"), 2),
+                  //'<p>' . _("Please read about the jobs you can do to help us.") . '</p>',
+                  //buttons([
+                  //    button(page_link_to('angeltypes') . '&action=about', _("Teams/Job description") . ' &raquo;') 
+                  //]) 
               ]) 
           ]) 
       ]) 
