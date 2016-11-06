@@ -17,7 +17,7 @@ function Shift_signup_button_render($shift, $angeltype, $user_angeltype = null, 
   if ($user_angeltype == null) {
     $user_angeltype = UserAngelType_by_User_and_AngelType($user, $angeltype);
     if ($user_angeltype === false) {
-      engelsystem_error('Unable to load user angeltype.');
+      engelsystem_error('Unable to load user helpertype.');
     }
   }
   
@@ -113,7 +113,7 @@ function Shift_view($shift, $shifttype, $room, $shift_admin, $angeltypes_source,
       ]),
       div('row', [
           div('col-sm-6', [
-              '<h2>' . _('Needed angels') . '</h2>',
+              '<h2>' . _('Needed helpers') . '</h2>',
               '<div class="list-group">' . $needed_angels . '</div>' 
           ]),
           div('col-sm-6', [

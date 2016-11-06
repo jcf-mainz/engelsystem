@@ -125,20 +125,20 @@ function admin_shifts() {
             $needed_angel_types[$type['id']] = trim($_REQUEST['type_' . $type['id']]);
           } else {
             $valid = false;
-            error(sprintf(_('Please check the needed angels for team %s.'), $type['name']));
+            error(sprintf(_('Please check the needed helpers for team %s.'), $type['name']));
           }
         }
         if (array_sum($needed_angel_types) == 0) {
           $valid = false;
-          error(_('There are 0 angels needed. Please enter the amounts of needed angels.'));
+          error(_('There are 0 helpers needed. Please enter the amounts of needed helpers.'));
         }
       } else {
         $valid = false;
-        error(_('Please select a mode for needed angels.'));
+        error(_('Please select a mode for needed helpers.'));
       }
     } else {
       $valid = false;
-      error(_('Please select needed angels.'));
+      error(_('Please select needed helpers.'));
     }
     
     // Beim Zurück-Knopf das Formular zeigen
@@ -267,7 +267,7 @@ function admin_shifts() {
               table([
                   'timeslot' => _('Time and location'),
                   'title' => _('Type and title'),
-                  'needed_angels' => _('Needed angels') 
+                  'needed_angels' => _('Needed helpers') 
               ], $shifts_table),
               form_submit('submit', _("Save")) 
           ]) 
@@ -297,7 +297,7 @@ function admin_shifts() {
       }
     }
     
-    engelsystem_log("Shift needs following angel types: " . join(", ", $needed_angel_types_info));
+    engelsystem_log("Shift needs following helper types: " . join(", ", $needed_angel_types_info));
     success("Schichten angelegt.");
     redirect(page_link_to('admin_shifts'));
   } else {
@@ -331,9 +331,9 @@ function admin_shifts() {
                   form_text('change_hours', _("Shift change hours"), ! empty($_REQUEST['change_hours']) ? $_REQUEST['change_hours'] : '00, 04, 08, 10, 12, 14, 16, 18, 20, 22') 
               ]),
               div('col-md-6', [
-                  form_info(_("Needed angels"), ''),
-                  form_radio('angelmode', _("Take needed angels from room settings"), $angelmode == 'location', 'location'),
-                  form_radio('angelmode', _("The following angels are needed"), $angelmode == 'manually', 'manually'),
+                  form_info(_("Needed helpers"), ''),
+                  form_radio('angelmode', _("Take needed helpers from room settings"), $angelmode == 'location', 'location'),
+                  form_radio('angelmode', _("The following helpers are needed"), $angelmode == 'manually', 'manually'),
                   div('row', [
                       $angel_types 
                   ]) 

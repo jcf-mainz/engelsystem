@@ -44,7 +44,7 @@ function shift_controller() {
   
   $angeltypes = AngelTypes();
   if ($angeltypes === false) {
-    engelsystem_error('Unable to load angeltypes.');
+    engelsystem_error('Unable to load helpertypes.');
   }
   
   $user_shifts = Shifts_by_user($user);

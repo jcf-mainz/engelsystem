@@ -34,7 +34,7 @@ function UserAngelTypes_confirm_all_view($angeltype) {
 }
 
 function UserAngelType_confirm_view($user_angeltype, $user, $angeltype) {
-  return page_with_title(_("Confirm angeltype for user"), [
+  return page_with_title(_("Confirm helpertype for user"), [
       msg(),
       info(sprintf(_("Do you really want to confirm %s for %s?"), User_Nick_render($user), $angeltype['name']), true),
       buttons([
@@ -45,7 +45,7 @@ function UserAngelType_confirm_view($user_angeltype, $user, $angeltype) {
 }
 
 function UserAngelType_delete_view($user_angeltype, $user, $angeltype) {
-  return page_with_title(_("Remove angeltype"), [
+  return page_with_title(_("Remove helpertype"), [
       msg(),
       info(sprintf(_("Do you really want to delete %s from %s?"), User_Nick_render($user), $angeltype['name']), true),
       buttons([
@@ -61,7 +61,7 @@ function UserAngelType_add_view($angeltype, $users_source, $user_id) {
     $users[$user_source['UID']] = User_Nick_render($user_source);
   }
   
-  return page_with_title(_("Add user to angeltype"), [
+  return page_with_title(_("Add user to helpertype"), [
       msg(),
       buttons([
           button(page_link_to('angeltypes') . '&action=view&angeltype_id=' . $angeltype['id'], _("back"), 'back') 

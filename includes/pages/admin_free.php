@@ -1,7 +1,7 @@
 <?php
 
 function admin_free_title() {
-  return _("Free angels");
+  return _("Free helpers");
 }
 
 function admin_free() {

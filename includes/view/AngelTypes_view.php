@@ -38,8 +38,8 @@ function AngelType_render_membership($user_angeltype) {
 }
 
 function AngelType_delete_view($angeltype) {
-  return page_with_title(sprintf(_("Delete angeltype %s"), $angeltype['name']), [
-      info(sprintf(_("Do you want to delete angeltype %s?"), $angeltype['name']), true),
+  return page_with_title(sprintf(_("Delete helpertype %s"), $angeltype['name']), [
+      info(sprintf(_("Do you want to delete helpertype %s?"), $angeltype['name']), true),
       buttons([
           button(page_link_to('angeltypes'), _("cancel"), 'cancel'),
           button(page_link_to('angeltypes') . '&action=delete&angeltype_id=' . $angeltype['id'] . '&confirmed', _("delete"), 'ok') 
@@ -57,7 +57,7 @@ function AngelType_edit_view($name, $restricted, $description, $coordinator_mode
           $coordinator_mode ? form_info(_("Name"), $name) : form_text('name', _("Name"), $name),
           $coordinator_mode ? form_info(_("Restricted"), $restricted ? _("Yes") : _("No")) : form_checkbox('restricted', _("Restricted"), $restricted),
           $coordinator_mode ? form_info(_("Requires driver license"), $requires_driver_license ? _("Yes") : _("No")) : form_checkbox('requires_driver_license', _("Requires driver license"), $requires_driver_license),
-          form_info("", _("Restricted angel types can only be used by an angel if enabled by an archangel (double opt-in).")),
+          form_info("", _("Restricted helper types can only be used by an angel if enabled by an archangel (double opt-in).")),
           form_textarea('description', _("Description"), $description),
           form_info("", _("Please use markdown for the description.")),
           form_submit('submit', _("Save")) 
@@ -78,11 +78,11 @@ function AngelType_view($angeltype, $members, $user_angeltype, $admin_user_angel
     $buttons[] = button(page_link_to('user_angeltypes') . '&action=add&angeltype_id=' . $angeltype['id'], _("join"), 'add');
   } else {
     if ($angeltype['requires_driver_license'] && $user_driver_license == null) {
-      error(_("This angeltype requires a driver license. Please enter your driver license information!"));
+      error(_("This helpertype requires a driver license. Please enter your driver license information!"));
     }
     
     if ($angeltype['restricted'] && $user_angeltype['confirm_user_id'] == null) {
-      error(sprintf(_("You are unconfirmed for this angeltype. Please go to the introduction for %s to get confirmed."), $angeltype['name']));
+      error(sprintf(_("You are unconfirmed for this helpertype. Please go to the introduction for %s to get confirmed."), $angeltype['name']));
     }
     $buttons[] = button(page_link_to('user_angeltypes') . '&action=delete&user_angeltype_id=' . $user_angeltype['id'], _("leave"), 'cancel');
   }
@@ -258,7 +258,7 @@ function AngelTypes_about_view($angeltypes, $user_logged_in) {
     }
     
     if ($angeltype['restricted']) {
-      $content[] = info(_("This angeltype is restricted by double-opt-in by a team coordinator. Please show up at the according introduction meetings."), true);
+      $content[] = info(_("This helpertype is restricted by double-opt-in by a team coordinator. Please show up at the according introduction meetings."), true);
     }
     if ($angeltype['description'] != "") {
       $content[] = '<div class="well">' . $parsedown->parse($angeltype['description']) . '</div>';

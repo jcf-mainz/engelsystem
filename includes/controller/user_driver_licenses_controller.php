@@ -8,7 +8,7 @@ function user_driver_license_required_hint() {
   
   $angeltypes = User_angeltypes($user);
   if ($angeltypes === false) {
-    engelsystem_error("Unable to load user angeltypes.");
+    engelsystem_error("Unable to load user helpertypes.");
   }
   $user_driver_license = UserDriverLicense($user['UID']);
   if ($user_driver_license === false) {
@@ -74,7 +74,7 @@ function user_driver_license_edit_controller() {
   if (isset($_REQUEST['user_id'])) {
     $user_source = User($_REQUEST['user_id']);
     if ($user_source === false) {
-      engelsystem_error('Unable to load angeltype.');
+      engelsystem_error('Unable to load helpertype.');
     }
     if ($user_source == null) {
       redirect(user_driver_license_edit_link());

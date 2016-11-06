@@ -90,7 +90,7 @@ function admin_rooms() {
             $angeltypes_count[$angeltype_id] = $_REQUEST['angeltype_count_' . $angeltype_id];
           } else {
             $valid = false;
-            $msg .= error(sprintf(_("Please enter needed angels for type %s.", $angeltype)), true);
+            $msg .= error(sprintf(_("Please enter needed helpers for type %s.", $angeltype)), true);
           }
         }
         
@@ -111,7 +111,7 @@ function admin_rooms() {
           foreach ($angeltypes_count as $angeltype_id => $angeltype_count) {
             $angeltype = AngelType($angeltype_id);
             if ($angeltype === false) {
-              engelsystem_error("Unable to load angeltype.");
+              engelsystem_error("Unable to load helpertype.");
             }
             if ($angeltype != null) {
               sql_query("INSERT INTO `NeededAngelTypes` SET `room_id`='" . sql_escape($room_id) . "', `angel_type_id`='" . sql_escape($angeltype_id) . "', `count`='" . sql_escape($angeltype_count) . "'");
@@ -119,7 +119,7 @@ function admin_rooms() {
             }
           }
           
-          engelsystem_log("Set needed angeltypes of room " . $name . " to: " . join(", ", $needed_angeltype_info));
+          engelsystem_log("Set needed helpertypes of room " . $name . " to: " . join(", ", $needed_angeltype_info));
           success(_("Room saved."));
           redirect(page_link_to("admin_rooms"));
         }
@@ -147,7 +147,7 @@ function admin_rooms() {
                   div('col-md-6', [
                       div('row', [
                           div('col-md-12', [
-                              form_info(_("Needed angels:")) 
+                              form_info(_("Needed helpers:")) 
                           ]),
                           join($angeltypes_count_form) 
                       ]) 

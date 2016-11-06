@@ -1,7 +1,7 @@
 <?php
 
 function admin_active_title() {
-  return _("Active angels");
+  return _("Active helpers");
 }
 
 function admin_active() {
@@ -26,12 +26,12 @@ function admin_active() {
     if (isset($_REQUEST['count']) && preg_match("/^[0-9]+$/", $_REQUEST['count'])) {
       $count = strip_request_item('count');
       if ($count < $forced_count) {
-        error(sprintf(_("At least %s angels are forced to be active. The number has to be greater."), $forced_count));
+        error(sprintf(_("At least %s helpers are forced to be active. The number has to be greater."), $forced_count));
         redirect(page_link_to('admin_active'));
       }
     } else {
       $valid = false;
-      $msg .= error(_("Please enter a number of angels to be marked as active."), true);
+      $msg .= error(_("Please enter a number of helpers to be marked as active."), true);
     }
     
     if ($valid) {
@@ -53,10 +53,10 @@ function admin_active() {
         $user_nicks[] = User_Nick_render($usr);
       }
       sql_query("UPDATE `User` SET `Aktiv`=1 WHERE `force_active`=TRUE");
-      engelsystem_log("These angels are active now: " . join(", ", $user_nicks));
+      engelsystem_log("These helpers are active now: " . join(", ", $user_nicks));
       
       $limit = "";
-      $msg = success(_("Marked angels."), true);
+      $msg = success(_("Marked helpers."), true);
     } else {
       $set_active = '<a href="' . page_link_to('admin_active') . '&amp;serach=' . $search . '">&laquo; ' . _("back") . '</a> | <a href="' . page_link_to('admin_active') . '&amp;search=' . $search . '&amp;count=' . $count . '&amp;set_active&amp;ack">' . _("apply") . '</a>';
     }
@@ -174,12 +174,12 @@ function admin_active() {
   
   return page_with_title(admin_active_title(), [
       form([
-          form_text('search', _("Search angel:"), $search),
+          form_text('search', _("Search helper:"), $search),
           form_checkbox('show_all_shifts', _("Show all shifts"), $show_all_shifts),
           form_submit('submit', _("Search")) 
       ], page_link_to('admin_active')),
       $set_active == "" ? form([
-          form_text('count', _("How much angels should be active?"), $count),
+          form_text('count', _("How much helpers should be active?"), $count),
           form_submit('set_active', _("Preview")) 
       ]) : $set_active,
       msg(),

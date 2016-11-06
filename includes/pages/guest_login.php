@@ -197,7 +197,7 @@ function guest_register() {
   }
   
   return page_with_title(register_title(), [
-      _("By completing this form you're registering as a Chaos-Angel. This script will create you an account in the angel task sheduler."),
+      _("By completing this form you're registering as a Chaos-Angel. This script will create you an account in the helper task sheduler."),
       $msg,
       msg(),
       form([
@@ -229,7 +229,7 @@ function guest_register() {
                       ]) 
                   ]),
                   form_checkboxes('angel_types', _("What do you want to do?") . sprintf(" (<a href=\"%s\">%s</a>)", page_link_to('angeltypes') . '&action=about', _("Description of job types")), $angel_types, $selected_angel_types),
-                  form_info("", _("Restricted angel types need will be confirmed later by an archangel. You can change your selection in the options section.")) 
+                  form_info("", _("Restricted helper types need will be confirmed later by an archangel. You can change your selection in the options section.")) 
               ]),
               div('col-md-6', [
                   div('row', [

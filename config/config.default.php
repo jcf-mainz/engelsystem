@@ -3,7 +3,7 @@
 // Enable maintenance mode (showin a static page)
 $maintenance_mode = false;
 
-// URL to the angel faq and job description
+// URL to the helper faq and job description
 $faq_url = "https://events.ccc.de/congress/2013/wiki/Static:Volunteers";
 
 // contact email address, linked on every page
@@ -32,7 +32,7 @@ define('MIN_PASSWORD_LENGTH', 8);
 // Wenn Engel beim Registrieren oder in ihrem Profil eine T-Shirt Größe angeben sollen, auf true setzen:
 $enable_tshirt_size = true;
 
-// Number of shifts to freeload until angel is locked for shift signup.
+// Number of shifts to freeload until helper is locked for shift signup.
 $max_freeloadable_shifts = 2;
 
 // local timezone

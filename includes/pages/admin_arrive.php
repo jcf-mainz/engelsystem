@@ -1,7 +1,7 @@
 <?php
 
 function admin_arrive_title() {
-  return _("Arrived angels");
+  return _("Arrived helpers");
 }
 
 function admin_arrive() {

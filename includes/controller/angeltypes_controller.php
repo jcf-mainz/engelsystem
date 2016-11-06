@@ -84,13 +84,13 @@ function angeltype_delete_controller() {
       engelsystem_error("Unable to delete angeltype.");
     }
     
-    engelsystem_log("Deleted angeltype: " . AngelType_name_render($angeltype));
+    engelsystem_log("Deleted helpertype: " . AngelType_name_render($angeltype));
     success(sprintf(_("Angeltype %s deleted."), AngelType_name_render($angeltype)));
     redirect(page_link_to('angeltypes'));
   }
   
   return [
-      sprintf(_("Delete angeltype %s"), $angeltype['name']),
+      sprintf(_("Delete helpertype %s"), $angeltype['name']),
       AngelType_delete_view($angeltype) 
   ];
 }
@@ -110,7 +110,7 @@ function angeltype_edit_controller() {
   if (isset($_REQUEST['angeltype_id'])) {
     $angeltype = AngelType($_REQUEST['angeltype_id']);
     if ($angeltype === false) {
-      engelsystem_error("Unable to load angeltype.");
+      engelsystem_error("Unable to load helpertype.");
     }
     if ($angeltype == null) {
       redirect(page_link_to('angeltypes'));
@@ -158,16 +158,16 @@ function angeltype_edit_controller() {
       if (isset($angeltype)) {
         $result = AngelType_update($angeltype['id'], $name, $restricted, $description, $requires_driver_license);
         if ($result === false) {
-          engelsystem_error("Unable to update angeltype.");
+          engelsystem_error("Unable to update helpertype.");
         }
-        engelsystem_log("Updated angeltype: " . $name . ($restricted ? ", restricted" : "") . ($requires_driver_license ? ", requires driver license" : ""));
+        engelsystem_log("Updated helpertype: " . $name . ($restricted ? ", restricted" : "") . ($requires_driver_license ? ", requires driver license" : ""));
         $angeltype_id = $angeltype['id'];
       } else {
         $angeltype_id = AngelType_create($name, $restricted, $description, $requires_driver_license);
         if ($angeltype_id === false) {
-          engelsystem_error("Unable to create angeltype.");
+          engelsystem_error("Unable to create helpertype.");
         }
-        engelsystem_log("Created angeltype: " . $name . ($restricted ? ", restricted" : "") . ($requires_driver_license ? ", requires driver license" : ""));
+        engelsystem_log("Created helpertype: " . $name . ($restricted ? ", restricted" : "") . ($requires_driver_license ? ", requires driver license" : ""));
       }
       
       success("Angel type saved.");
@@ -197,7 +197,7 @@ function angeltype_controller() {
   
   $angeltype = AngelType($_REQUEST['angeltype_id']);
   if ($angeltype === false) {
-    engelsystem_error("Unable to load angeltype.");
+    engelsystem_error("Unable to load helpertype.");
   }
   if ($angeltype == null) {
     redirect(page_link_to('angeltypes'));
@@ -205,7 +205,7 @@ function angeltype_controller() {
   
   $user_angeltype = UserAngelType_by_User_and_AngelType($user, $angeltype);
   if ($user_angeltype === false) {
-    engelsystem_error("Unable to load user angeltype.");
+    engelsystem_error("Unable to load user helpertype.");
   }
   
   $user_driver_license = UserDriverLicense($user['UID']);
@@ -236,7 +236,7 @@ function angeltypes_list_controller() {
   
   $angeltypes = AngelTypes_with_user($user);
   if ($angeltypes === false) {
-    engelsystem_error("Unable to load angeltypes.");
+    engelsystem_error("Unable to load helpertypes.");
   }
   
   foreach ($angeltypes as &$angeltype) {

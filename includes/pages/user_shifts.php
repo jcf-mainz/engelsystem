@@ -151,7 +151,7 @@ function user_shifts() {
           $needed_angel_types[$type['id']] = trim($_REQUEST['type_' . $type['id']]);
         } else {
           $valid = false;
-          $msg .= error(sprintf(_("Please check your input for needed angels of type %s."), $type['name']), true);
+          $msg .= error(sprintf(_("Please check your input for needed helpers of type %s."), $type['name']), true);
         }
       }
       
@@ -196,7 +196,7 @@ function user_shifts() {
             form_select('rid', _("Room:"), $room_array, $rid),
             form_text('start', _("Start:"), date("Y-m-d H:i", $start)),
             form_text('end', _("End:"), date("Y-m-d H:i", $end)),
-            '<h2>' . _("Needed angels") . '</h2>',
+            '<h2>' . _("Needed helpers") . '</h2>',
             $angel_types,
             form_submit('submit', _("Save")) 
         ]) 
@@ -293,7 +293,7 @@ function user_shifts() {
       }
       
       if (sql_num_query("SELECT * FROM `ShiftEntry` WHERE `SID`='" . sql_escape($shift['SID']) . "' AND `UID` = '" . sql_escape($user_id) . "'")) {
-        return error("This angel does already have an entry for this shift.", true);
+        return error("This helper does already have an entry for this shift.", true);
       }
       
       $freeloaded = $shift['freeloaded'];
@@ -394,7 +394,7 @@ function view_user_shifts() {
   ];
   
   if (count($types) == 0) {
-    error(_("The administration has not configured any angeltypes yet - or you are not subscribed to any angeltype."));
+    error(_("The administration has not configured any helpertypes yet - or you are not subscribed to any angeltype."));
     redirect('?');
   }
   

@@ -69,7 +69,7 @@ function header_toolbar() {
     
     // Hinweis für Engel, die noch nicht angekommen sind
     if ($user['Gekommen'] == 0) {
-      $hints[] = error(_("You are not marked as arrived. Please go to heaven's desk, get your angel badge and/or tell them that you arrived already."), true);
+      $hints[] = error(_("You are not marked as arrived. Please go to heaven's desk, get your helper badge and/or tell them that you arrived already."), true);
       $hint_class = 'danger';
       $glyphicon = 'warning-sign';
     }

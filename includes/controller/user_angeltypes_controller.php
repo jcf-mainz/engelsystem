@@ -8,7 +8,7 @@ function user_angeltypes_unconfirmed_hint() {
   
   $unconfirmed_user_angeltypes = User_unconfirmed_AngelTypes($user);
   if ($unconfirmed_user_angeltypes === false) {
-    engelsystem_error("Unable to load user angeltypes.");
+    engelsystem_error("Unable to load user helpertypes.");
   }
   if (count($unconfirmed_user_angeltypes) == 0) {
     return '';
@@ -19,11 +19,11 @@ function user_angeltypes_unconfirmed_hint() {
     $unconfirmed_links[] = '<a href="' . page_link_to('angeltypes') . '&action=view&angeltype_id=' . $user_angeltype['angeltype_id'] . '">' . $user_angeltype['name'] . ' (+' . $user_angeltype['count'] . ')' . '</a>';
   }
   
-  return info(sprintf(ngettext("There is %d unconfirmed angeltype.", "There are %d unconfirmed angeltypes.", count($unconfirmed_user_angeltypes)), count($unconfirmed_user_angeltypes)) . " " . _('Angel types which need approvals:') . ' ' . join(', ', $unconfirmed_links), true);
+  return info(sprintf(ngettext("There is %d unconfirmed helpertype.", "There are %d unconfirmed helpertypes.", count($unconfirmed_user_angeltypes)), count($unconfirmed_user_angeltypes)) . " " . _('Angel types which need approvals:') . ' ' . join(', ', $unconfirmed_links), true);
 }
 
 /**
- * Remove all unconfirmed users from a specific angeltype.
+ * Remove all unconfirmed users from a specific helpertype.
  */
 function user_angeltypes_delete_all_controller() {
   global $user;
@@ -35,7 +35,7 @@ function user_angeltypes_delete_all_controller() {
   
   $angeltype = AngelType($_REQUEST['angeltype_id']);
   if ($angeltype === false) {
-    engelsystem_error("Unable to load angeltype.");
+    engelsystem_error("Unable to load helpertype.");
   }
   if ($angeltype == null) {
     error(_("Angeltype doesn't exist."));
@@ -43,7 +43,7 @@ function user_angeltypes_delete_all_controller() {
   }
   
   if (! User_is_AngelType_coordinator($user, $angeltype)) {
-    error(_("You are not allowed to delete all users for this angeltype."));
+    error(_("You are not allowed to delete all users for this helpertype."));
     redirect(page_link_to('angeltypes'));
   }
   
@@ -53,8 +53,8 @@ function user_angeltypes_delete_all_controller() {
       engelsystem_error("Unable to confirm all users.");
     }
     
-    engelsystem_log(sprintf("Denied all users for angeltype %s", AngelType_name_render($angeltype)));
-    success(sprintf(_("Denied all users for angeltype %s."), AngelType_name_render($angeltype)));
+    engelsystem_log(sprintf("Denied all users for helpertype %s", AngelType_name_render($angeltype)));
+    success(sprintf(_("Denied all users for helpertype %s."), AngelType_name_render($angeltype)));
     redirect(page_link_to('angeltypes') . '&action=view&angeltype_id=' . $angeltype['id']);
   }
   
@@ -77,7 +77,7 @@ function user_angeltypes_confirm_all_controller() {
   
   $angeltype = AngelType($_REQUEST['angeltype_id']);
   if ($angeltype === false) {
-    engelsystem_error("Unable to load angeltype.");
+    engelsystem_error("Unable to load helpertype.");
   }
   if ($angeltype == null) {
     error(_("Angeltype doesn't exist."));
@@ -86,15 +86,15 @@ function user_angeltypes_confirm_all_controller() {
   
   $user_angeltype = UserAngelType_by_User_and_AngelType($user, $angeltype);
   if ($user_angeltype === false) {
-    engelsystem_error("Unable to load user angeltype.");
+    engelsystem_error("Unable to load user helpertype.");
   }
   if ($user_angeltype == null) {
-    error(_("User angeltype doesn't exist."));
+    error(_("User helpertype doesn't exist."));
     redirect(page_link_to('angeltypes'));
   }
   
   if (! in_array('admin_user_angeltypes', $privileges) && ! $user_angeltype['coordinator']) {
-    error(_("You are not allowed to confirm all users for this angeltype."));
+    error(_("You are not allowed to confirm all users for this helpertype."));
     redirect(page_link_to('angeltypes'));
   }
   
@@ -104,8 +104,8 @@ function user_angeltypes_confirm_all_controller() {
       engelsystem_error("Unable to confirm all users.");
     }
     
-    engelsystem_log(sprintf("Confirmed all users for angeltype %s", AngelType_name_render($angeltype)));
-    success(sprintf(_("Confirmed all users for angeltype %s."), AngelType_name_render($angeltype)));
+    engelsystem_log(sprintf("Confirmed all users for helpertype %s", AngelType_name_render($angeltype)));
+    success(sprintf(_("Confirmed all users for helpertype %s."), AngelType_name_render($angeltype)));
     redirect(page_link_to('angeltypes') . '&action=view&angeltype_id=' . $angeltype['id']);
   }
   
@@ -122,22 +122,22 @@ function user_angeltype_confirm_controller() {
   global $user;
   
   if (! isset($_REQUEST['user_angeltype_id'])) {
-    error(_("User angeltype doesn't exist."));
+    error(_("User helpertype doesn't exist."));
     redirect(page_link_to('angeltypes'));
   }
   
   $user_angeltype = UserAngelType($_REQUEST['user_angeltype_id']);
   if ($user_angeltype === false) {
-    engelsystem_error("Unable to load user angeltype.");
+    engelsystem_error("Unable to load user helpertype.");
   }
   if ($user_angeltype == null) {
-    error(_("User angeltype doesn't exist."));
+    error(_("User helpertype doesn't exist."));
     redirect(page_link_to('angeltypes'));
   }
   
   $angeltype = AngelType($user_angeltype['angeltype_id']);
   if ($angeltype === false) {
-    engelsystem_error("Unable to load angeltype.");
+    engelsystem_error("Unable to load helpertype.");
   }
   if ($angeltype == null) {
     error(_("Angeltype doesn't exist."));
@@ -145,7 +145,7 @@ function user_angeltype_confirm_controller() {
   }
   
   if (! User_is_AngelType_coordinator($user, $angeltype)) {
-    error(_("You are not allowed to confirm this users angeltype."));
+    error(_("You are not allowed to confirm this users helpertype."));
     redirect(page_link_to('angeltypes'));
   }
   
@@ -161,16 +161,16 @@ function user_angeltype_confirm_controller() {
   if (isset($_REQUEST['confirmed'])) {
     $result = UserAngelType_confirm($user_angeltype['id'], $user);
     if ($result === false) {
-      engelsystem_error("Unable to confirm user angeltype.");
+      engelsystem_error("Unable to confirm user helpertype.");
     }
     
-    engelsystem_log(sprintf("%s confirmed for angeltype %s", User_Nick_render($user_source), AngelType_name_render($angeltype)));
-    success(sprintf(_("%s confirmed for angeltype %s."), User_Nick_render($user_source), AngelType_name_render($angeltype)));
+    engelsystem_log(sprintf("%s confirmed for helpertype %s", User_Nick_render($user_source), AngelType_name_render($angeltype)));
+    success(sprintf(_("%s confirmed for helpertype %s."), User_Nick_render($user_source), AngelType_name_render($angeltype)));
     redirect(page_link_to('angeltypes') . '&action=view&angeltype_id=' . $angeltype['id']);
   }
   
   return [
-      _("Confirm angeltype for user"),
+      _("Confirm helpertype for user"),
       UserAngelType_confirm_view($user_angeltype, $user_source, $angeltype) 
   ];
 }
@@ -182,22 +182,22 @@ function user_angeltype_delete_controller() {
   global $user;
   
   if (! isset($_REQUEST['user_angeltype_id'])) {
-    error(_("User angeltype doesn't exist."));
+    error(_("User helpertype doesn't exist."));
     redirect(page_link_to('angeltypes'));
   }
   
   $user_angeltype = UserAngelType($_REQUEST['user_angeltype_id']);
   if ($user_angeltype === false) {
-    engelsystem_error("Unable to load user angeltype.");
+    engelsystem_error("Unable to load user helpertype.");
   }
   if ($user_angeltype == null) {
-    error(_("User angeltype doesn't exist."));
+    error(_("User helpertype doesn't exist."));
     redirect(page_link_to('angeltypes'));
   }
   
   $angeltype = AngelType($user_angeltype['angeltype_id']);
   if ($angeltype === false) {
-    engelsystem_error("Unable to load angeltype.");
+    engelsystem_error("Unable to load helpertype.");
   }
   if ($angeltype == null) {
     error(_("Angeltype doesn't exist."));
@@ -214,14 +214,14 @@ function user_angeltype_delete_controller() {
   }
   
   if ($user['UID'] != $user_angeltype['user_id'] && ! User_is_AngelType_coordinator($user, $angeltype)) {
-    error(_("You are not allowed to delete this users angeltype."));
+    error(_("You are not allowed to delete this users helpertype."));
     redirect(page_link_to('angeltypes'));
   }
   
   if (isset($_REQUEST['confirmed'])) {
     $result = UserAngelType_delete($user_angeltype);
     if ($result === false) {
-      engelsystem_error("Unable to delete user angeltype.");
+      engelsystem_error("Unable to delete user helpertype.");
     }
     
     $success_message = sprintf(_("User %s removed from %s."), User_Nick_render($user_source), $angeltype['name']);
@@ -232,7 +232,7 @@ function user_angeltype_delete_controller() {
   }
   
   return [
-      _("Remove angeltype"),
+      _("Remove helpertype"),
       UserAngelType_delete_view($user_angeltype, $user_source, $angeltype) 
   ];
 }
@@ -249,7 +249,7 @@ function user_angeltype_update_controller() {
   }
   
   if (! isset($_REQUEST['user_angeltype_id'])) {
-    error(_("User angeltype doesn't exist."));
+    error(_("User helpertype doesn't exist."));
     redirect(page_link_to('angeltypes'));
   }
   
@@ -262,16 +262,16 @@ function user_angeltype_update_controller() {
   
   $user_angeltype = UserAngelType($_REQUEST['user_angeltype_id']);
   if ($user_angeltype === false) {
-    engelsystem_error("Unable to load user angeltype.");
+    engelsystem_error("Unable to load user helpertype.");
   }
   if ($user_angeltype == null) {
-    error(_("User angeltype doesn't exist."));
+    error(_("User helpertype doesn't exist."));
     redirect(page_link_to('angeltypes'));
   }
   
   $angeltype = AngelType($user_angeltype['angeltype_id']);
   if ($angeltype === false) {
-    engelsystem_error("Unable to load angeltype.");
+    engelsystem_error("Unable to load helpertype.");
   }
   if ($angeltype == null) {
     error(_("Angeltype doesn't exist."));
@@ -336,7 +336,7 @@ function user_angeltype_add_controller() {
     if (! UserAngelType_exists($user_source, $angeltype)) {
       $user_angeltype_id = UserAngelType_create($user_source, $angeltype);
       if ($user_angeltype_id === false) {
-        engelsystem_error("Unable to create user angeltype.");
+        engelsystem_error("Unable to create user helpertype.");
       }
       
       engelsystem_log(sprintf("User %s added to %s.", User_Nick_render($user_source), AngelType_name_render($angeltype)));
@@ -344,7 +344,7 @@ function user_angeltype_add_controller() {
       
       $result = UserAngelType_confirm($user_angeltype_id, $user_source);
       if ($result === false) {
-        engelsystem_error("Unable to confirm user angeltype.");
+        engelsystem_error("Unable to confirm user helpertype.");
       }
       engelsystem_log(sprintf("User %s confirmed as %s.", User_Nick_render($user), AngelType_name_render($angeltype)));
       
@@ -353,7 +353,7 @@ function user_angeltype_add_controller() {
   }
   
   return [
-      _("Add user to angeltype"),
+      _("Add user to helpertype"),
       UserAngelType_add_view($angeltype, $users_source, $user_source['UID']) 
   ];
 }
@@ -366,7 +366,7 @@ function user_angeltype_join_controller($angeltype) {
   
   $user_angeltype = UserAngelType_by_User_and_AngelType($user, $angeltype);
   if ($user_angeltype === false) {
-    engelsystem_error("Unable to load user angeltype.");
+    engelsystem_error("Unable to load user helpertype.");
   }
   if ($user_angeltype != null) {
     error(sprintf(_("You are already a %s."), $angeltype['name']));
@@ -376,7 +376,7 @@ function user_angeltype_join_controller($angeltype) {
   if (isset($_REQUEST['confirmed'])) {
     $user_angeltype_id = UserAngelType_create($user, $angeltype);
     if ($user_angeltype_id === false) {
-      engelsystem_error("Unable to create user angeltype.");
+      engelsystem_error("Unable to create user helpertype.");
     }
     
     $success_message = sprintf(_("You joined %s."), $angeltype['name']);
@@ -386,7 +386,7 @@ function user_angeltype_join_controller($angeltype) {
     if (in_array('admin_user_angeltypes', $privileges)) {
       $result = UserAngelType_confirm($user_angeltype_id, $user);
       if ($result === false) {
-        engelsystem_error("Unable to confirm user angeltype.");
+        engelsystem_error("Unable to confirm user helpertype.");
       }
       engelsystem_log(sprintf("User %s confirmed as %s.", User_Nick_render($user), AngelType_name_render($angeltype)));
     }
