@@ -34,7 +34,7 @@ function User_registration_success_view($event_welcome_message) {
           div('col-md-4', [
               '<h2>' . _("Login") . '</h2>',
               form([
-                  form_text('nick', _("Nick"), ""),
+                  form_text('nick', _("Login-Name"), ""),
                   form_password('password', _("Password")),
                   form_submit('submit', _("Login")),
                   buttons([
@@ -43,13 +43,14 @@ function User_registration_success_view($event_welcome_message) {
                   info(_("Please note: You have to activate cookies!"), true) 
               ], page_link_to('login')) 
           ]),
-          div('col-md-4', [
-              '<h2>' . _("What can I do?") . '</h2>',
-              '<p>' . _("Please read about the jobs you can do to help us.") . '</p>',
-              buttons([
-                  button(page_link_to('angeltypes') . '&action=about', _("Teams/Job description") . ' &raquo;') 
-              ]) 
-          ]) 
+          // !!! MANUELL ENTFERNT !!!
+		  //div('col-md-4', [
+          //    '<h2>' . _("What can I do?") . '</h2>',
+          //    '<p>' . _("Please read about the jobs you can do to help us.") . '</p>',
+          //    buttons([
+          //        button(page_link_to('angeltypes') . '&action=about', _("Teams/Job description") . ' &raquo;') 
+          //    ]) 
+        //  ]) 
       ]) 
   ]);
 }
