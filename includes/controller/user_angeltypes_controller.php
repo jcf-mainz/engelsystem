@@ -19,7 +19,7 @@ function user_angeltypes_unconfirmed_hint() {
     $unconfirmed_links[] = '<a href="' . page_link_to('angeltypes') . '&action=view&angeltype_id=' . $user_angeltype['angeltype_id'] . '">' . $user_angeltype['name'] . ' (+' . $user_angeltype['count'] . ')' . '</a>';
   }
   
-  return info(sprintf(ngettext("There is %d unconfirmed helpertype.", "There are %d unconfirmed helpertypes.", count($unconfirmed_user_angeltypes)), count($unconfirmed_user_angeltypes)) . " " . _('Angel types which need approvals:') . ' ' . join(', ', $unconfirmed_links), true);
+  return info(sprintf(ngettext("There is %d unconfirmed helpertype.", "There are %d unconfirmed helpertypes.", count($unconfirmed_user_angeltypes)), count($unconfirmed_user_angeltypes)) . " " . _('Helper types which need approvals:') . ' ' . join(', ', $unconfirmed_links), true);
 }
 
 /**
@@ -29,7 +29,7 @@ function user_angeltypes_delete_all_controller() {
   global $user;
   
   if (! isset($_REQUEST['angeltype_id'])) {
-    error(_("Angeltype doesn't exist."));
+    error(_("Helpertype doesn't exist."));
     redirect(page_link_to('angeltypes'));
   }
   
@@ -38,7 +38,7 @@ function user_angeltypes_delete_all_controller() {
     engelsystem_error("Unable to load helpertype.");
   }
   if ($angeltype == null) {
-    error(_("Angeltype doesn't exist."));
+    error(_("Helpertype doesn't exist."));
     redirect(page_link_to('angeltypes'));
   }
   
@@ -71,7 +71,7 @@ function user_angeltypes_confirm_all_controller() {
   global $user, $privileges;
   
   if (! isset($_REQUEST['angeltype_id'])) {
-    error(_("Angeltype doesn't exist."));
+    error(_("Helpertype doesn't exist."));
     redirect(page_link_to('angeltypes'));
   }
   
@@ -80,7 +80,7 @@ function user_angeltypes_confirm_all_controller() {
     engelsystem_error("Unable to load helpertype.");
   }
   if ($angeltype == null) {
-    error(_("Angeltype doesn't exist."));
+    error(_("Helpertype doesn't exist."));
     redirect(page_link_to('angeltypes'));
   }
   
@@ -140,7 +140,7 @@ function user_angeltype_confirm_controller() {
     engelsystem_error("Unable to load helpertype.");
   }
   if ($angeltype == null) {
-    error(_("Angeltype doesn't exist."));
+    error(_("Helpertype doesn't exist."));
     redirect(page_link_to('angeltypes'));
   }
   
@@ -200,7 +200,7 @@ function user_angeltype_delete_controller() {
     engelsystem_error("Unable to load helpertype.");
   }
   if ($angeltype == null) {
-    error(_("Angeltype doesn't exist."));
+    error(_("Helpertype doesn't exist."));
     redirect(page_link_to('angeltypes'));
   }
   
@@ -274,7 +274,7 @@ function user_angeltype_update_controller() {
     engelsystem_error("Unable to load helpertype.");
   }
   if ($angeltype == null) {
-    error(_("Angeltype doesn't exist."));
+    error(_("Helpertype doesn't exist."));
     redirect(page_link_to('angeltypes'));
   }
   

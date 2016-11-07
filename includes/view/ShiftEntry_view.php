@@ -22,7 +22,7 @@ function ShiftEntry_edit_view($angel, $date, $location, $title, $type, $comment,
   return page_with_title(_("Edit shift entry"), [
       msg(),
       form([
-          form_info(_("Angel:"), $angel),
+          form_info(_("Helper:"), $angel),
           form_info(_("Date, Duration:"), $date),
           form_info(_("Location:"), $location),
           form_info(_("Title:"), $title),

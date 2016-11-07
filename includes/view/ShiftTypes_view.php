@@ -33,7 +33,7 @@ function ShiftType_edit_view($name, $angeltype_id, $angeltypes, $description, $s
       ]),
       form([
           form_text('name', _('Name'), $name),
-          form_select('angeltype_id', _('Angeltype'), $angeltypes_select, $angeltype_id),
+          form_select('angeltype_id', _('Helpertype'), $angeltypes_select, $angeltype_id),
           form_textarea('description', _('Description'), $description),
           form_info('', _('Please use markdown for the description.')),
           form_submit('submit', _('Save')) 

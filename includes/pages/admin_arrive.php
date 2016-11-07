@@ -17,10 +17,10 @@ function admin_arrive() {
     if ($user_source != null) {
       sql_query("UPDATE `User` SET `Gekommen`=0, `arrival_date` = NULL WHERE `UID`='" . sql_escape($user_id) . "' LIMIT 1");
       engelsystem_log("User set to not arrived: " . User_Nick_render($user_source));
-      success(_("Reset done. Angel has not arrived."));
+      success(_("Reset done. Helper has not arrived."));
       redirect(user_link($user_source));
     } else {
-      $msg = error(_("Angel not found."), true);
+      $msg = error(_("Helper not found."), true);
     }
   } elseif (isset($_REQUEST['arrived']) && preg_match("/^[0-9]*$/", $_REQUEST['arrived'])) {
     $user_id = $_REQUEST['arrived'];
@@ -28,10 +28,10 @@ function admin_arrive() {
     if ($user_source != null) {
       sql_query("UPDATE `User` SET `Gekommen`=1, `arrival_date`='" . time() . "' WHERE `UID`='" . sql_escape($user_id) . "' LIMIT 1");
       engelsystem_log("User set has arrived: " . User_Nick_render($user_source));
-      success(_("Angel has been marked as arrived."));
+      success(_("Helper has been marked as arrived."));
       redirect(user_link($user_source));
     } else {
-      $msg = error(_("Angel not found."), true);
+      $msg = error(_("Helper not found."), true);
     }
   }
   
