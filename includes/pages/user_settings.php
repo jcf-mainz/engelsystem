@@ -189,7 +189,7 @@ function user_settings() {
                   $enable_jabber ? form_text('jabber', _("Jabber"), $jabber) : '',
                   form_text('hometown', _("Hometown"), $hometown),
                   $enable_tshirt_size ? form_select('tshirt_size', _("Shirt size"), $tshirt_sizes, $tshirt_size) : '',
-                  form_info('', _('Please visit the helpertypes page to manage your angeltypes.')),
+                  form_info('', _('Please visit the helpertypes page to manage your helpertypes.')),
                   form_submit('submit', _("Save")) 
               ]) 
           ]),

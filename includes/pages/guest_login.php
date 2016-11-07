@@ -180,7 +180,7 @@ function guest_register() {
       }
       
       engelsystem_log("User " . User_Nick_render(User($user_id)) . " signed up as: " . join(", ", $user_angel_types_info));
-      success(_("Angel registration successful!"));
+      success(_("Helper registration successful!"));
       
       // User is already logged in - that means a coordinator has registered an angel. Return to register page.
       if (isset($user)) {
@@ -197,7 +197,7 @@ function guest_register() {
   }
   
   return page_with_title(register_title(), [
-      _("Bitte fülle die Felder aus um dich als Helfer für das JCF-Frühjahrsymposium zu registrieren."), // Text geändert!!!
+      _("By completing this form you're registering as a JCF-Helper. This script will create you an account in the helper task scheduler."),
       $msg,
       msg(),
       form([
@@ -228,13 +228,13 @@ function guest_register() {
                           form_password('password2', _("Confirm password") . ' ' . entry_required()) 
                       ]) 
                   ]),
-                  form_checkboxes('angel_types', _($enable_description_jobs ? "What do you want to do?" : 'Wann hast du Zeit?') . sprintf($enable_description_jobs ? " (<a href=\"%s\">%s</a>)" : '', page_link_to('angeltypes') . '&action=about', _($enable_description_jobs ? "Description of job types" : '')), $angel_types, $selected_angel_types),
-                  form_info($enable_description_jobs ? "" : '', _($enable_description_jobs ? "Restricted angel types need will be confirmed later by an archangel. You can change your selection in the options section." : 'Hast du ein Gesundheitszeugnis? Dann bitte das Kästchen ankreuzen!'))
+                  form_checkboxes('angel_types', _($enable_description_jobs ? "What do you want to do?" : 'When can you help?') . sprintf($enable_description_jobs ? " (<a href=\"%s\">%s</a>)" : '', page_link_to('angeltypes') . '&action=about', _($enable_description_jobs ? "Description of job types" : '')), $angel_types, $selected_angel_types),
+                  form_info($enable_description_jobs ? "" : '', _($enable_description_jobs ? "Restricted helper types need will be confirmed later by an archhelper. You can change your selection in the options section." : 'Hast du ein Gesundheitszeugnis? Dann bitte das Kästchen ankreuzen!'))
               ]),
               div('col-md-6', [
                   div('row', [
                       div('col-sm-4', [
-                        form_text('mobile', _("Handy (für Whatsapp-Helfer-Gruppe)"), $mobile)  
+                        form_text('mobile', _("Cellphone (forr Whatsapp-Helper-Group)"), $mobile)  
                       ]),
                       div('col-sm-4', [
                         $enable_phone ? form_text('tel', _("Phone"), $tel) : ''	

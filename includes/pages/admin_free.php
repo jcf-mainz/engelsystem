@@ -78,7 +78,7 @@ function admin_free() {
                   form_text('search', _("Search"), $search) 
               ]),
               div('col-md-4', [
-                  form_select('angeltype', _("Angeltype"), $angel_types, $_REQUEST['angeltype']) 
+                  form_select('angeltype', _("Helpertype"), $angel_types, $_REQUEST['angeltype']) 
               ]),
               div('col-md-2', [
                   form_checkbox('confirmed_only', _("Only confirmed"), isset($_REQUEST['confirmed_only'])) 

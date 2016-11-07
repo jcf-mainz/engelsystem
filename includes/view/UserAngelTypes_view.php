@@ -67,7 +67,7 @@ function UserAngelType_add_view($angeltype, $users_source, $user_id) {
           button(page_link_to('angeltypes') . '&action=view&angeltype_id=' . $angeltype['id'], _("back"), 'back') 
       ]),
       form([
-          form_info(_("Angeltype"), $angeltype['name']),
+          form_info(_("Helpertype"), $angeltype['name']),
           form_select('user_id', _("User"), $users, $user_id),
           form_submit('submit', _("Add")) 
       ]) 

@@ -25,7 +25,7 @@ function admin_log() {
       ]),
       table([
           'date' => "Time",
-          'nick' => "Angel",
+          'nick' => "Helper",
           'message' => "Log Entry" 
       ], $log_entries) 
   ]);

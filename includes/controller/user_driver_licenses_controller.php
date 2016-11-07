@@ -24,7 +24,7 @@ function user_driver_license_required_hint() {
   }
   
   if ($driving_license_information_required && $user_driver_license == null) {
-    return info(sprintf(_("You joined an angeltype which requires a driving license. Please edit your driving license information here: %s."), '<a href="' . user_driver_license_edit_link() . '">' . _("driving license information") . '</a>'), true);
+    return info(sprintf(_("You joined an helpertype which requires a driving license. Please edit your driving license information here: %s."), '<a href="' . user_driver_license_edit_link() . '">' . _("driving license information") . '</a>'), true);
   }
   
   return '';

@@ -394,7 +394,7 @@ function view_user_shifts() {
   ];
   
   if (count($types) == 0) {
-    error(_("The administration has not configured any helpertypes yet - or you are not subscribed to any angeltype."));
+    error(_("The administration has not configured any helpertypes yet - or you are not subscribed to any helpertype."));
     redirect('?');
   }
   
@@ -713,7 +713,7 @@ function view_user_shifts() {
                   $shifts_row .= '<br />';
                 }
                 if (in_array('user_shifts_admin', $privileges)) {
-                  $shifts_row .= ' ' . button(page_link_to('user_shifts') . '&amp;shift_id=' . $shift['SID'] . '&amp;type_id=' . $angeltype['id'], _("Add more angels"), 'btn-xs');
+                  $shifts_row .= ' ' . button(page_link_to('user_shifts') . '&amp;shift_id=' . $shift['SID'] . '&amp;type_id=' . $angeltype['id'], _("Add more helpers"), 'btn-xs');
                 }
               }
               if ($shift['own'] && ! in_array('user_shifts_admin', $privileges)) {
@@ -856,7 +856,7 @@ function view_user_shifts() {
           $shift_row['entries'] .= '<br />';
         }
         if (in_array('user_shifts_admin', $privileges)) {
-          $shift_row['entries'] .= '<a href="' . page_link_to('user_shifts') . '&amp;shift_id=' . $shift['SID'] . '&amp;type_id=' . $angeltype['id'] . '">' . _('Add more angels') . ' &raquo;</a>';
+          $shift_row['entries'] .= '<a href="' . page_link_to('user_shifts') . '&amp;shift_id=' . $shift['SID'] . '&amp;type_id=' . $angeltype['id'] . '">' . _('Add more helpers') . ' &raquo;</a>';
         }
         $shifts_table[] = $shift_row;
         $shift['angeltypes'] = $angeltypes;
@@ -883,7 +883,7 @@ function view_user_shifts() {
               'start_time' => $_SESSION['user_shifts']['start_time'],
               'end_select' => html_select_key("end_day", "end_day", array_combine($days, $days), $_SESSION['user_shifts']['end_day']),
               'end_time' => $_SESSION['user_shifts']['end_time'],
-              'type_select' => make_select($types, $_SESSION['user_shifts']['types'], "types", _("Angeltypes") . '<sup>1</sup>'),
+              'type_select' => make_select($types, $_SESSION['user_shifts']['types'], "types", _("Helpertypes") . '<sup>1</sup>'),
               'filled_select' => make_select($filled, $_SESSION['user_shifts']['filled'], "filled", _("Occupancy")),
               'task_notice' => '<sup>1</sup>' . _("The tasks shown here are influenced by the preferences you defined in your settings!") . " <a href=\"" . page_link_to('angeltypes') . '&action=about' . "\">" . _("Description of the jobs.") . "</a>",
               'new_style_checkbox' => '<label><input type="checkbox" name="new_style" value="1" ' . ($_SESSION['user_shifts']['new_style'] ? ' checked' : '') . '> ' . _("Use new style if possible") . '</label>',

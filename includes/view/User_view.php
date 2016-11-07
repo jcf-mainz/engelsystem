@@ -81,7 +81,7 @@ function User_edit_vouchers_view($user) {
       buttons([
           button(user_link($user), glyph('chevron-left') . _("back")) 
       ]),
-      info(sprintf(_("Angel should receive at least  %d vouchers."), User_get_eligable_voucher_count($user)), true),
+      info(sprintf(_("Helper should receive at least  %d vouchers."), User_get_eligable_voucher_count($user)), true),
       form([
           form_spinner('vouchers', _("Number of vouchers given out"), $user['got_voucher']),
           form_submit('submit', _("Save")) 
@@ -255,7 +255,7 @@ function User_view($user_source, $admin_user_privilege, $freeloader, $user_angel
               ($user_source['Gekommen'] && $admin_user_privilege && $user_source['Tshirt']) ? ' <span class="text-success">' . _("T-Shirt") . '</span>' : '' 
           ]),
           div('col-md-3', [
-              '<h4>' . _("Angeltypes") . '</h4>',
+              '<h4>' . _("Helpertypes") . '</h4>',
               User_angeltypes_render($user_angeltypes) 
           ]),
           div('col-md-3', [
