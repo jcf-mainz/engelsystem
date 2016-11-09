@@ -1,7 +1,7 @@
 <?php
 
 function questions_title() {
-  return _("Ask an archhelper");
+  return _("Ask the Guest Service Team");
 }
 
 function user_questions() {

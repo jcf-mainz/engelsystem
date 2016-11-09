@@ -229,12 +229,12 @@ function guest_register() {
                       ]) 
                   ]),
                   form_checkboxes('angel_types', _($enable_description_jobs ? "What do you want to do?" : 'When can you help?') . sprintf($enable_description_jobs ? " (<a href=\"%s\">%s</a>)" : '', page_link_to('angeltypes') . '&action=about', _($enable_description_jobs ? "Description of job types" : '')), $angel_types, $selected_angel_types),
-                  form_info($enable_description_jobs ? "" : '', _($enable_description_jobs ? "Restricted helper types need will be confirmed later by an archhelper. You can change your selection in the options section." : 'Hast du ein Gesundheitszeugnis? Dann bitte das Kästchen ankreuzen!'))
+                  form_info($enable_description_jobs ? "" : '', _($enable_description_jobs ? "Restricted helper types need will be confirmed later by the Guest Service Team. You can change your selection in the options section." : 'Ist dein Gesundheitszeugnis aktuell gültig?'))
               ]),
               div('col-md-6', [
                   div('row', [
                       div('col-sm-4', [
-                        form_text('mobile', _("Cellphone (forr Whatsapp-Helper-Group)"), $mobile)  
+                        form_text('mobile', _("Cellphone (for Whatsapp-Helper-Group)"), $mobile)  
                       ]),
                       div('col-sm-4', [
                         $enable_phone ? form_text('tel', _("Phone"), $tel) : ''	
