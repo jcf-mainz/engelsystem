@@ -57,7 +57,7 @@ function AngelType_edit_view($name, $restricted, $description, $coordinator_mode
           $coordinator_mode ? form_info(_("Name"), $name) : form_text('name', _("Name"), $name),
           $coordinator_mode ? form_info(_("Restricted"), $restricted ? _("Yes") : _("No")) : form_checkbox('restricted', _("Restricted"), $restricted),
           $coordinator_mode ? form_info(_("Requires driver license"), $requires_driver_license ? _("Yes") : _("No")) : form_checkbox('requires_driver_license', _("Requires driver license"), $requires_driver_license),
-          form_info("", _("Restricted helper types can only be used by an helper if enabled by an archhelper (double opt-in).")),
+          form_info("", _("Restricted helper types need will be confirmed later by the Guest Service Team (double opt-in).")),
           form_textarea('description', _("Description"), $description),
           form_info("", _("Please use markdown for the description.")),
           form_submit('submit', _("Save")) 
