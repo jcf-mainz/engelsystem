@@ -214,8 +214,15 @@ function guest_register() {
                   ]),
                   div('row', [
                       div('col-sm-6', [
-                          $enable_planned_arrival_date ? form_date('planned_arrival_date', _("Planned date of arrival") . ' ' . entry_required(), $planned_arrival_date, time()) : ''
+                          $enable_First_Last_Name ? form_text('prename', _("First name"), $prename) : ''
                       ]),
+                      div('col-sm-6', [
+                          $enable_First_Last_Name ? form_text('lastname', _("Last name"), $lastname) : ''
+                      ])
+                  ]),
+                  div('row', [ $enable_planned_arrival_date ? div('col-sm-6', [
+                               form_date('planned_arrival_date', _("Planned date of arrival") . ' ' . entry_required(), $planned_arrival_date, time())
+                          ]) : '',
                       div('col-sm-6', [
                           $enable_tshirt_size ? form_select('tshirt_size', _("Shirt size") . ' ' . entry_required(), $tshirt_sizes, $tshirt_size) : ''
                       ])
@@ -228,12 +235,10 @@ function guest_register() {
                           form_password('password2', _("Confirm password") . ' ' . entry_required())
                       ])
                   ]),
-                  form_checkboxes('angel_types', _($enable_description_jobs ? "What do you want to do?" : 'When can you help?') . sprintf($enable_description_jobs ? " (<a href=\"%s\">%s</a>)" : '', page_link_to('angeltypes') . '&action=about', _($enable_description_jobs ? "Description of job types" : '')), $angel_types, $selected_angel_types),
-                  form_info($enable_description_jobs ? "" : '', _($enable_description_jobs ? "Restricted helper types need will be confirmed later by the Guest Service Team. You can change your selection in the options section." : 'Ist dein Gesundheitszeugnis aktuell gültig?'))
-              ]),
-              div('col-md-6', [
+              //]),
+              //div('col-md-6', [
                   div('row', [
-                      div('col-sm-4', [
+                      div('col-sm-7', [
                         form_text('mobile', _("Cellphone (for Whatsapp-Helper-Group)"), $mobile)
                       ]),
                       div('col-sm-4', [
@@ -245,14 +250,6 @@ function guest_register() {
                   ]),
                   $enable_jabber ? form_text('jabber', _("Jabber"), $jabber) : '' ,
                   div('row', [
-                      div('col-sm-6', [
-                          $enable_First_Last_Name ? form_text('prename', _("First name"), $prename) : ''
-                      ]),
-                      div('col-sm-6', [
-                          $enable_First_Last_Name ? form_text('lastname', _("Last name"), $lastname) : ''
-                      ])
-                  ]),
-                  div('row', [
                       div('col-sm-3', [
                           $enable_age ? form_text('age', _("Age"), $age) : ''
                       ]),
@@ -260,8 +257,13 @@ function guest_register() {
                           $enable_Hometown ? form_text('hometown', _("Hometown"), $hometown) : ''
                       ])
                   ]),
-                  form_info(entry_required() . ' = ' . _("Entry required!"))
-              ])
+                  form_info(entry_required() . ' = ' . _("Entry required!")),
+                  form_checkboxes('angel_types', _($enable_description_jobs ? "What do you want to do?" : 'When can you help?') . sprintf($enable_description_jobs ? " (<a href=\"%s\">%s</a>)" : '', page_link_to('angeltypes') . '&action=about', _($enable_description_jobs ? "Description of job types" : '')), $angel_types, $selected_angel_types),
+                  form_info($enable_description_jobs ? "" : '', _($enable_description_jobs ? "Restricted helper types need will be confirmed later by the Guest Service Team. You can change your selection in the options section." : 'Ist dein Gesundheitszeugnis aktuell gültig?'))
+
+                  ]
+
+              )
           ]),
           // form_textarea('comment', _("Did you help at former CCC events and which tasks have you performed then?"), $comment),
           form_submit('submit', _("Register"))
