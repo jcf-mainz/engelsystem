@@ -2,2282 +2,2433 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Engelsystem 2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-07 21:55+0100\n"
-"PO-Revision-Date: 2016-11-07 21:56+0100\n"
+"POT-Creation-Date: 2016-11-14 03:03+0100\n"
+"PO-Revision-Date: 2016-11-14 03:04+0100\n"
 "Last-Translator: Stefan Kraus <anykraus@users.noreply.github.com>\n"
 "Language-Team: \n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.8.11\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
-"X-Poedit-Basepath: .\n"
+"X-Poedit-Basepath: ../../..\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPath-1: /media/truecrypt1/home/anykraus/engelsystem\n"
+"X-Poedit-SearchPath-0: locale/de_DE.UTF-8/LC_MESSAGES\n"
+"X-Poedit-SearchPath-1: .\n"
+"X-Poedit-SearchPathExcluded-0: vendor\n"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/sys_menu.php:56
-msgid "Please enter your planned date of departure on your settings page to give us a feeling for teardown capacities."
-msgstr "Bitte gib Dein geplantes Abreisedatum an, damit wir ein Gefühl für die Abbau-Planung bekommen."
-
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/sys_menu.php:65
-#, php-format
-msgid "You freeloaded at least %s shifts. Shift signup is locked. Please go to heavens desk to be unlocked again."
-msgstr "Du hast mindestens %s Schichten geschwänzt. Schicht-Registrierung ist gesperrt. Bitte gehe zum Himmelsschreibtisch um wieder entsperrt zu werden."
-
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/sys_menu.php:72
-msgid "You are not marked as arrived. Please go to heaven's desk, get your helper badge and/or tell them that you arrived already."
-msgstr "Du bist nicht als angekommen markiert. Bitte gehe zur Himmelsverwaltung, hole Dein Badge ab und/oder erkläre ihnen, dass Du bereits angekommen bist."
-
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/sys_menu.php:78
-msgid "You need to specify a tshirt size in your settings!"
-msgstr "Bitte eine T-Shirt-Größe auswählen"
-
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/sys_menu.php:84
-msgid "You need to specify a DECT phone number in your settings! If you don't have a DECT phone, just enter \"-\"."
-msgstr "Bitte eine DECT-Telefonnummer in den Einstellungen eingeben. Wenn du noch keine Nummer hast, bitte einfach \"-\" angeben."
-
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/sys_menu.php:155
-msgid "Admin"
-msgstr "Admin"
-
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/sys_template.php:364
-msgid "No data found."
-msgstr "Nichts gefunden."
-
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/angeltypes_controller.php:7
+#: includes/controller/angeltypes_controller.php:7
+#: includes/pages/user_shifts.php:886 includes/view/AngelTypes_view.php:53
+#: includes/view/AngelTypes_view.php:70 includes/view/User_view.php:258
 msgid "Helpertypes"
 msgstr "Helfertypen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/angeltypes_controller.php:58
+#: includes/controller/angeltypes_controller.php:58
+#: includes/view/AngelTypes_view.php:222 includes/view/AngelTypes_view.php:269
 msgid "Teams/Job description"
 msgstr "Team-/Aufgabenbeschreibung"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/angeltypes_controller.php:88
+#: includes/controller/angeltypes_controller.php:88
 #, php-format
 msgid "Helpertype %s deleted."
 msgstr "Helfertyp %s gelöscht."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/angeltypes_controller.php:93
+#: includes/controller/angeltypes_controller.php:93
+#: includes/view/AngelTypes_view.php:41
 #, php-format
 msgid "Delete helpertype %s"
 msgstr "Lösche Helfertyp %s"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/angeltypes_controller.php:145
+#: includes/controller/angeltypes_controller.php:145
 msgid "Please check the name. Maybe it already exists."
 msgstr "Bitte überprüfe den Namen. Vielleicht ist er bereits vergeben."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/angeltypes_controller.php:179
+#: includes/controller/angeltypes_controller.php:179
+#: includes/view/AngelTypes_view.php:51
 #, php-format
 msgid "Edit %s"
 msgstr "%s bearbeiten"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/angeltypes_controller.php:222
+#: includes/controller/angeltypes_controller.php:222
+#: includes/view/AngelTypes_view.php:209
 #, php-format
 msgid "Team %s"
 msgstr "Team %s"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/angeltypes_controller.php:244
+#: includes/controller/angeltypes_controller.php:244
+#: includes/view/User_view.php:211
 msgid "view"
 msgstr "ansehen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/angeltypes_controller.php:248
+#: includes/controller/angeltypes_controller.php:248
+#: includes/pages/admin_free.php:71 includes/pages/admin_groups.php:23
+#: includes/pages/admin_rooms.php:16 includes/view/AngelTypes_view.php:91
+#: includes/view/ShiftTypes_view.php:55 includes/view/ShiftTypes_view.php:66
+#: includes/view/Shifts_view.php:83 includes/view/User_view.php:214
+#: includes/view/User_view.php:269
 msgid "edit"
 msgstr "bearbeiten"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/angeltypes_controller.php:249
+#: includes/controller/angeltypes_controller.php:249
+#: includes/pages/admin_questions.php:40 includes/pages/admin_questions.php:61
+#: includes/pages/admin_rooms.php:17 includes/pages/admin_user.php:122
+#: includes/pages/user_shifts.php:234 includes/view/AngelTypes_view.php:45
+#: includes/view/AngelTypes_view.php:94 includes/view/Questions_view.php:5
+#: includes/view/Questions_view.php:12 includes/view/ShiftTypes_view.php:16
+#: includes/view/ShiftTypes_view.php:56 includes/view/ShiftTypes_view.php:67
+#: includes/view/Shifts_view.php:84
 msgid "delete"
 msgstr "löschen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/angeltypes_controller.php:254
+#: includes/controller/angeltypes_controller.php:254
+#: includes/view/AngelTypes_view.php:87 includes/view/AngelTypes_view.php:253
 msgid "leave"
 msgstr "verlassen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/angeltypes_controller.php:256
+#: includes/controller/angeltypes_controller.php:256
+#: includes/view/AngelTypes_view.php:78 includes/view/AngelTypes_view.php:255
 msgid "join"
 msgstr "mitmachen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/angeltypes_controller.php:284
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_angeltypes_controller.php:32
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_angeltypes_controller.php:41
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_angeltypes_controller.php:74
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_angeltypes_controller.php:83
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_angeltypes_controller.php:143
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_angeltypes_controller.php:203
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_angeltypes_controller.php:277
+#: includes/controller/angeltypes_controller.php:284
+#: includes/controller/user_angeltypes_controller.php:32
+#: includes/controller/user_angeltypes_controller.php:41
+#: includes/controller/user_angeltypes_controller.php:74
+#: includes/controller/user_angeltypes_controller.php:83
+#: includes/controller/user_angeltypes_controller.php:143
+#: includes/controller/user_angeltypes_controller.php:203
+#: includes/controller/user_angeltypes_controller.php:277
 msgid "Helpertype doesn't exist."
 msgstr "Helfertyp existiert nicht."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/event_config_controller.php:4
+#: includes/controller/event_config_controller.php:4
 msgid "Event config"
 msgstr "Event Einstellungen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/event_config_controller.php:51
+#: includes/controller/event_config_controller.php:51
 msgid "Please enter buildup start date."
 msgstr "Bitte gib das Aufbau Start Datum an."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/event_config_controller.php:55
+#: includes/controller/event_config_controller.php:55
 msgid "Please enter event start date."
 msgstr "Bitte gib das Event Start Datum an."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/event_config_controller.php:59
+#: includes/controller/event_config_controller.php:59
 msgid "Please enter event end date."
 msgstr "Bitte gib das Event Ende Datum an."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/event_config_controller.php:63
+#: includes/controller/event_config_controller.php:63
 msgid "Please enter teardown end date."
 msgstr "Bitte gib das Abbau Ende Datum an."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/event_config_controller.php:69
+#: includes/controller/event_config_controller.php:69
 msgid "The buildup start date has to be before the event start date."
 msgstr "Das Aufbau Start Datum muss vor dem Event Start Datum liegen."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/event_config_controller.php:74
+#: includes/controller/event_config_controller.php:74
 msgid "The event start date has to be before the event end date."
 msgstr "Das Event Start Datum muss vor dem Event End Datum liegen."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/event_config_controller.php:79
+#: includes/controller/event_config_controller.php:79
 msgid "The event end date has to be before the teardown end date."
 msgstr "Das Event Ende Datum muss vor dem Abbau Ende Datum liegen."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/event_config_controller.php:84
+#: includes/controller/event_config_controller.php:84
 msgid "The buildup start date has to be before the teardown end date."
 msgstr "Das Aufbau Start Datum muss vor dem Abbau Ende Datum liegen."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/event_config_controller.php:95
+#: includes/controller/event_config_controller.php:95
+#: includes/pages/user_settings.php:119
 msgid "Settings saved."
 msgstr "Einstellungen gespeichert."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/shifts_controller.php:31
+#: includes/controller/shifts_controller.php:31
 msgid "Shift could not be found."
 msgstr "Schicht konnte nicht gefunden werden."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/shifttypes_controller.php:31
+#: includes/controller/shifttypes_controller.php:31
 #, php-format
 msgid "Shifttype %s deleted."
 msgstr "Schichttyp %s gelöscht."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/shifttypes_controller.php:36
+#: includes/controller/shifttypes_controller.php:36
+#: includes/view/ShiftTypes_view.php:12
 #, php-format
 msgid "Delete shifttype %s"
 msgstr "Lösche Schichttyp %s"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/shifttypes_controller.php:61
+#: includes/controller/shifttypes_controller.php:61
 msgid "Shifttype not found."
 msgstr "Schichttyp nicht gefunden."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/shifttypes_controller.php:77
+#: includes/controller/shifttypes_controller.php:77
+#: includes/pages/admin_rooms.php:67
 msgid "Please enter a name."
 msgstr "Gib bitte einen Namen an."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/shifttypes_controller.php:97
+#: includes/controller/shifttypes_controller.php:97
 msgid "Updated shifttype."
 msgstr "Schichttyp geändert."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/shifttypes_controller.php:104
+#: includes/controller/shifttypes_controller.php:104
 msgid "Created shifttype."
 msgstr "Schichttyp erstellt."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/shifttypes_controller.php:161
+#: includes/controller/shifttypes_controller.php:161
 msgid "Shifttypes"
 msgstr "Schichttypen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/users_controller.php:50
-msgid "You cannot delete yourself."
-msgstr "Du kannst Dich nicht selber löschen."
-
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/users_controller.php:59
-msgid "Your password is incorrect.  Please try it again."
-msgstr "Dein Passwort stimmt nicht. Bitte probiere es nochmal."
-
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/users_controller.php:69
-msgid "User deleted."
-msgstr "Helfer gelöscht."
-
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/users_controller.php:77
-#, php-format
-msgid "Delete %s"
-msgstr "%s löschen"
-
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/users_controller.php:118
-msgid "Please enter a valid number of vouchers."
-msgstr "Bitte gib eine korrekte Anzahl von Vouchern ein."
-
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/users_controller.php:129
-msgid "Saved the number of vouchers."
-msgstr "Anzahl der Voucher gespeichert."
-
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/users_controller.php:137
-#, php-format
-msgid "%s's vouchers"
-msgstr "Voucher von %s"
-
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/users_controller.php:151
-msgid "User not found."
-msgstr "Benutzer nicht gefunden."
-
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/users_controller.php:207
-msgid "All users"
-msgstr "Alle Benutzer"
-
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/users_controller.php:223
-msgid "Token is not correct."
-msgstr "Der Token ist nicht in Ordnung."
-
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/users_controller.php:233
-msgid "Your passwords don't match."
-msgstr "Deine Passwörter stimmen nicht überein."
-
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/users_controller.php:237
-msgid "Your password is to short (please use at least 6 characters)."
-msgstr "Dein Passwort ist zu kurz (Bitte mindestens 6 Zeichen nutzen)."
-
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/users_controller.php:243
-msgid "Password could not be updated."
-msgstr "Passwort kann nicht neu gesetzt werden."
-
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/users_controller.php:246
-msgid "Password saved."
-msgstr "Passwort gespeichert."
-
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/users_controller.php:265
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/users_controller.php:269
-msgid "E-mail address is not correct."
-msgstr "Die E-Mail Adresse ist nicht in Ordnung."
-
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/users_controller.php:273
-msgid "Please enter your e-mail."
-msgstr "Bitte gib Deine E-Mail-Adresse ein."
-
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/users_controller.php:281
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/users_controller.php:299
-msgid "Password recovery"
-msgstr "Passwort wiederherstellen"
-
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/users_controller.php:281
-#, php-format
-msgid "Please visit %s to recover your password."
-msgstr "Bitte besuche %s, um Dein Passwort zurückzusetzen"
-
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/users_controller.php:286
-msgid "We sent an email containing your password recovery link."
-msgstr "Wir haben eine eMail mit einem Link zum Passwort-zurücksetzen geschickt."
-
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/users_controller.php:316
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_angeltypes_controller.php:157
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_angeltypes_controller.php:212
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_angeltypes_controller.php:286
-msgid "User doesn't exist."
-msgstr "Benutzer existiert nicht."
-
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_angeltypes_controller.php:22
+#: includes/controller/user_angeltypes_controller.php:22
 #, php-format
 msgid "There is %d unconfirmed helpertype."
 msgid_plural "There are %d unconfirmed helpertypes."
 msgstr[0] "Es gibt %d nicht freigeschalteten Helfertypen!"
 msgstr[1] "Es gibt %d nicht freigeschaltete Helfertypen!"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_angeltypes_controller.php:22
+#: includes/controller/user_angeltypes_controller.php:22
 msgid "Helper types which need approvals:"
 msgstr "Helfertypen die bestätigt werden müssen:"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_angeltypes_controller.php:46
+#: includes/controller/user_angeltypes_controller.php:46
 msgid "You are not allowed to delete all users for this helpertype."
 msgstr "Du darfst nicht alle Benutzer von diesem Helfertyp entfernen."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_angeltypes_controller.php:57
+#: includes/controller/user_angeltypes_controller.php:57
 #, php-format
 msgid "Denied all users for helpertype %s."
 msgstr "Alle Benutzer mit Helfertyp %s abgelehnt."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_angeltypes_controller.php:62
+#: includes/controller/user_angeltypes_controller.php:62
+#: includes/view/UserAngelTypes_view.php:15
 msgid "Deny all users"
 msgstr "Alle Benutzer ablehnen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_angeltypes_controller.php:92
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_angeltypes_controller.php:125
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_angeltypes_controller.php:134
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_angeltypes_controller.php:185
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_angeltypes_controller.php:194
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_angeltypes_controller.php:252
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_angeltypes_controller.php:268
+#: includes/controller/user_angeltypes_controller.php:92
+#: includes/controller/user_angeltypes_controller.php:125
+#: includes/controller/user_angeltypes_controller.php:134
+#: includes/controller/user_angeltypes_controller.php:185
+#: includes/controller/user_angeltypes_controller.php:194
+#: includes/controller/user_angeltypes_controller.php:252
+#: includes/controller/user_angeltypes_controller.php:268
 msgid "User helpertype doesn't exist."
 msgstr "Benutzer-Helfertype existiert nicht."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_angeltypes_controller.php:97
+#: includes/controller/user_angeltypes_controller.php:97
 msgid "You are not allowed to confirm all users for this helpertype."
 msgstr "Du darfst nicht alle Benutzer für diesen Helfertyp freischalten."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_angeltypes_controller.php:108
+#: includes/controller/user_angeltypes_controller.php:108
 #, php-format
 msgid "Confirmed all users for helpertype %s."
 msgstr "Alle Benutzer für Helfertyp %s freigeschaltet."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_angeltypes_controller.php:113
+#: includes/controller/user_angeltypes_controller.php:113
+#: includes/view/UserAngelTypes_view.php:26
 msgid "Confirm all users"
 msgstr "Alle Benutzer bestätigen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_angeltypes_controller.php:148
+#: includes/controller/user_angeltypes_controller.php:148
 msgid "You are not allowed to confirm this users helpertype."
 msgstr "Du darfst diesen Benutzer nicht für diesen Helfertyp freischalten."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_angeltypes_controller.php:168
+#: includes/controller/user_angeltypes_controller.php:157
+#: includes/controller/user_angeltypes_controller.php:212
+#: includes/controller/user_angeltypes_controller.php:286
+#: includes/controller/users_controller.php:316
+msgid "User doesn't exist."
+msgstr "Benutzer existiert nicht."
+
+#: includes/controller/user_angeltypes_controller.php:168
 #, php-format
 msgid "%s confirmed for helpertype %s."
 msgstr "%s für Helfertyp %s freigeschaltet."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_angeltypes_controller.php:173
+#: includes/controller/user_angeltypes_controller.php:173
+#: includes/view/UserAngelTypes_view.php:37
 msgid "Confirm helpertype for user"
 msgstr "Helfertyp für Benutzer bestätigen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_angeltypes_controller.php:217
+#: includes/controller/user_angeltypes_controller.php:217
 msgid "You are not allowed to delete this users helpertype."
 msgstr "Du darfst diesen Benutzer nicht von diesem Helfertyp entfernen."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_angeltypes_controller.php:227
+#: includes/controller/user_angeltypes_controller.php:227
 #, php-format
 msgid "User %s removed from %s."
 msgstr "Benutzer %s von %s entfernt."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_angeltypes_controller.php:235
+#: includes/controller/user_angeltypes_controller.php:235
+#: includes/view/UserAngelTypes_view.php:48
 msgid "Remove helpertype"
 msgstr "Helfertyp löschen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_angeltypes_controller.php:247
+#: includes/controller/user_angeltypes_controller.php:247
 msgid "You are not allowed to set coordinator rights."
 msgstr "Du darfst keine Koordinatorrechte bearbeiten."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_angeltypes_controller.php:259
+#: includes/controller/user_angeltypes_controller.php:259
 msgid "No coordinator update given."
 msgstr "Kein Update für Koordinationsrechte gegeben."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_angeltypes_controller.php:296
+#: includes/controller/user_angeltypes_controller.php:296
 #, php-format
 msgid "Added coordinator rights for %s to %s."
 msgstr "%s hat %s als Koordinator bekommen."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_angeltypes_controller.php:296
+#: includes/controller/user_angeltypes_controller.php:296
 #, php-format
 msgid "Removed coordinator rights for %s from %s."
 msgstr "%s hat jetzt nicht mehr %s als Koordinator."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_angeltypes_controller.php:304
+#: includes/controller/user_angeltypes_controller.php:304
+#: includes/view/AngelTypes_view.php:142
+#: includes/view/UserAngelTypes_view.php:4
 msgid "Add coordinator rights"
 msgstr "Koordinatorrechte geben"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_angeltypes_controller.php:304
+#: includes/controller/user_angeltypes_controller.php:304
+#: includes/view/AngelTypes_view.php:133
+#: includes/view/UserAngelTypes_view.php:4
 msgid "Remove coordinator rights"
 msgstr "Koordinatorrechte entfernen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_angeltypes_controller.php:343
+#: includes/controller/user_angeltypes_controller.php:343
 #, php-format
 msgid "User %s added to %s."
 msgstr "Benutzer %s zu %s hinzugefügt."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_angeltypes_controller.php:356
+#: includes/controller/user_angeltypes_controller.php:356
+#: includes/view/UserAngelTypes_view.php:64
 msgid "Add user to helpertype"
 msgstr "Benutzer zu Helfertyp hinzufügen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_angeltypes_controller.php:372
+#: includes/controller/user_angeltypes_controller.php:372
 #, php-format
 msgid "You are already a %s."
 msgstr "Du bist bereits %s."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_angeltypes_controller.php:382
+#: includes/controller/user_angeltypes_controller.php:382
 #, php-format
 msgid "You joined %s."
 msgstr "Du bist %s beigetreten."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_angeltypes_controller.php:398
+#: includes/controller/user_angeltypes_controller.php:398
+#: includes/view/UserAngelTypes_view.php:78
 #, php-format
 msgid "Become a %s"
 msgstr "Werde ein %s"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_driver_licenses_controller.php:27
+#: includes/controller/user_driver_licenses_controller.php:27
 #, php-format
-msgid "You joined an helpertype which requires a driving license. Please edit your driving license information here: %s."
-msgstr "Du bist einem Helfertypen beigetreten, der Führerschein-Infos benötigt. Bitte trage Deine Führerschein-Infos hier ein: %s."
+msgid ""
+"You joined an helpertype which requires a driving license. Please edit your "
+"driving license information here: %s."
+msgstr ""
+"Du bist einem Helfertypen beigetreten, der Führerschein-Infos benötigt. "
+"Bitte trage Deine Führerschein-Infos hier ein: %s."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_driver_licenses_controller.php:27
+#: includes/controller/user_driver_licenses_controller.php:27
 msgid "driving license information"
 msgstr "Führerschein-Infos"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_driver_licenses_controller.php:123
+#: includes/controller/user_driver_licenses_controller.php:123
 msgid "Please select at least one driving license."
 msgstr "Bitte wähle mindestens einen Führerschein-Typen aus."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_driver_licenses_controller.php:133
+#: includes/controller/user_driver_licenses_controller.php:133
 msgid "Your driver license information has been removed."
 msgstr "Deine Führerschein-Infos wurden gelöscht."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_driver_licenses_controller.php:147
+#: includes/controller/user_driver_licenses_controller.php:147
 msgid "Your driver license information has been saved."
 msgstr "Deine Führerschein-Infos wurden gespeichert."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/controller/user_driver_licenses_controller.php:155
+#: includes/controller/user_driver_licenses_controller.php:155
+#: includes/view/UserDriverLicenses_view.php:15
 #, php-format
 msgid "Edit %s driving license information"
 msgstr "Bearbeite die Führerschein-Infos von %s"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/helper/email_helper.php:12
+#: includes/controller/users_controller.php:50
+msgid "You cannot delete yourself."
+msgstr "Du kannst Dich nicht selber löschen."
+
+#: includes/controller/users_controller.php:59
+#: includes/pages/guest_login.php:297
+msgid "Your password is incorrect.  Please try it again."
+msgstr "Dein Passwort stimmt nicht. Bitte probiere es nochmal."
+
+#: includes/controller/users_controller.php:69
+msgid "User deleted."
+msgstr "Helfer gelöscht."
+
+#: includes/controller/users_controller.php:77 includes/view/User_view.php:62
+#, php-format
+msgid "Delete %s"
+msgstr "%s löschen"
+
+#: includes/controller/users_controller.php:118
+msgid "Please enter a valid number of vouchers."
+msgstr "Bitte gib eine korrekte Anzahl von Vouchern ein."
+
+#: includes/controller/users_controller.php:129
+msgid "Saved the number of vouchers."
+msgstr "Anzahl der Voucher gespeichert."
+
+#: includes/controller/users_controller.php:137 includes/view/User_view.php:79
+#, php-format
+msgid "%s's vouchers"
+msgstr "Voucher von %s"
+
+#: includes/controller/users_controller.php:151
+msgid "User not found."
+msgstr "Benutzer nicht gefunden."
+
+#: includes/controller/users_controller.php:207 includes/view/User_view.php:116
+msgid "All users"
+msgstr "Alle Benutzer"
+
+#: includes/controller/users_controller.php:223
+msgid "Token is not correct."
+msgstr "Der Token ist nicht in Ordnung."
+
+#: includes/controller/users_controller.php:233
+#: includes/pages/guest_login.php:100 includes/pages/user_settings.php:130
+msgid "Your passwords don't match."
+msgstr "Deine Passwörter stimmen nicht überein."
+
+#: includes/controller/users_controller.php:237
+#: includes/pages/user_settings.php:128
+msgid "Your password is to short (please use at least 6 characters)."
+msgstr "Dein Passwort ist zu kurz (Bitte mindestens 6 Zeichen nutzen)."
+
+#: includes/controller/users_controller.php:243
+msgid "Password could not be updated."
+msgstr "Passwort kann nicht neu gesetzt werden."
+
+#: includes/controller/users_controller.php:246
+#: includes/pages/user_settings.php:132
+msgid "Password saved."
+msgstr "Passwort gespeichert."
+
+#: includes/controller/users_controller.php:265
+#: includes/controller/users_controller.php:269
+#: includes/pages/guest_login.php:69 includes/pages/user_settings.php:36
+msgid "E-mail address is not correct."
+msgstr "Die E-Mail Adresse ist nicht in Ordnung."
+
+#: includes/controller/users_controller.php:273
+#: includes/pages/guest_login.php:73 includes/pages/user_settings.php:40
+msgid "Please enter your e-mail."
+msgstr "Bitte gib Deine E-Mail-Adresse ein."
+
+#: includes/controller/users_controller.php:281
+#: includes/controller/users_controller.php:299
+msgid "Password recovery"
+msgstr "Passwort wiederherstellen"
+
+#: includes/controller/users_controller.php:281
+#, php-format
+msgid "Please visit %s to recover your password."
+msgstr "Bitte besuche %s, um Dein Passwort zurückzusetzen"
+
+#: includes/controller/users_controller.php:286
+msgid "We sent an email containing your password recovery link."
+msgstr ""
+"Wir haben eine eMail mit einem Link zum Passwort-zurücksetzen geschickt."
+
+#: includes/helper/email_helper.php:12
 #, php-format
 msgid "Hi %s,"
 msgstr "Hallo %s,"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/helper/email_helper.php:12
-msgid "here is a message for you from the Helfersystem:"
-msgstr "hier ist eine Nachricht aus dem Helfersystem für Dich:"
+#: includes/helper/email_helper.php:12
+msgid "here is a message for you from the JCF Helfersystem:"
+msgstr "hier ist eine Nachricht für dich vom JCF Helfersystem:"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/helper/email_helper.php:12
-msgid "This email is autogenerated and has not to be signed. You got this email because you are registered in the Helfersystem."
-msgstr "Diese E-Mail wurde automatisch generiert und muss daher nicht unterschrieben werden. Du hast diese E-Mail bekommen, weil Du im Helfersystem registriert bist."
+#: includes/helper/email_helper.php:12
+msgid ""
+"This email is autogenerated and has not to be signed. You got this email "
+"because you are registered in the Helfersystem."
+msgstr ""
+"Diese E-Mail ist automatisch generiert und ist nicht unterschrieben. Diese E-"
+"Mail wurde aufgrund der Registrierung im Helfersystem versandt."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/mailer/shifts_mailer.php:10
+#: includes/mailer/shifts_mailer.php:10
 msgid "A Shift you are registered on has changed:"
 msgstr "Eine deiner Schichten hat sich geändert:"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/mailer/shifts_mailer.php:14
+#: includes/mailer/shifts_mailer.php:14
 #, php-format
 msgid "* Shift type changed from %s to %s"
 msgstr "* Schichttyp von %s in %s geändert"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/mailer/shifts_mailer.php:19
+#: includes/mailer/shifts_mailer.php:19
 #, php-format
 msgid "* Shift title changed from %s to %s"
 msgstr "* Schicht Titel von %s nach %s geändert"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/mailer/shifts_mailer.php:24
+#: includes/mailer/shifts_mailer.php:24
 #, php-format
 msgid "* Shift Start changed from %s to %s"
 msgstr "* Schicht Beginn von %s nach %s geändert"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/mailer/shifts_mailer.php:29
+#: includes/mailer/shifts_mailer.php:29
 #, php-format
 msgid "* Shift End changed from %s to %s"
 msgstr "* Schicht Ende von %s nach %s geändert"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/mailer/shifts_mailer.php:34
+#: includes/mailer/shifts_mailer.php:34
 #, php-format
 msgid "* Shift Location changed from %s to %s"
 msgstr "* Schicht Ort von %s to %s geändert"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/mailer/shifts_mailer.php:44
+#: includes/mailer/shifts_mailer.php:44
 msgid "The updated Shift:"
 msgstr "Die aktualisierte Schicht:"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/mailer/shifts_mailer.php:53
+#: includes/mailer/shifts_mailer.php:53
 msgid "Your Shift has changed"
 msgstr "Deine Schicht hat sich geändert"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/mailer/shifts_mailer.php:62
+#: includes/mailer/shifts_mailer.php:62
 msgid "A Shift you are registered on was deleted:"
 msgstr "Eine deiner Schichten wurde gelöscht:"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/mailer/shifts_mailer.php:71
+#: includes/mailer/shifts_mailer.php:71
 msgid "Your Shift was deleted"
 msgstr "Deine Schicht wurde gelöscht"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/mailer/shifts_mailer.php:80
+#: includes/mailer/shifts_mailer.php:80
 msgid "You have been assigned to a Shift:"
 msgstr "Du wurdest in eine Schicht eingetragen:"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/mailer/shifts_mailer.php:86
+#: includes/mailer/shifts_mailer.php:86
 msgid "Assigned to Shift"
 msgstr "In Schicht eingetragen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/mailer/shifts_mailer.php:94
+#: includes/mailer/shifts_mailer.php:94
 msgid "You have been removed from a Shift:"
 msgstr "Du wurdest aus einer Schicht ausgetragen:"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/mailer/shifts_mailer.php:100
+#: includes/mailer/shifts_mailer.php:100
 msgid "Removed from Shift"
 msgstr "Von Schicht ausgetragen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/mailer/users_mailer.php:7
+#: includes/mailer/users_mailer.php:7
 msgid "Your account has been deleted"
 msgstr "Dein Konto wurde gelöscht."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/mailer/users_mailer.php:7
-msgid "Your helpersystem account has been deleted. If you have any questions regarding your account deletion, please contact heaven."
-msgstr "Dein Helfersystem-Konto wurde gelöscht. Wenn Du dazu Fragen hast, kontaktiere bitte den Himmel."
+#: includes/mailer/users_mailer.php:7
+msgid ""
+"Your helpersystem account has been deleted. If you have any questions "
+"regarding your account deletion, please contact heaven."
+msgstr ""
+"Dein Helfersystem-Konto wurde gelöscht. Wenn Du dazu Fragen hast, "
+"kontaktiere bitte den Himmel."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_log.php:4
-msgid "Log"
-msgstr "Log"
-
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_log.php:23
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_log.php:24
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_active.php:179
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_arrive.php:141
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_arrive.php:142
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_free.php:78
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_free.php:87
-msgid "Search"
-msgstr "Suche"
-
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_active.php:4
+#: includes/pages/admin_active.php:4
 msgid "Active helpers"
 msgstr "Aktive Helfer"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_active.php:29
+#: includes/pages/admin_active.php:29
 #, php-format
-msgid "At least %s helpers are forced to be active. The number has to be greater."
-msgstr "Mindestens %s Helfer werden als aktiv gekennzeichnet. Die Nummer muss größer sein."
+msgid ""
+"At least %s helpers are forced to be active. The number has to be greater."
+msgstr ""
+"Mindestens %s Helfer werden als aktiv gekennzeichnet. Die Nummer muss größer "
+"sein."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_active.php:34
+#: includes/pages/admin_active.php:34
 msgid "Please enter a number of helpers to be marked as active."
-msgstr "Bitte gib eine Anzahl an Helfern ein, die als Aktiv markiert werden sollen."
+msgstr ""
+"Bitte gib eine Anzahl an Helfern ein, die als Aktiv markiert werden sollen."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_active.php:59
+#: includes/pages/admin_active.php:59
 msgid "Marked helpers."
 msgstr "Helfer wurden markiert."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_active.php:61
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_rooms.php:136
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_rooms.php:172
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_shifts.php:266
+#: includes/pages/admin_active.php:61 includes/pages/admin_rooms.php:136
+#: includes/pages/admin_rooms.php:172 includes/pages/admin_shifts.php:266
+#: includes/view/UserAngelTypes_view.php:67 includes/view/User_view.php:65
+#: includes/view/User_view.php:82
 msgid "back"
 msgstr "zurück"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_active.php:61
+#: includes/pages/admin_active.php:61
 msgid "apply"
 msgstr "anwenden"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_active.php:71
+#: includes/pages/admin_active.php:71
 msgid "Helper has been marked as working."
 msgstr "Helfer wurde als arbeitend markiert."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_active.php:73
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_active.php:83
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_active.php:103
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_arrive.php:23
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_arrive.php:34
+#: includes/pages/admin_active.php:73 includes/pages/admin_active.php:83
+#: includes/pages/admin_active.php:103 includes/pages/admin_arrive.php:23
+#: includes/pages/admin_arrive.php:34
 msgid "Helper not found."
 msgstr "Helfer nicht gefunden."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_active.php:81
+#: includes/pages/admin_active.php:81
 msgid "Helper has been marked as not working."
 msgstr "Helfer wurde als nicht arbeitend markiert."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_active.php:91
+#: includes/pages/admin_active.php:91
 msgid "Helper has got a t-shirt."
 msgstr "Helfer hat ein T-Shirt bekommen."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_active.php:101
+#: includes/pages/admin_active.php:101
 msgid "Helper has got no t-shirt."
 msgstr "Helfer hat kein T-Shirt bekommen."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_active.php:144
+#: includes/pages/admin_active.php:144
 msgid "set active"
 msgstr "setze aktiv"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_active.php:147
+#: includes/pages/admin_active.php:147
 msgid "remove active"
 msgstr "entferne aktiv"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_active.php:148
+#: includes/pages/admin_active.php:148
 msgid "got t-shirt"
 msgstr "hat t-shirt"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_active.php:151
+#: includes/pages/admin_active.php:151
 msgid "remove t-shirt"
 msgstr "entferne t-shirt"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_active.php:170
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_arrive.php:165
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_arrive.php:180
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_arrive.php:195
+#: includes/pages/admin_active.php:170 includes/pages/admin_arrive.php:165
+#: includes/pages/admin_arrive.php:180 includes/pages/admin_arrive.php:195
+#: includes/view/AngelTypes_view.php:178 includes/view/AngelTypes_view.php:186
+#: includes/view/User_view.php:106
 msgid "Sum"
 msgstr "Summe"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_active.php:177
+#: includes/pages/admin_active.php:177
 msgid "Search helper:"
 msgstr "Suche Helfer:"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_active.php:178
+#: includes/pages/admin_active.php:178
 msgid "Show all shifts"
 msgstr "Alle Schichten anzeigen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_active.php:182
+#: includes/pages/admin_active.php:179 includes/pages/admin_arrive.php:141
+#: includes/pages/admin_arrive.php:142 includes/pages/admin_free.php:78
+#: includes/pages/admin_free.php:87 includes/pages/admin_log.php:23
+#: includes/pages/admin_log.php:24
+msgid "Search"
+msgstr "Suche"
+
+#: includes/pages/admin_active.php:182
 msgid "How much helpers should be active?"
 msgstr "Wie viele Helfer sollten aktiv sein?"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_active.php:183
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_shifts.php:254
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_shifts.php:342
+#: includes/pages/admin_active.php:183 includes/pages/admin_shifts.php:254
+#: includes/pages/admin_shifts.php:342
 msgid "Preview"
 msgstr "Vorschau"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_active.php:187
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_arrive.php:145
+#: includes/pages/admin_active.php:187 includes/pages/admin_arrive.php:145
 msgid "Nickname"
 msgstr "Nick"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_active.php:188
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_active.php:198
+#: includes/pages/admin_active.php:188 includes/pages/admin_active.php:198
+#: includes/view/User_view.php:132
 msgid "Size"
 msgstr "Größe"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_active.php:189
+#: includes/pages/admin_active.php:189 includes/pages/user_shifts.php:4
+#: includes/view/User_view.php:280
 msgid "Shifts"
 msgstr "Schichten"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_active.php:190
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_shifts.php:329
+#: includes/pages/admin_active.php:190 includes/pages/admin_shifts.php:329
 msgid "Length"
 msgstr "Länge"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_active.php:191
+#: includes/pages/admin_active.php:191
 msgid "Active?"
 msgstr "Aktiv?"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_active.php:192
+#: includes/pages/admin_active.php:192 includes/view/User_view.php:130
 msgid "Forced"
 msgstr "Gezwungen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_active.php:193
+#: includes/pages/admin_active.php:193
 msgid "T-shirt?"
 msgstr "T-Shirt?"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_active.php:196
+#: includes/pages/admin_active.php:196
 msgid "Shirt statistics"
 msgstr "T-Shirt Statistik"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_active.php:199
+#: includes/pages/admin_active.php:199
 msgid "Needed shirts"
 msgstr "Benötigte T-Shirts"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_active.php:200
+#: includes/pages/admin_active.php:200
 msgid "Given shirts"
 msgstr "Ausgegebene T-Shirts"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_arrive.php:4
+#: includes/pages/admin_arrive.php:4
 msgid "Arrived helpers"
 msgstr "Angekommene Helfer"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_arrive.php:20
+#: includes/pages/admin_arrive.php:20
 msgid "Reset done. Helper has not arrived."
 msgstr "Zurückgesetzt. Helfer ist nicht angekommen."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_arrive.php:31
+#: includes/pages/admin_arrive.php:31
 msgid "Helper has been marked as arrived."
 msgstr "Helfer wurde als angekommen markiert."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_arrive.php:71
+#: includes/pages/admin_arrive.php:71 includes/view/UserAngelTypes_view.php:9
+#: includes/view/UserAngelTypes_view.php:20
+#: includes/view/UserAngelTypes_view.php:31
+#: includes/view/UserAngelTypes_view.php:42
+#: includes/view/UserAngelTypes_view.php:53
 msgid "yes"
 msgstr "Ja"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_arrive.php:72
+#: includes/pages/admin_arrive.php:72
 msgid "reset"
 msgstr "zurücksetzen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_arrive.php:72
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_arrive.php:156
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_arrive.php:171
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_arrive.php:186
+#: includes/pages/admin_arrive.php:72 includes/pages/admin_arrive.php:156
+#: includes/pages/admin_arrive.php:171 includes/pages/admin_arrive.php:186
+#: includes/view/User_view.php:271
 msgid "arrived"
 msgstr "angekommen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_arrive.php:146
+#: includes/pages/admin_arrive.php:146
 msgid "Planned arrival"
 msgstr "Geplanter Ankunftstag"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_arrive.php:147
+#: includes/pages/admin_arrive.php:147
 msgid "Arrived?"
 msgstr "Angekommen?"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_arrive.php:148
+#: includes/pages/admin_arrive.php:148
 msgid "Arrival date"
 msgstr "Ankunftsdatum"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_arrive.php:149
+#: includes/pages/admin_arrive.php:149
 msgid "Planned departure"
 msgstr "Geplante Abreise"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_arrive.php:154
+#: includes/pages/admin_arrive.php:154
 msgid "Planned arrival statistics"
 msgstr "Geplante Ankunfts-Statistik"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_arrive.php:157
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_arrive.php:172
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_arrive.php:187
+#: includes/pages/admin_arrive.php:157 includes/pages/admin_arrive.php:172
+#: includes/pages/admin_arrive.php:187
 msgid "arrived sum"
 msgstr "Summe angekommen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_arrive.php:163
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_arrive.php:178
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_arrive.php:193
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_news.php:30
+#: includes/pages/admin_arrive.php:163 includes/pages/admin_arrive.php:178
+#: includes/pages/admin_arrive.php:193 includes/pages/admin_news.php:30
+#: includes/pages/user_messages.php:82
 msgid "Date"
 msgstr "Datum"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_arrive.php:164
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_arrive.php:179
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_arrive.php:194
+#: includes/pages/admin_arrive.php:164 includes/pages/admin_arrive.php:179
+#: includes/pages/admin_arrive.php:194
 msgid "Count"
 msgstr "Anzahl"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_arrive.php:169
+#: includes/pages/admin_arrive.php:169
 msgid "Arrival statistics"
 msgstr "Ankunfts-Statistik"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_arrive.php:184
+#: includes/pages/admin_arrive.php:184
 msgid "Planned departure statistics"
 msgstr "Geplante Abreise-Statistik"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_free.php:4
+#: includes/pages/admin_free.php:4
 msgid "Free helpers"
 msgstr "Freie Helfer"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_free.php:81
+#: includes/pages/admin_free.php:81 includes/view/ShiftTypes_view.php:36
+#: includes/view/UserAngelTypes_view.php:70
 msgid "Helpertype"
 msgstr "Helfertyp"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_free.php:84
+#: includes/pages/admin_free.php:84
 msgid "Only confirmed"
 msgstr "Nur bestätigte"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_free.php:92
+#: includes/pages/admin_free.php:92 includes/pages/user_settings.php:178
+#: includes/view/AngelTypes_view.php:151 includes/view/AngelTypes_view.php:158
+#: includes/view/User_view.php:122
 msgid "Nick"
 msgstr "Nick"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_free.php:94
+#: includes/pages/admin_free.php:94 includes/pages/guest_login.php:243
+#: includes/pages/user_settings.php:185 includes/view/AngelTypes_view.php:152
+#: includes/view/AngelTypes_view.php:159 includes/view/User_view.php:125
 msgid "DECT"
 msgstr "DECT"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_free.php:95
+#: includes/pages/admin_free.php:95 includes/pages/guest_login.php:246
+#: includes/pages/user_settings.php:189
 msgid "Jabber"
 msgstr "Jabber"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_free.php:96
+#: includes/pages/admin_free.php:96 includes/pages/guest_login.php:211
+#: includes/pages/user_settings.php:187 includes/view/User_view.php:302
 msgid "E-Mail"
 msgstr "E-Mail"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_groups.php:4
+#: includes/pages/admin_groups.php:4
 msgid "Grouprights"
 msgstr "Gruppenrechte"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_groups.php:29
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:144
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:148
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_rooms.php:142
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_rooms.php:188
+#: includes/pages/admin_groups.php:29 includes/pages/admin_import.php:144
+#: includes/pages/admin_import.php:148 includes/pages/admin_rooms.php:142
+#: includes/pages/admin_rooms.php:188 includes/view/AngelTypes_view.php:57
+#: includes/view/AngelTypes_view.php:225 includes/view/ShiftTypes_view.php:35
+#: includes/view/ShiftTypes_view.php:77 includes/view/User_view.php:124
 msgid "Name"
 msgstr "Name"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_groups.php:30
+#: includes/pages/admin_groups.php:30
 msgid "Privileges"
 msgstr "Privilegien"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_groups.php:54
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_news.php:35
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_questions.php:38
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_rooms.php:156
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_shifts.php:272
+#: includes/pages/admin_groups.php:54 includes/pages/admin_news.php:35
+#: includes/pages/admin_questions.php:38 includes/pages/admin_rooms.php:156
+#: includes/pages/admin_shifts.php:272 includes/pages/user_messages.php:44
+#: includes/pages/user_news.php:113 includes/pages/user_news.php:170
+#: includes/pages/user_settings.php:193 includes/pages/user_settings.php:202
+#: includes/pages/user_settings.php:207 includes/pages/user_settings.php:212
+#: includes/pages/user_shifts.php:201 includes/view/AngelTypes_view.php:63
+#: includes/view/EventConfig_view.php:106 includes/view/Questions_view.php:32
+#: includes/view/ShiftEntry_view.php:32 includes/view/ShiftTypes_view.php:39
+#: includes/view/UserDriverLicenses_view.php:34 includes/view/User_view.php:87
+#: includes/view/User_view.php:318
 msgid "Save"
 msgstr "Speichern"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_groups.php:55
+#: includes/pages/admin_groups.php:55
 msgid "Edit group"
 msgstr "Gruppe bearbeiten"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:4
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_rooms.php:143
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_rooms.php:189
+#: includes/pages/admin_import.php:4 includes/pages/admin_rooms.php:143
+#: includes/pages/admin_rooms.php:189
 msgid "Frab import"
 msgstr "Frab Import"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:25
+#: includes/pages/admin_import.php:25
 msgid "Webserver has no write-permission on import directory."
 msgstr "Der Webserver hat keine Schreibrechte für das Verzeichnis import."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:53
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:117
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:195
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_shifts.php:53
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_shifts.php:59
+#: includes/pages/admin_import.php:53 includes/pages/admin_import.php:117
+#: includes/pages/admin_import.php:195 includes/pages/admin_shifts.php:53
+#: includes/pages/admin_shifts.php:59
 msgid "Please select a shift type."
 msgstr "Bitte einen Schichttyp wählen."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:60
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:124
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:202
+#: includes/pages/admin_import.php:60 includes/pages/admin_import.php:124
+#: includes/pages/admin_import.php:202
 msgid "Please enter an amount of minutes to add to a talk's begin."
-msgstr "Bitte gib eine Anzahl Minuten ein, die vor dem Talk-Beginn hinzugefügt werden sollen."
+msgstr ""
+"Bitte gib eine Anzahl Minuten ein, die vor dem Talk-Beginn hinzugefügt "
+"werden sollen."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:67
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:131
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:209
+#: includes/pages/admin_import.php:67 includes/pages/admin_import.php:131
+#: includes/pages/admin_import.php:209
 msgid "Please enter an amount of minutes to add to a talk's end."
-msgstr "Bitte gib eine Anzahl Minuten ein, die nach dem Talk-Ende hinzugefügt werden sollen."
+msgstr ""
+"Bitte gib eine Anzahl Minuten ein, die nach dem Talk-Ende hinzugefügt werden "
+"sollen."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:75
+#: includes/pages/admin_import.php:75
 msgid "No valid xml/xcal file provided."
 msgstr "Keine valide xml/xcal Datei hochgeladen."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:80
+#: includes/pages/admin_import.php:80
 msgid "File upload went wrong."
 msgstr "Das Hochladen der Datei ist schiefgegangen."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:84
+#: includes/pages/admin_import.php:84
 msgid "Please provide some data."
 msgstr "Bitte lade eine Datei hoch."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:92
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:139
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:252
+#: includes/pages/admin_import.php:92 includes/pages/admin_import.php:139
+#: includes/pages/admin_import.php:252
 msgid "File Upload"
 msgstr "Datei hochladen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:92
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:139
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:252
+#: includes/pages/admin_import.php:92 includes/pages/admin_import.php:139
+#: includes/pages/admin_import.php:252
 msgid "Validation"
 msgstr "Überprüfen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:92
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:101
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:139
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:178
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:252
+#: includes/pages/admin_import.php:92 includes/pages/admin_import.php:101
+#: includes/pages/admin_import.php:139 includes/pages/admin_import.php:178
+#: includes/pages/admin_import.php:252
 msgid "Import"
 msgstr "Importieren"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:96
-msgid "This import will create/update/delete rooms and shifts by given FRAB-export file. The needed file format is xcal."
-msgstr "Dieser Import erzeugt, ändert und löscht Räume und Schichten anhand einer FRAB-Export Datei. Das benötigte Format ist xcal."
+#: includes/pages/admin_import.php:96
+msgid ""
+"This import will create/update/delete rooms and shifts by given FRAB-export "
+"file. The needed file format is xcal."
+msgstr ""
+"Dieser Import erzeugt, ändert und löscht Räume und Schichten anhand einer "
+"FRAB-Export Datei. Das benötigte Format ist xcal."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:97
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_shifts.php:319
+#: includes/pages/admin_import.php:97 includes/pages/admin_shifts.php:319
+#: includes/pages/user_shifts.php:194
 msgid "Shifttype"
 msgstr "Schichttyp"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:98
+#: includes/pages/admin_import.php:98
 msgid "Add minutes to start"
 msgstr "Minuten vor Talk-Beginn hinzufügen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:99
+#: includes/pages/admin_import.php:99
 msgid "Add minutes to end"
 msgstr "Minuten nach Talk-Ende hinzufügen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:100
+#: includes/pages/admin_import.php:100
 msgid "xcal-File (.xcal)"
 msgstr "xcal-Datei (.xcal)"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:110
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:184
+#: includes/pages/admin_import.php:110 includes/pages/admin_import.php:184
 msgid "Missing import file."
 msgstr "Import-Datei nicht vorhanden."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:143
+#: includes/pages/admin_import.php:143
 msgid "Rooms to create"
 msgstr "Anzulegende Räume"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:147
+#: includes/pages/admin_import.php:147
 msgid "Rooms to delete"
 msgstr "Zu löschende Räume"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:151
+#: includes/pages/admin_import.php:151
 msgid "Shifts to create"
 msgstr "Anzulegende Schichten"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:153
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:162
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:171
+#: includes/pages/admin_import.php:153 includes/pages/admin_import.php:162
+#: includes/pages/admin_import.php:171 includes/view/User_view.php:282
 msgid "Day"
 msgstr "Tag"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:154
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:163
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:172
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_shifts.php:324
+#: includes/pages/admin_import.php:154 includes/pages/admin_import.php:163
+#: includes/pages/admin_import.php:172 includes/pages/admin_shifts.php:324
+#: includes/view/Shifts_view.php:94
 msgid "Start"
 msgstr "Beginn"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:155
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:164
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:173
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_shifts.php:325
+#: includes/pages/admin_import.php:155 includes/pages/admin_import.php:164
+#: includes/pages/admin_import.php:173 includes/pages/admin_shifts.php:325
+#: includes/view/Shifts_view.php:102
 msgid "End"
 msgstr "Ende"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:156
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:165
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:174
+#: includes/pages/admin_import.php:156 includes/pages/admin_import.php:165
+#: includes/pages/admin_import.php:174
 msgid "Shift type"
 msgstr "Schichttyp"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:157
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:166
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:175
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_shifts.php:320
+#: includes/pages/admin_import.php:157 includes/pages/admin_import.php:166
+#: includes/pages/admin_import.php:175 includes/pages/admin_shifts.php:320
+#: includes/pages/user_shifts.php:195 includes/view/Shifts_view.php:90
 msgid "Title"
 msgstr "Titel"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:158
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:167
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:176
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_shifts.php:321
+#: includes/pages/admin_import.php:158 includes/pages/admin_import.php:167
+#: includes/pages/admin_import.php:176 includes/pages/admin_shifts.php:321
+#: includes/pages/user_shifts.php:867
 msgid "Room"
 msgstr "Raum"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:160
+#: includes/pages/admin_import.php:160
 msgid "Shifts to update"
 msgstr "Zu aktualisierende Schichten"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:169
+#: includes/pages/admin_import.php:169
 msgid "Shifts to delete"
 msgstr "Zu löschende Schichten"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_import.php:253
+#: includes/pages/admin_import.php:253
 msgid "It's done!"
 msgstr "Erledigt!"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_news.php:9
+#: includes/pages/admin_log.php:4
+msgid "Log"
+msgstr "Log"
+
+#: includes/pages/admin_news.php:9
 msgid "Edit news entry"
 msgstr "News-Eintrag bearbeiten"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_news.php:31
+#: includes/pages/admin_news.php:31
 msgid "Author"
 msgstr "Autor"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_news.php:32
+#: includes/pages/admin_news.php:32 includes/pages/user_news.php:167
 msgid "Subject"
 msgstr "Betreff"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_news.php:33
+#: includes/pages/admin_news.php:33 includes/pages/user_messages.php:85
+#: includes/pages/user_news.php:112 includes/pages/user_news.php:168
 msgid "Message"
 msgstr "Nachricht"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_news.php:34
+#: includes/pages/admin_news.php:34 includes/pages/user_news.php:169
 msgid "Meeting"
 msgstr "Treffen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_news.php:38
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_rooms.php:176
+#: includes/pages/admin_news.php:38 includes/pages/admin_rooms.php:176
+#: includes/view/User_view.php:70
 msgid "Delete"
 msgstr "löschen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_news.php:52
+#: includes/pages/admin_news.php:52
 msgid "News entry updated."
 msgstr "News-Eintrag gespeichert."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_news.php:61
+#: includes/pages/admin_news.php:61
 msgid "News entry deleted."
 msgstr "News-Eintrag gelöscht."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_questions.php:4
+#: includes/pages/admin_questions.php:4
 msgid "Answer questions"
 msgstr "Fragen beantworten"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_questions.php:14
+#: includes/pages/admin_questions.php:14
 msgid "There are unanswered questions!"
 msgstr "Es gibt unbeantwortete Fragen!"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_questions.php:66
+#: includes/pages/admin_questions.php:66
 msgid "Unanswered questions"
 msgstr "Unbeantwortete Fragen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_questions.php:68
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_questions.php:75
+#: includes/pages/admin_questions.php:68 includes/pages/admin_questions.php:75
 msgid "From"
 msgstr "Von"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_questions.php:69
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_questions.php:76
+#: includes/pages/admin_questions.php:69 includes/pages/admin_questions.php:76
+#: includes/view/Questions_view.php:19 includes/view/Questions_view.php:24
 msgid "Question"
 msgstr "Frage"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_questions.php:70
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_questions.php:78
+#: includes/pages/admin_questions.php:70 includes/pages/admin_questions.php:78
+#: includes/view/Questions_view.php:26
 msgid "Answer"
 msgstr "Antwort"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_questions.php:73
+#: includes/pages/admin_questions.php:73 includes/view/Questions_view.php:22
 msgid "Answered questions"
 msgstr "Beantwortete Fragen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_questions.php:77
+#: includes/pages/admin_questions.php:77 includes/view/Questions_view.php:25
 msgid "Answered by"
 msgstr "Antwort von"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_rooms.php:4
+#: includes/pages/admin_rooms.php:4 includes/pages/user_shifts.php:881
 msgid "Rooms"
 msgstr "Räume"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_rooms.php:63
+#: includes/pages/admin_rooms.php:63
 msgid "This name is already in use."
 msgstr "Dieser Name ist bereits vergeben."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_rooms.php:93
+#: includes/pages/admin_rooms.php:93
 #, php-format
 msgid "Please enter needed helpers for type %s."
 msgstr "Bitte gib die Anzahl der benötigten Helfer vom Typ %s an."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_rooms.php:123
+#: includes/pages/admin_rooms.php:123
 msgid "Room saved."
 msgstr "Raum gespeichert."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_rooms.php:144
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_rooms.php:190
+#: includes/pages/admin_rooms.php:144 includes/pages/admin_rooms.php:190
 msgid "Public"
 msgstr "Öffentlich"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_rooms.php:145
+#: includes/pages/admin_rooms.php:145
 msgid "Room number"
 msgstr "Raumnummer"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_rooms.php:150
+#: includes/pages/admin_rooms.php:150
 msgid "Needed helpers:"
 msgstr "Benötigte Helfer:"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_rooms.php:166
+#: includes/pages/admin_rooms.php:166
 #, php-format
 msgid "Room %s deleted."
 msgstr "Raum %s gelöscht."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_rooms.php:174
+#: includes/pages/admin_rooms.php:174
 #, php-format
 msgid "Do you want to delete room %s?"
 msgstr "Möchest Du den Raum %s wirklich löschen?"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_rooms.php:184
+#: includes/pages/admin_rooms.php:184
 msgid "add"
 msgstr "Neu"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_shifts.php:4
+#: includes/pages/admin_shifts.php:4
 msgid "Create shifts"
 msgstr "Schichten erstellen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_shifts.php:71
+#: includes/pages/admin_shifts.php:71
 msgid "Please select a location."
 msgstr "Bitte einen Ort auswählen."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_shifts.php:78
+#: includes/pages/admin_shifts.php:78
 msgid "Please select a start time."
 msgstr "Bitte eine Startzeit auswählen."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_shifts.php:85
+#: includes/pages/admin_shifts.php:85
 msgid "Please select an end time."
 msgstr "Bitte eine Endzeit auswählen."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_shifts.php:90
+#: includes/pages/admin_shifts.php:90
 msgid "The shifts end has to be after its start."
 msgstr "Die Endzeit muss nach der Startzeit liegen."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_shifts.php:102
+#: includes/pages/admin_shifts.php:102
 msgid "Please enter a shift duration in minutes."
 msgstr "Gib bitte eine Schichtlänge in Minuten ein."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_shifts.php:110
+#: includes/pages/admin_shifts.php:110
 msgid "Please split the shift-change hours by colons."
 msgstr "Trenne die Schichtwechselstunden mit einem Komma."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_shifts.php:115
+#: includes/pages/admin_shifts.php:115
 msgid "Please select a mode."
 msgstr "Bitte einen Modus auswählen."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_shifts.php:128
+#: includes/pages/admin_shifts.php:128
 #, php-format
 msgid "Please check the needed helpers for team %s."
 msgstr "Bitte gib die Anzahl der benötigten Helfer vom Team %s an."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_shifts.php:133
+#: includes/pages/admin_shifts.php:133
 msgid "There are 0 helpers needed. Please enter the amounts of needed helpers."
 msgstr "Es werden 0 Helfer benötigt. Bitte ändere das."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_shifts.php:137
+#: includes/pages/admin_shifts.php:137
 msgid "Please select a mode for needed helpers."
 msgstr "Bitte wähle einen Modus für benötigte Helfer."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_shifts.php:141
+#: includes/pages/admin_shifts.php:141
 msgid "Please select needed helpers."
 msgstr "Bitte wähle benötigte Helfer."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_shifts.php:268
+#: includes/pages/admin_shifts.php:268
 msgid "Time and location"
 msgstr "Zeit und Ort"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_shifts.php:269
+#: includes/pages/admin_shifts.php:269
 msgid "Type and title"
 msgstr "Typ und Titel"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_shifts.php:270
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_shifts.php:334
+#: includes/pages/admin_shifts.php:270 includes/pages/admin_shifts.php:334
+#: includes/pages/user_shifts.php:199 includes/view/Shifts_view.php:116
 msgid "Needed helpers"
 msgstr "Benötigte Helfer"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_shifts.php:326
+#: includes/pages/admin_shifts.php:326
 msgid "Mode"
 msgstr "Modus"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_shifts.php:327
+#: includes/pages/admin_shifts.php:327
 msgid "Create one shift"
 msgstr "Eine Schicht erstellen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_shifts.php:328
+#: includes/pages/admin_shifts.php:328
 msgid "Create multiple shifts"
 msgstr "Mehrere Schichten erstellen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_shifts.php:330
+#: includes/pages/admin_shifts.php:330
 msgid "Create multiple shifts with variable length"
 msgstr "Erstelle mehrere Schichten mit unterschiedlicher Länge"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_shifts.php:331
+#: includes/pages/admin_shifts.php:331
 msgid "Shift change hours"
 msgstr "Schichtwechsel-Stunden"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_shifts.php:335
+#: includes/pages/admin_shifts.php:335
 msgid "Take needed helpers from room settings"
 msgstr "Übernehme benötigte Helfer von den Raum-Einstellungen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_shifts.php:336
+#: includes/pages/admin_shifts.php:336
 msgid "The following helpers are needed"
 msgstr "Die folgenden Helfer werden benötigt"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_user.php:4
+#: includes/pages/admin_user.php:4
 msgid "All helpers"
 msgstr "Helferliste"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_user.php:23
+#: includes/pages/admin_user.php:23
 msgid "This user does not exist."
 msgstr "Benutzer existiert nicht."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_user.php:43
+#: includes/pages/admin_user.php:43 includes/pages/guest_login.php:212
+#: includes/pages/user_settings.php:188
 msgid "Please send me an email if my shifts change"
 msgstr "Informiere mich per E-Mail über Änderungen an meinen Schichten"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_user.php:48
+#: includes/pages/admin_user.php:48 includes/view/AngelTypes_view.php:58
+#: includes/view/AngelTypes_view.php:59
 msgid "Yes"
 msgstr "Ja"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_user.php:49
+#: includes/pages/admin_user.php:49 includes/view/AngelTypes_view.php:58
+#: includes/view/AngelTypes_view.php:59
 msgid "No"
 msgstr "Nein"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_user.php:62
+#: includes/pages/admin_user.php:62
 msgid "Force active"
 msgstr "Aktiv erzwingen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_user.php:81
-msgid "Please visit the helpertypes page or the users profile to manage users helpertypes."
-msgstr "Bitte benutze die Helfertypen-Seite um die Helfertypen des Users zu verwalten."
+#: includes/pages/admin_user.php:81
+msgid ""
+"Please visit the helpertypes page or the users profile to manage users "
+"helpertypes."
+msgstr ""
+"Bitte benutze die Helfertypen-Seite um die Helfertypen des Users zu "
+"verwalten."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/admin_user.php:207
+#: includes/pages/admin_user.php:207
 msgid "Edit user"
 msgstr "User bearbeiten"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/guest_credits.php:3
+#: includes/pages/guest_credits.php:3
 msgid "Credits"
 msgstr "Credits"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/guest_login.php:4
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/guest_login.php:337
+#: includes/pages/guest_login.php:4 includes/pages/guest_login.php:337
+#: includes/view/User_view.php:35 includes/view/User_view.php:39
 msgid "Login"
 msgstr "Login"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/guest_login.php:8
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/guest_login.php:267
+#: includes/pages/guest_login.php:8 includes/pages/guest_login.php:267
 msgid "Register"
 msgstr "Registrieren"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/guest_login.php:12
+#: includes/pages/guest_login.php:12
 msgid "Logout"
 msgstr "Logout"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/guest_login.php:237
-#~ msgid "Cellphone (for Whatsapp-Helper-Group)"
-#~ msgstr "Handy (für die Whatsapp-Helfer-Gruppe)"
-
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/guest_login.php:58
+#: includes/pages/guest_login.php:58
 #, php-format
 msgid "Your nick &quot;%s&quot; already exists."
 msgstr "Der Nick &quot;%s&quot; existiert schon."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/guest_login.php:62
+#: includes/pages/guest_login.php:62
 #, php-format
 msgid "Your nick &quot;%s&quot; is too short (min. 2 characters)."
 msgstr "Der Nick &quot;%s&quot; ist zu kurz (Mindestens 2 Zeichen)."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/guest_login.php:84
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_settings.php:49
+#: includes/pages/guest_login.php:84 includes/pages/user_settings.php:49
 msgid "Please check your jabber account information."
 msgstr "Bitte überprüfe deine Jabber Account Eingabe."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/guest_login.php:93
+#: includes/pages/guest_login.php:93
 msgid "Please select your shirt size."
 msgstr "Bitte wähle Deine T-Shirt Größe."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/guest_login.php:104
+#: includes/pages/guest_login.php:104
 #, php-format
 msgid "Your password is too short (please use at least %s characters)."
 msgstr "Dein Passwort ist zu kurz (Bitte mindestens %s Zeichen nutzen)."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/guest_login.php:111
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_settings.php:63
+#: includes/pages/guest_login.php:111 includes/pages/user_settings.php:63
 msgid "Please enter your planned date of arrival."
 msgstr "Bitte gib Dein geplantes Ankunftsdatum an."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/guest_login.php:183
+#: includes/pages/guest_login.php:183
 msgid "Helper registration successful!"
 msgstr "Helfer-Registrierung erfolgreich!"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/guest_login.php:200
-msgid "By completing this form you're registering as a JCF-Helper. This script will create you an account in the helper task scheduler."
-msgstr "Mit diesem Formular registrierst Du Dich als Helfer. Du bekommst ein Konto in der Helfer-Aufgabenverwaltung."
+#: includes/pages/guest_login.php:200
+msgid ""
+"By completing this form you're registering as a JCF-Helper. This script will "
+"create you an account in the helper task scheduler."
+msgstr ""
+"Mit diesem Formular registrierst Du Dich als Helfer. Du bekommst ein Konto "
+"in der Helfer-Aufgabenverwaltung."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/guest_login.php:217
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_settings.php:181
+#: includes/pages/guest_login.php:208 includes/pages/guest_login.php:335
+#: includes/view/User_view.php:37
+msgid "Login-Name"
+msgstr "Login-Name"
+
+#: includes/pages/guest_login.php:217 includes/pages/user_settings.php:181
 msgid "Planned date of arrival"
 msgstr "Geplanter Ankunftstag"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/guest_login.php:220
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_settings.php:191
+#: includes/pages/guest_login.php:220 includes/pages/user_settings.php:191
 msgid "Shirt size"
 msgstr "T-Shirt Größe"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/guest_login.php:225
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/guest_login.php:336
+#: includes/pages/guest_login.php:225 includes/pages/guest_login.php:336
+#: includes/view/User_view.php:38 includes/view/User_view.php:316
 msgid "Password"
 msgstr "Passwort"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/guest_login.php:228
+#: includes/pages/guest_login.php:228 includes/view/User_view.php:317
 msgid "Confirm password"
 msgstr "Passwort wiederholen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/guest_login.php:231
+#: includes/pages/guest_login.php:231
 msgid "What do you want to do?"
 msgstr "Was möchtest Du machen?"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/guest_login.php:231
+#: includes/pages/guest_login.php:231
 msgid "Description of job types"
 msgstr "Beschreibung der Aufgaben"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/guest_login.php:232
-msgid "Restricted helper types need will be confirmed later by the Guest Service Team. You can change your selection in the options section."
-msgstr "Beschränkte Helfertypen müssen später vom Guest-Service Team freigeschaltet werden. Du kannst Deine Auswahl später in den Einstellungen ändern."
+#: includes/pages/guest_login.php:232
+msgid ""
+"Restricted helper types need will be confirmed later by the Guest Service "
+"Team. You can change your selection in the options section."
+msgstr ""
+"Beschränkte Helfertypen müssen später vom Guest-Service Team freigeschaltet "
+"werden. Du kannst Deine Auswahl später in den Einstellungen ändern."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/guest_login.php:240
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_settings.php:186
-msgid "Mobile"
-msgstr "Handy"
+#: includes/pages/guest_login.php:237
+msgid "Cellphone (for Whatsapp-Helper-Group)"
+msgstr "Handy (für die Whatsapp-Helfer-Gruppe)"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/guest_login.php:243
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_settings.php:184
+#: includes/pages/guest_login.php:240 includes/pages/user_settings.php:184
 msgid "Phone"
 msgstr "Telefon"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/guest_login.php:249
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_settings.php:180
+#: includes/pages/guest_login.php:249 includes/pages/user_settings.php:180
 msgid "First name"
 msgstr "Vorname"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/guest_login.php:252
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_settings.php:179
+#: includes/pages/guest_login.php:252 includes/pages/user_settings.php:179
 msgid "Last name"
 msgstr "Nachname"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/guest_login.php:257
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_settings.php:183
+#: includes/pages/guest_login.php:257 includes/pages/user_settings.php:183
 msgid "Age"
 msgstr "Alter"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/guest_login.php:260
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_settings.php:190
+#: includes/pages/guest_login.php:260 includes/pages/user_settings.php:190
 msgid "Hometown"
 msgstr "Wohnort"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/guest_login.php:263
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_settings.php:177
+#: includes/pages/guest_login.php:263 includes/pages/user_settings.php:177
 msgid "Entry required!"
 msgstr "Pflichtfeld!"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/guest_login.php:301
+#: includes/pages/guest_login.php:301
 msgid "Please enter a password."
 msgstr "Gib bitte ein Passwort ein."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/guest_login.php:305
-msgid "No user was found with that Nickname. Please try again. If you are still having problems, ask an Dispatcher."
-msgstr "Es wurde kein Helfer mit diesem Namen gefunden. Probiere es bitte noch einmal. Wenn das Problem weiterhin besteht, frage einen Dispatcher."
+#: includes/pages/guest_login.php:305
+msgid ""
+"No user was found with that Nickname. Please try again. If you are still "
+"having problems, ask an Dispatcher."
+msgstr ""
+"Es wurde kein Helfer mit diesem Namen gefunden. Probiere es bitte noch "
+"einmal. Wenn das Problem weiterhin besteht, frage einen Dispatcher."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/guest_login.php:309
+#: includes/pages/guest_login.php:309
 msgid "Please enter a nickname."
 msgstr "Gib bitte einen Nick an."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/guest_login.php:339
+#: includes/pages/guest_login.php:339 includes/view/User_view.php:41
 msgid "I forgot my password"
 msgstr "Passwort vergessen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/guest_login.php:341
+#: includes/pages/guest_login.php:341 includes/view/User_view.php:43
 msgid "Please note: You have to activate cookies!"
 msgstr "Hinweis: Cookies müssen aktiviert sein!"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/guest_login.php:347
-msgid "What can I do?"
-msgstr "Was kann ich machen?"
-
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/guest_login.php:348
-msgid "Please read about the jobs you can do to help us."
-msgstr "Bitte informiere Dich über die Tätigkeiten bei denen Du uns helfen kannst."
-
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/guest_login.php:363
+#: includes/pages/guest_login.php:364
 msgid "Please sign up, if you want to help us!"
 msgstr "Bitte registriere Dich, wenn Du helfen möchtest!"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/guest_login.php:370
+#: includes/pages/guest_login.php:371
 msgid "Registration is disabled."
 msgstr "Registrierung ist abgeschaltet."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_messages.php:4
+#: includes/pages/user_messages.php:4
 msgid "Messages"
 msgstr "Nachrichten"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_messages.php:26
+#: includes/pages/user_messages.php:26
 msgid "Select recipient..."
 msgstr "Empfänger auswählen..."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_messages.php:51
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_messages.php:55
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_news.php:66
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_news.php:98
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_questions.php:17
+#: includes/pages/user_messages.php:51 includes/pages/user_messages.php:55
+#: includes/pages/user_news.php:66 includes/pages/user_news.php:98
+#: includes/pages/user_questions.php:17
 msgid "Unable to load user."
 msgstr "Konnte Benutzer nicht laden."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_messages.php:68
+#: includes/pages/user_messages.php:68
 msgid "mark as read"
 msgstr "als gelesen markieren"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_messages.php:71
+#: includes/pages/user_messages.php:71
 msgid "delete message"
 msgstr "Nachricht löschen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_messages.php:78
+#: includes/pages/user_messages.php:78
 #, php-format
 msgid "Hello %s, here can you leave messages for other helpers"
 msgstr "Hallo %s, hier kannst Du anderen Helfern Nachrichten schreiben."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_messages.php:81
+#: includes/pages/user_messages.php:81
 msgid "New"
 msgstr "Neu"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_messages.php:83
+#: includes/pages/user_messages.php:83
 msgid "Transmitted"
 msgstr "Gesendet"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_messages.php:84
+#: includes/pages/user_messages.php:84
 msgid "Recipient"
 msgstr "Empfänger"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_messages.php:96
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_messages.php:112
+#: includes/pages/user_messages.php:96 includes/pages/user_messages.php:112
 msgid "Incomplete call, missing Message ID."
 msgstr "Unvollständiger Aufruf, fehlende Nachrichten ID."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_messages.php:104
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_messages.php:120
+#: includes/pages/user_messages.php:104 includes/pages/user_messages.php:120
 msgid "No Message found."
 msgstr "Keine Nachricht gefunden."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_messages.php:128
+#: includes/pages/user_messages.php:128
 msgid "Transmitting was terminated with an Error."
 msgstr "Übertragung wurde mit einem Fehler abgebrochen."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_messages.php:133
+#: includes/pages/user_messages.php:133
 msgid "Wrong action."
 msgstr "Falsche Aktion."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_myshifts.php:4
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:325
+#: includes/pages/user_myshifts.php:4 includes/pages/user_shifts.php:325
 msgid "My shifts"
 msgstr "Meine Schichten"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_myshifts.php:23
+#: includes/pages/user_myshifts.php:23
 msgid "Key changed."
 msgstr "Key geändert."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_myshifts.php:26
+#: includes/pages/user_myshifts.php:26 includes/view/User_view.php:276
 msgid "Reset API key"
 msgstr "API-Key zurücksetzen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_myshifts.php:27
-msgid "If you reset the key, the url to your iCal- and JSON-export and your atom feed changes! You have to update it in every application using one of these exports."
-msgstr "Wenn du den API-Key zurücksetzt, ändert sich die URL zu deinem iCal-, JSON-Export und Atom Feed! Du musst diesen überall ändern, wo er in Benutzung ist."
+#: includes/pages/user_myshifts.php:27
+msgid ""
+"If you reset the key, the url to your iCal- and JSON-export and your atom "
+"feed changes! You have to update it in every application using one of these "
+"exports."
+msgstr ""
+"Wenn du den API-Key zurücksetzt, ändert sich die URL zu deinem iCal-, JSON-"
+"Export und Atom Feed! Du musst diesen überall ändern, wo er in Benutzung ist."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_myshifts.php:28
+#: includes/pages/user_myshifts.php:28
 msgid "Continue"
 msgstr "Fortfahren"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_myshifts.php:60
+#: includes/pages/user_myshifts.php:60
 msgid "Please enter a freeload comment!"
 msgstr "Gib bitte einen Schwänz-Kommentar ein!"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_myshifts.php:79
+#: includes/pages/user_myshifts.php:79
 msgid "Shift saved."
 msgstr "Schicht gespeichert."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_myshifts.php:107
+#: includes/pages/user_myshifts.php:107
 msgid "Shift canceled."
 msgstr "Schichteintrag gelöscht."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_myshifts.php:109
-msgid "It's too late to sign yourself off the shift. If neccessary, ask the dispatcher to do so."
-msgstr "Es ist zu spät um Dich aus der Schicht auszutragen. Wenn notwendig, frage einen Dispatcher dafür."
+#: includes/pages/user_myshifts.php:109
+msgid ""
+"It's too late to sign yourself off the shift. If neccessary, ask the "
+"dispatcher to do so."
+msgstr ""
+"Es ist zu spät um Dich aus der Schicht auszutragen. Wenn notwendig, frage "
+"einen Dispatcher dafür."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_news.php:4
+#: includes/pages/user_news.php:4
 msgid "News comments"
 msgstr "News Kommentare"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_news.php:8
+#: includes/pages/user_news.php:8
 msgid "News"
 msgstr "News"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_news.php:12
+#: includes/pages/user_news.php:12
 msgid "Meetings"
 msgstr "Treffen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_news.php:71
+#: includes/pages/user_news.php:71
 msgid "Comments"
 msgstr "Kommentare"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_news.php:89
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_news.php:133
+#: includes/pages/user_news.php:89 includes/pages/user_news.php:133
 msgid "Entry saved."
 msgstr "Eintrag gespeichert."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_news.php:110
+#: includes/pages/user_news.php:110
 msgid "New Comment:"
 msgstr "Neuer Kommentar:"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_news.php:116
+#: includes/pages/user_news.php:116
 msgid "Invalid request."
 msgstr "Ungültige Abfrage."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_news.php:164
+#: includes/pages/user_news.php:164
 msgid "Create news:"
 msgstr "News anlegen:"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_questions.php:4
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/Questions_view.php:29
+#: includes/pages/user_questions.php:4 includes/view/Questions_view.php:29
 msgid "Ask the Guest Service Team"
 msgstr "Frage das Guest Service Team"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_questions.php:30
+#: includes/pages/user_questions.php:30
 msgid "Unable to save question."
 msgstr "Konnte Frage nicht speichern."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_questions.php:32
+#: includes/pages/user_questions.php:32
 msgid "You question was saved."
 msgstr "Frage gespeichert."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_questions.php:36
+#: includes/pages/user_questions.php:36
 msgid "Please enter a question!"
 msgstr "Gib eine Frage ein!"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_questions.php:44
+#: includes/pages/user_questions.php:44
 msgid "Incomplete call, missing Question ID."
 msgstr "Unvollständiger Aufruf, fehlende Fragen ID."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_questions.php:53
+#: includes/pages/user_questions.php:53
 msgid "No question found."
 msgstr "Keine Frage gefunden."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_settings.php:4
+#: includes/pages/user_settings.php:4 includes/view/User_view.php:273
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_settings.php:71
+#: includes/pages/user_settings.php:71
 msgid "Please enter your planned date of departure."
 msgstr "Bitte gib Dein geplantes Abreisedatum an."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_settings.php:126
+#: includes/pages/user_settings.php:126
 msgid "-> not OK. Please try again."
 msgstr "-> Nicht OK. Bitte erneut versuchen."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_settings.php:134
+#: includes/pages/user_settings.php:134
 msgid "Failed setting password."
 msgstr "Konnte Passwort nicht speichern."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_settings.php:149
+#: includes/pages/user_settings.php:149
 msgid "Theme changed."
 msgstr "Aussehen geändert."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_settings.php:176
+#: includes/pages/user_settings.php:176
 msgid "Here you can change your user details."
 msgstr "Hier kannst Du Deine Details ändern."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_settings.php:182
+#: includes/pages/user_settings.php:182
 msgid "Planned date of departure"
 msgstr "Geplanter Abreisetag"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_settings.php:192
+#: includes/pages/user_settings.php:186
+msgid "Mobile"
+msgstr "Handy"
+
+#: includes/pages/user_settings.php:192
 msgid "Please visit the helpertypes page to manage your helpertypes."
 msgstr "Bitte benutze die Helfertypen-Seite um deine Helfertypen zu verwalten."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_settings.php:198
+#: includes/pages/user_settings.php:198
 msgid "Here you can change your password."
 msgstr "Hier kannst Du Dein Passwort ändern."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_settings.php:199
+#: includes/pages/user_settings.php:199
 msgid "Old password:"
 msgstr "Altes Passwort:"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_settings.php:200
+#: includes/pages/user_settings.php:200
 msgid "New password:"
 msgstr "Neues Passwort:"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_settings.php:201
+#: includes/pages/user_settings.php:201
 msgid "Password confirmation:"
 msgstr "Passwort wiederholen:"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_settings.php:205
+#: includes/pages/user_settings.php:205
 msgid "Here you can choose your color settings:"
 msgstr "Hier kannst Du das Aussehen auswählen:"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_settings.php:206
+#: includes/pages/user_settings.php:206
 msgid "Color settings:"
 msgstr "Aussehen:"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_settings.php:210
+#: includes/pages/user_settings.php:210
 msgid "Here you can choose your language:"
 msgstr "Hier kannst Du Deine Sprache auswählen:"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_settings.php:211
+#: includes/pages/user_settings.php:211
 msgid "Language:"
 msgstr "Sprache:"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:47
+#: includes/pages/user_shifts.php:47
 msgid "Shift entry deleted."
 msgstr "Schicht-Eintrag gelöscht."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:49
+#: includes/pages/user_shifts.php:49
 msgid "Entry not found."
 msgstr "Eintrag nicht gefunden."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:120
+#: includes/pages/user_shifts.php:120
 msgid "Please select a room."
 msgstr "Bitte einen Raum auswählen."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:127
+#: includes/pages/user_shifts.php:127
 msgid "Please select a shifttype."
 msgstr "Bitte einen Schichttyp wählen."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:134
+#: includes/pages/user_shifts.php:134
 msgid "Please enter a valid starting time for the shifts."
 msgstr "Bitte gib eine korrekte Startzeit für die Schichten ein."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:141
+#: includes/pages/user_shifts.php:141
 msgid "Please enter a valid ending time for the shifts."
 msgstr "Bitte gib eine korrekte Endzeit für die Schichten ein."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:146
+#: includes/pages/user_shifts.php:146
 msgid "The ending time has to be after the starting time."
 msgstr "Die Endzeit muss nach der Startzeit liegen."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:154
+#: includes/pages/user_shifts.php:154
 #, php-format
 msgid "Please check your input for needed helpers of type %s."
 msgstr "Bitte prüfe deine Eingabe für benötigte Helfer des Typs %s."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:177
+#: includes/pages/user_shifts.php:177
 msgid "Shift updated."
 msgstr "Schicht aktualisiert."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:192
+#: includes/pages/user_shifts.php:192
 msgid "This page is much more comfortable with javascript."
 msgstr "Diese Seite ist mit JavaScript viel komfortabler."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:196
+#: includes/pages/user_shifts.php:196
 msgid "Room:"
 msgstr "Raum:"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:197
+#: includes/pages/user_shifts.php:197
 msgid "Start:"
 msgstr "Start:"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:198
+#: includes/pages/user_shifts.php:198
 msgid "End:"
 msgstr "Ende:"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:228
+#: includes/pages/user_shifts.php:228
 msgid "Shift deleted."
 msgstr "Schicht gelöscht."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:233
+#: includes/pages/user_shifts.php:233
 #, php-format
 msgid "Do you want to delete the shift %s from %s to %s?"
 msgstr "Möchtest Du die Schicht %s von %s bis %s löschen?"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:271
-msgid "You are not allowed to sign up for this shift. Maybe shift is full or already running."
-msgstr "Du darfst Dich nicht für diese Schicht eintragen. Vielleicht ist die Schicht voll oder sie läuft bereits."
+#: includes/pages/user_shifts.php:271
+msgid ""
+"You are not allowed to sign up for this shift. Maybe shift is full or "
+"already running."
+msgstr ""
+"Du darfst Dich nicht für diese Schicht eintragen. Vielleicht ist die Schicht "
+"voll oder sie läuft bereits."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:325
+#: includes/pages/user_shifts.php:325
 msgid "You are subscribed. Thank you!"
 msgstr "Du bist eingetragen. Danke!"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:334
+#: includes/pages/user_shifts.php:334 includes/view/User_view.php:250
 msgid "Freeloader"
 msgstr "Schwänzer"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:366
+#: includes/pages/user_shifts.php:366
 msgid "The administration has not configured any shifts yet."
 msgstr "Die Administratoren haben noch keine Schichten angelegt."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:373
+#: includes/pages/user_shifts.php:373
 msgid "The administration has not configured any rooms yet."
 msgstr "Die Administratoren habe noch keine Räume eingerichtet."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:388
+#: includes/pages/user_shifts.php:388
 msgid "occupied"
 msgstr "belegt"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:392
+#: includes/pages/user_shifts.php:392
 msgid "free"
 msgstr "frei"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:397
-msgid "The administration has not configured any helpertypes yet - or you are not subscribed to any helpertype."
-msgstr "Die Administratoren haben noch keine Helfertypen konfiguriert - oder Du hast noch keine Helfertypen ausgewählt."
+#: includes/pages/user_shifts.php:397
+msgid ""
+"The administration has not configured any helpertypes yet - or you are not "
+"subscribed to any helpertype."
+msgstr ""
+"Die Administratoren haben noch keine Helfertypen konfiguriert - oder Du hast "
+"noch keine Helfertypen ausgewählt."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:671
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:818
+#: includes/pages/user_shifts.php:671 includes/pages/user_shifts.php:818
 #, php-format
 msgid "%d helper needed"
 msgid_plural "%d helpers needed"
 msgstr[0] "%d Helfer benötigt"
 msgstr[1] "%d Helfer benötigt"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:692
+#: includes/pages/user_shifts.php:692 includes/view/Shifts_view.php:25
 msgid "Sign up"
 msgstr "Eintragen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:695
+#: includes/pages/user_shifts.php:695
 msgid "ended"
 msgstr "vorbei"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:703
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:846
+#: includes/pages/user_shifts.php:703 includes/pages/user_shifts.php:846
+#: includes/view/Shifts_view.php:27
 #, php-format
 msgid "Become %s"
 msgstr "Werde ein %s"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:716
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:859
+#: includes/pages/user_shifts.php:716 includes/pages/user_shifts.php:859
 msgid "Add more helpers"
 msgstr "Neue Helfer hinzufügen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:867
+#: includes/pages/user_shifts.php:867 includes/view/User_view.php:283
 msgid "Time"
 msgstr "Zeit"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:868
+#: includes/pages/user_shifts.php:868
 msgid "Entries"
 msgstr "Einträge"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:887
+#: includes/pages/user_shifts.php:887
 msgid "Occupancy"
 msgstr "Belegung"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:888
-msgid "The tasks shown here are influenced by the preferences you defined in your settings!"
-msgstr "Die Schichten, die hier angezeigt werden, sind von Deinen Einstellungen (Helfertypen/Aufgaben) abhängig!"
+#: includes/pages/user_shifts.php:888
+msgid ""
+"The tasks shown here are influenced by the preferences you defined in your "
+"settings!"
+msgstr ""
+"Die Schichten, die hier angezeigt werden, sind von Deinen Einstellungen "
+"(Helfertypen/Aufgaben) abhängig!"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:888
+#: includes/pages/user_shifts.php:888
 msgid "Description of the jobs."
 msgstr "Beschreibung der Aufgaben."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:889
+#: includes/pages/user_shifts.php:889
 msgid "Use new style if possible"
 msgstr "Wenn möglich neuen Stil verwenden"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:891
+#: includes/pages/user_shifts.php:891
 msgid "iCal export"
 msgstr "iCal Export"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:891
+#: includes/pages/user_shifts.php:891
 #, php-format
-msgid "Export of shown shifts. <a href=\"%s\">iCal format</a> or <a href=\"%s\">JSON format</a> available (please keep secret, otherwise <a href=\"%s\">reset the api key</a>)."
-msgstr "Exportiere Deine Schichten. <a href=\"%s\">iCal Format</a> oder <a href=\"%s\">JSON Format</a> verfügbar (Link bitte geheimhalten, sonst <a href=\"%s\">API-Key zurücksetzen</a>)."
+msgid ""
+"Export of shown shifts. <a href=\"%s\">iCal format</a> or <a href=\"%s"
+"\">JSON format</a> available (please keep secret, otherwise <a href=\"%s"
+"\">reset the api key</a>)."
+msgstr ""
+"Exportiere Deine Schichten. <a href=\"%s\">iCal Format</a> oder <a href=\"%s"
+"\">JSON Format</a> verfügbar (Link bitte geheimhalten, sonst <a href=\"%s"
+"\">API-Key zurücksetzen</a>)."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:892
+#: includes/pages/user_shifts.php:892
 msgid "Filter"
 msgstr "Filter"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:931
+#: includes/pages/user_shifts.php:931 includes/view/ShiftTypes_view.php:23
 msgid "All"
 msgstr "Alle"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/pages/user_shifts.php:932
+#: includes/pages/user_shifts.php:932
 msgid "None"
 msgstr "Keine"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/AngelTypes_view.php:27
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/AngelTypes_view.php:201
+#: includes/sys_menu.php:56
+msgid ""
+"Please enter your planned date of departure on your settings page to give us "
+"a feeling for teardown capacities."
+msgstr ""
+"Bitte gib Dein geplantes Abreisedatum an, damit wir ein Gefühl für die Abbau-"
+"Planung bekommen."
+
+#: includes/sys_menu.php:65
+#, php-format
+msgid ""
+"You freeloaded at least %s shifts. Shift signup is locked. Please go to "
+"heavens desk to be unlocked again."
+msgstr ""
+"Du hast mindestens %s Schichten geschwänzt. Schicht-Registrierung ist "
+"gesperrt. Bitte gehe zum Himmelsschreibtisch um wieder entsperrt zu werden."
+
+#: includes/sys_menu.php:72
+msgid ""
+"You are not marked as arrived. Please go to heaven's desk, get your helper "
+"badge and/or tell them that you arrived already."
+msgstr ""
+"Du bist nicht als angekommen markiert. Bitte gehe zur Himmelsverwaltung, "
+"hole Dein Badge ab und/oder erkläre ihnen, dass Du bereits angekommen bist."
+
+#: includes/sys_menu.php:78
+msgid "You need to specify a tshirt size in your settings!"
+msgstr "Bitte eine T-Shirt-Größe auswählen"
+
+#: includes/sys_menu.php:84
+msgid ""
+"You need to specify a DECT phone number in your settings! If you don't have "
+"a DECT phone, just enter \"-\"."
+msgstr ""
+"Bitte eine DECT-Telefonnummer in den Einstellungen eingeben. Wenn du noch "
+"keine Nummer hast, bitte einfach \"-\" angeben."
+
+#: includes/sys_menu.php:155
+msgid "Admin"
+msgstr "Admin"
+
+#: includes/sys_template.php:364
+msgid "No data found."
+msgstr "Nichts gefunden."
+
+#: includes/view/AngelTypes_view.php:27 includes/view/AngelTypes_view.php:201
 msgid "Unconfirmed"
 msgstr "Unbestätigt"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/AngelTypes_view.php:29
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/AngelTypes_view.php:33
+#: includes/view/AngelTypes_view.php:29 includes/view/AngelTypes_view.php:33
 msgid "Coordinator"
 msgstr "Koordinator"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/AngelTypes_view.php:31
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/AngelTypes_view.php:35
+#: includes/view/AngelTypes_view.php:31 includes/view/AngelTypes_view.php:35
 msgid "Member"
 msgstr "Mitglied"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/AngelTypes_view.php:42
+#: includes/view/AngelTypes_view.php:42
 #, php-format
 msgid "Do you want to delete helpertype %s?"
 msgstr "Möchtest Du den Helfertypen %s löschen?"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/AngelTypes_view.php:44
+#: includes/view/AngelTypes_view.php:44 includes/view/ShiftTypes_view.php:15
+#: includes/view/UserAngelTypes_view.php:8
+#: includes/view/UserAngelTypes_view.php:19
+#: includes/view/UserAngelTypes_view.php:30
+#: includes/view/UserAngelTypes_view.php:41
+#: includes/view/UserAngelTypes_view.php:52
+#: includes/view/UserAngelTypes_view.php:82
 msgid "cancel"
 msgstr "abbrechen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/AngelTypes_view.php:58
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/AngelTypes_view.php:226
+#: includes/view/AngelTypes_view.php:58 includes/view/AngelTypes_view.php:226
 msgid "Restricted"
 msgstr "Beschränkt"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/AngelTypes_view.php:59
+#: includes/view/AngelTypes_view.php:59
 msgid "Requires driver license"
 msgstr "Benötigt Führerschein"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/AngelTypes_view.php:60
-msgid "Restricted helper types need will be confirmed later by the Guest Service Team (double opt-in)."
-msgstr "Beschränkte Helfertypen müssen später vom Guest-Service Team freigeschaltet werden (double-opt-in)."
+#: includes/view/AngelTypes_view.php:60
+msgid ""
+"Restricted helper types need will be confirmed later by the Guest Service "
+"Team (double opt-in)."
+msgstr ""
+"Beschränkte Helfertypen müssen später vom Guest-Service Team freigeschaltet "
+"werden (double-opt-in)."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/AngelTypes_view.php:61
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/AngelTypes_view.php:102
+#: includes/view/AngelTypes_view.php:61 includes/view/AngelTypes_view.php:102
+#: includes/view/ShiftTypes_view.php:37 includes/view/Shifts_view.php:120
 msgid "Description"
 msgstr "Beschreibung"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/AngelTypes_view.php:62
+#: includes/view/AngelTypes_view.php:62 includes/view/ShiftTypes_view.php:38
 msgid "Please use markdown for the description."
 msgstr "Bitte benutze Markdown für die Beschreibung."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/AngelTypes_view.php:74
+#: includes/view/AngelTypes_view.php:74
 msgid "my driving license"
 msgstr "Meine Führerschein-Infos"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/AngelTypes_view.php:81
-msgid "This helpertype requires a driver license. Please enter your driver license information!"
-msgstr "Dieser Helfertyp benötigt Führerschein-Infos. Bitte trage Deine Führerschein-Infos ein!"
+#: includes/view/AngelTypes_view.php:81
+msgid ""
+"This helpertype requires a driver license. Please enter your driver license "
+"information!"
+msgstr ""
+"Dieser Helfertyp benötigt Führerschein-Infos. Bitte trage Deine Führerschein-"
+"Infos ein!"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/AngelTypes_view.php:85
+#: includes/view/AngelTypes_view.php:85
 #, php-format
-msgid "You are unconfirmed for this helpertype. Please go to the introduction for %s to get confirmed."
-msgstr "Du bist noch nicht für diesen Helfertyp bestätigt. Bitte gehe zur Einführung für %s um bestätigt zu werden."
+msgid ""
+"You are unconfirmed for this helpertype. Please go to the introduction for "
+"%s to get confirmed."
+msgstr ""
+"Du bist noch nicht für diesen Helfertyp bestätigt. Bitte gehe zur Einführung "
+"für %s um bestätigt zu werden."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/AngelTypes_view.php:126
+#: includes/view/AngelTypes_view.php:126
 msgid "confirm"
 msgstr "bestätigen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/AngelTypes_view.php:127
+#: includes/view/AngelTypes_view.php:127
 msgid "deny"
 msgstr "ablehnen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/AngelTypes_view.php:143
+#: includes/view/AngelTypes_view.php:143
 msgid "remove"
 msgstr "entfernen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/AngelTypes_view.php:160
+#: includes/view/AngelTypes_view.php:160
 msgid "Driver"
 msgstr "Fahrer"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/AngelTypes_view.php:161
+#: includes/view/AngelTypes_view.php:161
 msgid "Has car"
 msgstr "Hat Auto"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/AngelTypes_view.php:162
+#: includes/view/AngelTypes_view.php:162
+#: includes/view/UserDriverLicenses_view.php:27
 msgid "Car"
 msgstr "Auto"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/AngelTypes_view.php:163
+#: includes/view/AngelTypes_view.php:163
 msgid "3,5t Transporter"
 msgstr "3,5t Transporter"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/AngelTypes_view.php:164
+#: includes/view/AngelTypes_view.php:164
 msgid "7,5t Truck"
 msgstr "7,5t LKW"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/AngelTypes_view.php:165
+#: includes/view/AngelTypes_view.php:165
 msgid "12,5t Truck"
 msgstr "12,5t LKW"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/AngelTypes_view.php:166
+#: includes/view/AngelTypes_view.php:166
+#: includes/view/UserDriverLicenses_view.php:31
 msgid "Forklift"
 msgstr "Gabelstapler"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/AngelTypes_view.php:172
+#: includes/view/AngelTypes_view.php:172
 msgid "Coordinators"
 msgstr "Koordinatoren"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/AngelTypes_view.php:192
+#: includes/view/AngelTypes_view.php:192
 msgid "Members"
 msgstr "Mitglieder"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/AngelTypes_view.php:195
+#: includes/view/AngelTypes_view.php:195
+#: includes/view/UserAngelTypes_view.php:72
 msgid "Add"
 msgstr "Hinzufügen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/AngelTypes_view.php:203
+#: includes/view/AngelTypes_view.php:203
 msgid "confirm all"
 msgstr "Alle bestätigen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/AngelTypes_view.php:204
+#: includes/view/AngelTypes_view.php:204
 msgid "deny all"
 msgstr "Alle ablehnen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/AngelTypes_view.php:221
+#: includes/view/AngelTypes_view.php:221
 msgid "New helpertype"
 msgstr "Neuer Helfertyp"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/AngelTypes_view.php:227
+#: includes/view/AngelTypes_view.php:227
 msgid "Membership"
 msgstr "Mitgliedschaft"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/AngelTypes_view.php:241
+#: includes/view/AngelTypes_view.php:241
 msgid "FAQ"
 msgstr "FAQ"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/AngelTypes_view.php:243
-msgid "Here is the list of teams and their tasks. If you have questions, read the FAQ."
-msgstr "Hier ist die Liste der Teams und ihrer Aufgaben. Wenn Du Fragen hast, schaue im FAQ nach."
+#: includes/view/AngelTypes_view.php:243
+msgid ""
+"Here is the list of teams and their tasks. If you have questions, read the "
+"FAQ."
+msgstr ""
+"Hier ist die Liste der Teams und ihrer Aufgaben. Wenn Du Fragen hast, schaue "
+"im FAQ nach."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/AngelTypes_view.php:261
-msgid "This helpertype is restricted by double-opt-in by a team coordinator. Please show up at the according introduction meetings."
-msgstr "Dieser Helfertyp muss zusätzlich von einem Team-Koordinator freigeschaltet werden. Bitte komme zu den entsprechenden Einführungstreffen."
+#: includes/view/AngelTypes_view.php:261
+msgid ""
+"This helpertype is restricted by double-opt-in by a team coordinator. Please "
+"show up at the according introduction meetings."
+msgstr ""
+"Dieser Helfertyp muss zusätzlich von einem Team-Koordinator freigeschaltet "
+"werden. Bitte komme zu den entsprechenden Einführungstreffen."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/EventConfig_view.php:9
+#: includes/view/EventConfig_view.php:9
 msgid "We got no information about the event right now."
 msgstr "Wir haben aktuell keine Informationen über das Event."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/EventConfig_view.php:19
+#: includes/view/EventConfig_view.php:19
 #, php-format
 msgid "from %s to %s"
 msgstr "von %s bis %s"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/EventConfig_view.php:23
+#: includes/view/EventConfig_view.php:23
 #, php-format
 msgid "Buildup starts in %c"
 msgstr "Aufbau startet in %c"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/EventConfig_view.php:27
+#: includes/view/EventConfig_view.php:27
 #, php-format
 msgid "Event starts in %c"
 msgstr "Event startet in %c"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/EventConfig_view.php:31
+#: includes/view/EventConfig_view.php:31
 #, php-format
 msgid "Event ends in %c"
 msgstr "Event endet in %c"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/EventConfig_view.php:35
+#: includes/view/EventConfig_view.php:35
 #, php-format
 msgid "Teardown ends in %c"
 msgstr "Abbau endet in %c"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/EventConfig_view.php:51
+#: includes/view/EventConfig_view.php:51
 #, php-format
 msgid "%s, from %s to %s"
 msgstr "%s, von %s bis %s"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/EventConfig_view.php:56
+#: includes/view/EventConfig_view.php:56
 #, php-format
 msgid "%s, starting %s"
 msgstr "%s, ab %s"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/EventConfig_view.php:61
+#: includes/view/EventConfig_view.php:61
 #, php-format
 msgid "Event from %s to %s"
 msgstr "Event von %s bis %s"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/EventConfig_view.php:90
+#: includes/view/EventConfig_view.php:90
 msgid "Event Name"
 msgstr "Event Name"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/EventConfig_view.php:91
+#: includes/view/EventConfig_view.php:91
 msgid "Event Name is shown on the start page."
 msgstr "Event Name wird auf der Startseite angezeigt."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/EventConfig_view.php:92
+#: includes/view/EventConfig_view.php:92
 msgid "Event Welcome Message"
 msgstr "Event Willkommens-Nachricht"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/EventConfig_view.php:93
-msgid "Welcome message is shown after successful registration. You can use markdown."
-msgstr "Die Willkommens-Nachricht wird nach einer erfolgreichen Registrierung angezeigt. Du kannst Markdown benutzen."
+#: includes/view/EventConfig_view.php:93
+msgid ""
+"Welcome message is shown after successful registration. You can use markdown."
+msgstr ""
+"Die Willkommens-Nachricht wird nach einer erfolgreichen Registrierung "
+"angezeigt. Du kannst Markdown benutzen."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/EventConfig_view.php:96
+#: includes/view/EventConfig_view.php:96
 msgid "Buildup date"
 msgstr "Aufbau Datum"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/EventConfig_view.php:97
+#: includes/view/EventConfig_view.php:97
 msgid "Event start date"
 msgstr "Event Start Datum"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/EventConfig_view.php:100
+#: includes/view/EventConfig_view.php:100
 msgid "Teardown end date"
 msgstr "Abbau Ende Datum"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/EventConfig_view.php:101
+#: includes/view/EventConfig_view.php:101
 msgid "Event end date"
 msgstr "Event Ende Datum"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/Questions_view.php:17
+#: includes/view/Questions_view.php:17
 msgid "Open questions"
 msgstr "Offene Fragen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/Questions_view.php:31
+#: includes/view/Questions_view.php:31
 msgid "Your Question:"
 msgstr "Deine Frage:"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/ShiftEntry_view.php:18
+#: includes/view/ShiftEntry_view.php:18 includes/view/User_view.php:204
+#: includes/view/User_view.php:206
 msgid "Freeloaded"
 msgstr "Geschwänzt"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/ShiftEntry_view.php:19
+#: includes/view/ShiftEntry_view.php:19
 msgid "Freeload comment (Only for shift coordination):"
 msgstr "Schwänzer Kommentar (Nur für die Schicht-Koordination):"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/ShiftEntry_view.php:22
+#: includes/view/ShiftEntry_view.php:22
 msgid "Edit shift entry"
 msgstr "Schichteintrag bearbeiten"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/ShiftEntry_view.php:25
+#: includes/view/ShiftEntry_view.php:25
 msgid "Helper:"
 msgstr "Helfer:"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/ShiftEntry_view.php:26
+#: includes/view/ShiftEntry_view.php:26
 msgid "Date, Duration:"
 msgstr "Termin, Dauer:"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/ShiftEntry_view.php:27
+#: includes/view/ShiftEntry_view.php:27
 msgid "Location:"
 msgstr "Ort:"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/ShiftEntry_view.php:28
+#: includes/view/ShiftEntry_view.php:28
 msgid "Title:"
 msgstr "Titel:"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/ShiftEntry_view.php:29
+#: includes/view/ShiftEntry_view.php:29
 msgid "Type:"
 msgstr "Typ:"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/ShiftEntry_view.php:30
+#: includes/view/ShiftEntry_view.php:30
 msgid "Comment (for your eyes only):"
 msgstr "Kommentar (nur für Dich):"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/Shifts_view.php:6
-#, php-format
-msgid "created at %s by %s"
-msgstr "erstellt am %s von %s"
-
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/Shifts_view.php:9
-#, php-format
-msgid "edited at %s by %s"
-msgstr "bearbeitet am %s von %s"
-
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/Shifts_view.php:80
-msgid "This shift collides with one of your shifts."
-msgstr "Diese Schicht kollidiert mit deinen Schichten."
-
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/Shifts_view.php:81
-msgid "You are signed up for this shift."
-msgstr "Du bist für diese Schicht eingetragen."
-
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/Shifts_view.php:110
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:283
-msgid "Location"
-msgstr "Ort"
-
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/ShiftTypes_view.php:13
+#: includes/view/ShiftTypes_view.php:13
 #, php-format
 msgid "Do you want to delete shifttype %s?"
 msgstr "Möchtest Du den Schichttypen %s löschen?"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/ShiftTypes_view.php:29
+#: includes/view/ShiftTypes_view.php:29
 msgid "Edit shifttype"
 msgstr "Schichttyp bearbeiten"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/ShiftTypes_view.php:29
+#: includes/view/ShiftTypes_view.php:29
 msgid "Create shifttype"
 msgstr "Schichttyp erstellen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/ShiftTypes_view.php:48
+#: includes/view/ShiftTypes_view.php:48
 #, php-format
 msgid "for team %s"
 msgstr "für Team %s"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/ShiftTypes_view.php:74
+#: includes/view/ShiftTypes_view.php:74
 msgid "New shifttype"
 msgstr "Neuer Schichttyp"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/UserAngelTypes_view.php:6
+#: includes/view/Shifts_view.php:6
+#, php-format
+msgid "created at %s by %s"
+msgstr "erstellt am %s von %s"
+
+#: includes/view/Shifts_view.php:9
+#, php-format
+msgid "edited at %s by %s"
+msgstr "bearbeitet am %s von %s"
+
+#: includes/view/Shifts_view.php:80
+msgid "This shift collides with one of your shifts."
+msgstr "Diese Schicht kollidiert mit deinen Schichten."
+
+#: includes/view/Shifts_view.php:81
+msgid "You are signed up for this shift."
+msgstr "Du bist für diese Schicht eingetragen."
+
+#: includes/view/Shifts_view.php:110 includes/view/User_view.php:284
+msgid "Location"
+msgstr "Ort"
+
+#: includes/view/UserAngelTypes_view.php:6
 #, php-format
 msgid "Do you really want to add coordinator rights for %s to %s?"
 msgstr "Sollen %s %s als neuen Koordinator bekommen?"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/UserAngelTypes_view.php:6
+#: includes/view/UserAngelTypes_view.php:6
 #, php-format
 msgid "Do you really want to remove coordinator rights for %s from %s?"
 msgstr "Möchtest Du wirklich %s von %s als Koordinator befreien?"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/UserAngelTypes_view.php:17
+#: includes/view/UserAngelTypes_view.php:17
 #, php-format
 msgid "Do you really want to deny all users for %s?"
 msgstr "Möchtest Du wirklich alle Benutzer als %s ablehnen?"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/UserAngelTypes_view.php:28
+#: includes/view/UserAngelTypes_view.php:28
 #, php-format
 msgid "Do you really want to confirm all users for %s?"
 msgstr "Möchtest Du wirklich alle Benutzer als %s bestätigen?"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/UserAngelTypes_view.php:39
+#: includes/view/UserAngelTypes_view.php:39
 #, php-format
 msgid "Do you really want to confirm %s for %s?"
 msgstr "Möchtest Du wirklich %s für %s bestätigen?"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/UserAngelTypes_view.php:50
+#: includes/view/UserAngelTypes_view.php:50
 #, php-format
 msgid "Do you really want to delete %s from %s?"
 msgstr "Möchtest Du wirklich %s von %s entfernen?"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/UserAngelTypes_view.php:71
+#: includes/view/UserAngelTypes_view.php:71
 msgid "User"
 msgstr "Benutzer"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/UserAngelTypes_view.php:80
+#: includes/view/UserAngelTypes_view.php:80
 #, php-format
 msgid "Do you really want to add %s to %s?"
 msgstr "Möchtest Du wirklich %s zu %s hinzufügen?"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/UserAngelTypes_view.php:83
+#: includes/view/UserAngelTypes_view.php:83
 msgid "save"
 msgstr "Speichern"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/UserDriverLicenses_view.php:17
+#: includes/view/UserDriverLicenses_view.php:17
 msgid "Back to profile"
 msgstr "Zurück zum Profil"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/UserDriverLicenses_view.php:21
+#: includes/view/UserDriverLicenses_view.php:21
 msgid "Privacy"
 msgstr "Privatsphäre"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/UserDriverLicenses_view.php:21
-msgid "Your driving license information is only visible for coordinators and admins."
-msgstr "Deine Führerschein-Infos sind nur für Koordinatoren und Admins sichtbar."
+#: includes/view/UserDriverLicenses_view.php:21
+msgid ""
+"Your driving license information is only visible for coordinators and admins."
+msgstr ""
+"Deine Führerschein-Infos sind nur für Koordinatoren und Admins sichtbar."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/UserDriverLicenses_view.php:22
+#: includes/view/UserDriverLicenses_view.php:22
 msgid "I am willing to operate cars for the PL"
 msgstr "Ich möchte für die PL Auto fahren"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/UserDriverLicenses_view.php:25
-msgid "I have my own car with me and am willing to use it for the PL (You'll get reimbursed for fuel)"
-msgstr "Ich habe mein eigenes Auto dabei und möchte würde es zum Fahren für die PL verwenden (Du wirst für Spritkosten entschädigt)"
+#: includes/view/UserDriverLicenses_view.php:25
+msgid ""
+"I have my own car with me and am willing to use it for the PL (You'll get "
+"reimbursed for fuel)"
+msgstr ""
+"Ich habe mein eigenes Auto dabei und möchte würde es zum Fahren für die PL "
+"verwenden (Du wirst für Spritkosten entschädigt)"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/UserDriverLicenses_view.php:26
+#: includes/view/UserDriverLicenses_view.php:26
 msgid "Driver license"
 msgstr "Führerschein"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/UserDriverLicenses_view.php:28
+#: includes/view/UserDriverLicenses_view.php:28
 msgid "Transporter 3,5t"
 msgstr "3,5t Transporter"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/UserDriverLicenses_view.php:29
+#: includes/view/UserDriverLicenses_view.php:29
 msgid "Truck 7,5t"
 msgstr "7,5t LKW"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/UserDriverLicenses_view.php:30
+#: includes/view/UserDriverLicenses_view.php:30
 msgid "Truck 12,5t"
 msgstr "12,5t LKW"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:7
+#: includes/view/User_view.php:7
 msgid "Please select..."
 msgstr "Bitte auswählen..."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:28
+#: includes/view/User_view.php:28
 msgid "Registration successful"
 msgstr "Registrierung erfolgreich"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:66
-msgid "Do you really want to delete the user including all his shifts and every other piece of his data?"
-msgstr "Möchtest Du wirklich den Helfer inklusive aller seiner Schichten und allen anderen seiner Daten löschen?"
+#: includes/view/User_view.php:67
+msgid ""
+"Do you really want to delete the user including all his shifts and every "
+"other piece of his data?"
+msgstr ""
+"Möchtest Du wirklich den Helfer inklusive aller seiner Schichten und allen "
+"anderen seiner Daten löschen?"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:68
+#: includes/view/User_view.php:69
 msgid "Your password"
 msgstr "Dein Passwort"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:83
+#: includes/view/User_view.php:84
 #, php-format
 msgid "Helper should receive at least  %d vouchers."
 msgstr "Helfer sollte mindestens %d Voucher bekommen."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:85
+#: includes/view/User_view.php:86
 msgid "Number of vouchers given out"
 msgstr "Anzahl Voucher bekommen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:99
+#: includes/view/User_view.php:100
 msgid "m/d/Y h:i a"
 msgstr "d.m.Y H:i"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:118
+#: includes/view/User_view.php:119
 msgid "New user"
 msgstr "Neuer User"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:122
+#: includes/view/User_view.php:123
 msgid "Prename"
 msgstr "Vorname"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:125
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:251
+#: includes/view/User_view.php:126 includes/view/User_view.php:252
 msgid "Arrived"
 msgstr "Angekommen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:126
+#: includes/view/User_view.php:127
 msgid "Voucher"
 msgstr "Voucher"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:127
+#: includes/view/User_view.php:128
 msgid "Freeloads"
 msgstr "Schwänzereien"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:128
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:253
+#: includes/view/User_view.php:129 includes/view/User_view.php:254
 msgid "Active"
 msgstr "Aktiv"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:130
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:254
+#: includes/view/User_view.php:131 includes/view/User_view.php:255
 msgid "T-Shirt"
 msgstr "T-Shirt"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:132
+#: includes/view/User_view.php:133
 msgid "Last login"
 msgstr "Letzter Login"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:149
+#: includes/view/User_view.php:150
 msgid "Free"
 msgstr "Frei"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:154
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:156
+#: includes/view/User_view.php:155 includes/view/User_view.php:157
 #, php-format
 msgid "Next shift %c"
 msgstr "Nächste Schicht %c"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:161
+#: includes/view/User_view.php:162
 #, php-format
 msgid "Shift starts %c"
 msgstr "Schicht startet %c"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:163
+#: includes/view/User_view.php:164
 #, php-format
 msgid "Shift ends %c"
 msgstr "Schicht endet %c"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:216
+#: includes/view/User_view.php:217
 msgid "sign off"
 msgstr "abmelden"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:229
+#: includes/view/User_view.php:230
 msgid "Sum:"
 msgstr "Summe:"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:248
+#: includes/view/User_view.php:249
 msgid "User state"
 msgstr "Helferzustand"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:251
+#: includes/view/User_view.php:252
 #, php-format
 msgid "Arrived at %s"
 msgstr "Angekommen am %s"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:251
+#: includes/view/User_view.php:252
 #, php-format
 msgid "Not arrived (Planned: %s)"
 msgstr "Nicht angekommen (Geplant: %s)"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:251
+#: includes/view/User_view.php:252
 msgid "Not arrived"
 msgstr "Nicht angekommen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:252
+#: includes/view/User_view.php:253
 #, php-format
 msgid "Got %s voucher"
 msgid_plural "Got %s vouchers"
 msgstr[0] "Einen Voucher bekommen"
 msgstr[1] "%s Voucher bekommen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:252
+#: includes/view/User_view.php:253
 msgid "Got no vouchers"
 msgstr "Voucher nicht bekommen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:261
+#: includes/view/User_view.php:262
 msgid "Rights"
 msgstr "Rechte"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:269
+#: includes/view/User_view.php:270
 msgid "driving license"
 msgstr "Führerschein"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:271
+#: includes/view/User_view.php:272
 msgid "Edit vouchers"
 msgstr "Voucher bearbeiten"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:273
+#: includes/view/User_view.php:274
 msgid "iCal Export"
 msgstr "iCal Export"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:274
+#: includes/view/User_view.php:275
 msgid "JSON Export"
 msgstr "JSON Export"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:284
+#: includes/view/User_view.php:285
 msgid "Name &amp; workmates"
 msgstr "Name &amp; Kollegen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:285
+#: includes/view/User_view.php:286
 msgid "Comment"
 msgstr "Kommentar"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:286
+#: includes/view/User_view.php:287
 msgid "Action"
 msgstr "Aktion"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:288
+#: includes/view/User_view.php:289
 msgid "Your night shifts between 2 and 8 am count twice."
 msgstr "Deine Nachtschichten zwischen 2 und 8 Uhr zählen doppelt."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:289
+#: includes/view/User_view.php:290
 #, php-format
-msgid "Go to the <a href=\"%s\">shifts table</a> to sign yourself up for some shifts."
-msgstr "Gehe zur <a href=\"%s\">Schicht-Tabelle</a>, um Dich für Schichten einzutragen."
+msgid ""
+"Go to the <a href=\"%s\">shifts table</a> to sign yourself up for some "
+"shifts."
+msgstr ""
+"Gehe zur <a href=\"%s\">Schicht-Tabelle</a>, um Dich für Schichten "
+"einzutragen."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:299
-msgid "We will send you an e-mail with a password recovery link. Please use the email address you used for registration."
-msgstr "Wir werden eine eMail mit einem Link schicken, mit dem du das Passwort zurücksetzen kannst. Bitte benutze die Mailadresse, die du bei der Anmeldung verwendet hast."
+#: includes/view/User_view.php:300
+msgid ""
+"We will send you an e-mail with a password recovery link. Please use the "
+"email address you used for registration."
+msgstr ""
+"Wir werden eine eMail mit einem Link schicken, mit dem du das Passwort "
+"zurücksetzen kannst. Bitte benutze die Mailadresse, die du bei der Anmeldung "
+"verwendet hast."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:302
+#: includes/view/User_view.php:303
 msgid "Recover"
 msgstr "Wiederherstellen"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/includes/view/User_view.php:313
+#: includes/view/User_view.php:314
 msgid "Please enter a new password."
 msgstr "Gib bitte ein neues Passwort ein."
 
-#: /media/truecrypt1/home/anykraus/engelsystem/public/index.php:152
+#: public/index.php:152
 msgid "No Access"
 msgstr "Kein Zugriff"
 
-#: /media/truecrypt1/home/anykraus/engelsystem/public/index.php:153
-msgid "You don't have permission to view this page. You probably have to sign in or register in order to gain access!"
-msgstr "Du hast keinen Zugriff auf diese Seite. Registriere Dich und logge Dich bitte ein, um Zugriff zu erhalten!"
+#: public/index.php:153
+msgid ""
+"You don't have permission to view this page. You probably have to sign in or "
+"register in order to gain access!"
+msgstr ""
+"Du hast keinen Zugriff auf diese Seite. Registriere Dich und logge Dich "
+"bitte ein, um Zugriff zu erhalten!"
+
+#~ msgid "here is a message for you from the Helfersystem:"
+#~ msgstr "hier ist eine Nachricht aus dem Helfersystem für Dich:"
+
+#~ msgid "What can I do?"
+#~ msgstr "Was kann ich machen?"
+
+#~ msgid "Please read about the jobs you can do to help us."
+#~ msgstr ""
+#~ "Bitte informiere Dich über die Tätigkeiten bei denen Du uns helfen kannst."
 
 #~ msgid "Please select a user."
 #~ msgstr "Bitte einen Benutzer auswählen."
@@ -2359,7 +2510,6 @@ msgstr "Du hast keinen Zugriff auf diese Seite. Registriere Dich und logge Dich 
 #~ msgstr "Sprache"
 
 #~ msgid "You have %s new message."
-
 #~ msgid_plural "You have %s new messages."
 #~ msgstr[0] "Du hast %s neue Nachricht."
 #~ msgstr[1] "Du hast %s neue Nachrichten."
@@ -2425,4 +2575,3 @@ msgstr "Du hast keinen Zugriff auf diese Seite. Registriere Dich und logge Dich 
 
 #~ msgid "asdf"
 #~ msgstr "fdsa"
-
