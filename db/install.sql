@@ -402,7 +402,7 @@ CREATE TABLE `User` (
   `api_key` varchar(32) NOT NULL,
   `got_voucher` int(11) NOT NULL,
   `arrival_date` int(11) DEFAULT NULL,
-  `planned_arrival_date` int(11) NOT NULL,
+  `planned_arrival_date` int(11) DEFAULT NULL,
   `planned_departure_date` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 

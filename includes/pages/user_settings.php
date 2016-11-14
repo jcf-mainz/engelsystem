@@ -6,7 +6,7 @@ function settings_title() {
 
 function user_settings() {
   global $enable_tshirt_size, $tshirt_sizes, $themes, $locales;
-  global $user;
+  global $user, $enable_dect, $enable_jabber;
   
   $msg = "";
   $nick = $user['Nick'];
@@ -178,7 +178,7 @@ function user_settings() {
                   form_text('nick', _("Nick"), $nick, true),
                   form_text('lastname', _("Last name"), $lastname),
                   form_text('prename', _("First name"), $prename),
-                  form_date('planned_arrival_date', _("Planned date of arrival") . ' ' . entry_required(), $planned_arrival_date, time()),
+                  form_date('planned_arrival_date', _("Planned date of arrival"), $planned_arrival_date, time()),
                   form_date('planned_departure_date', _("Planned date of departure"), $planned_departure_date, time()),
                   form_text('age', _("Age"), $age),
                   form_text('tel', _("Phone"), $tel),
