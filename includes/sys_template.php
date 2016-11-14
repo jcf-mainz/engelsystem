@@ -4,6 +4,7 @@
  * Liste der verfügbaren Themes
  */
 $themes = [
+    '4' => "Helfersystem JCF FJS 2017",
     '3' => "Engelsystem 32c3",
     "2" => "Engelsystem cccamp15",
     "0" => "Engelsystem light",
