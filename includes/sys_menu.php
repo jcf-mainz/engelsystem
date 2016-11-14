@@ -62,14 +62,14 @@ function header_toolbar() {
     }
     
     if (User_is_freeloader($user)) {
-      $hints[] = error(sprintf(_("You freeloaded at least %s shifts. Shift signup is locked. Please go to heavens desk to be unlocked again."), $max_freeloadable_shifts), true);
+      $hints[] = error(sprintf(_("You freeloaded at least %s shifts. Shift signup is locked. Please go to the event organization's desk to be unlocked again."), $max_freeloadable_shifts), true);
       $hint_class = 'danger';
       $glyphicon = 'warning-sign';
     }
     
     // Hinweis für Engel, die noch nicht angekommen sind
     if ($user['Gekommen'] == 0) {
-      $hints[] = error(_("You are not marked as arrived. Please go to heaven's desk, get your helper badge and/or tell them that you arrived already."), true);
+      $hints[] = error(_("You are not marked as arrived. Please go to the event organization's desk, get your helper badge and/or tell them that you arrived already."), true);
       $hint_class = 'danger';
       $glyphicon = 'warning-sign';
     }
