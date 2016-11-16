@@ -51,11 +51,14 @@ function header_toolbar() {
     if ($unconfirmed_hint != '') {
       $hints[] = $unconfirmed_hint;
     }
-    
+    if ($enable_unnecessary_Notifications) {
     if (! isset($user['planned_departure_date']) || $user['planned_departure_date'] == null) {
       $hints[] = info(_("Please enter your planned date of departure on your settings page to give us a feeling for teardown capacities."), true);
     }
-    
+    }
+	else
+	{}
+
     $driver_license_required = user_driver_license_required_hint();
     if ($driver_license_required != '') {
       $hints[] = $driver_license_required;
@@ -68,12 +71,16 @@ function header_toolbar() {
     }
     
     // Hinweis für Engel, die noch nicht angekommen sind
-    if ($user['Gekommen'] == 0) {
+    if ($enable_unnecessary_Notifications) {
+	if ($user['Gekommen'] == 0) {
       $hints[] = error(_("You are not marked as arrived. Please go to the event organization's desk, get your helper badge and/or tell them that you arrived already."), true);
       $hint_class = 'danger';
       $glyphicon = 'warning-sign';
     }
-    
+    }
+	else
+	{}
+
     if ($enable_tshirt_size && $user['Size'] == "") {
       $hints[] = error(_("You need to specify a tshirt size in your settings!"), true);
       $hint_class = 'danger';
