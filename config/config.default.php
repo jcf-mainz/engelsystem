@@ -41,6 +41,7 @@ $enable_description_jobs = true;
 $enable_age = true;
 $enable_phone = true;
 $enable_angeltypedescription = true;
+$enable_unnecessary_Notifications = false;
 
 // Number of shifts to freeload until helper is locked for shift signup.
 $max_freeloadable_shifts = 2;
