@@ -3,14 +3,14 @@
 // Enable maintenance mode (showin a static page)
 $maintenance_mode = false;
 
-// URL to the helper faq and job description
-$faq_url = "https://jcf-fruehjahrssymposium.de/";
+// URL to the angel faq and job description
+$faq_url = "https://events.ccc.de/congress/2013/wiki/Static:Volunteers";
 
 // contact email address, linked on every page
-$contact_email = "mailto:fjs2017-guestservice@uni-mainz.de";
+$contact_email = "mailto:erzengel@lists.ccc.de";
 
 // Default-Theme auf der Startseite, 1=style1.css usw.
-$default_theme = 4;
+$default_theme = 1;
 
 // Anzahl der News, die auf einer Seite ausgeben werden koennen...
 $DISPLAY_NEWS = 6;
@@ -31,19 +31,8 @@ define('MIN_PASSWORD_LENGTH', 8);
 
 // Wenn Engel beim Registrieren oder in ihrem Profil eine T-Shirt Größe angeben sollen, auf true setzen:
 $enable_tshirt_size = true;
-$enable_dect = true;
-$enable_jabber = true;
-$enable_planned_arrival_date = true;
-$enable_emailcheckbox = true;
-$enable_First_Last_Name = true;
-$enable_Hometown = true;
-$enable_description_jobs = true;
-$enable_age = true;
-$enable_phone = true;
-$enable_angeltypedescription = true;
-$enable_unnecessary_Notifications = false;
 
-// Number of shifts to freeload until helper is locked for shift signup.
+// Number of shifts to freeload until angel is locked for shift signup.
 $max_freeloadable_shifts = 2;
 
 // local timezone
