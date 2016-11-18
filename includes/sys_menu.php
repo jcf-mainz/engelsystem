@@ -15,7 +15,7 @@ function page_link_to_absolute($page) {
  * Renders the header toolbar containing search, login/logout, user and settings links.
  */
 function header_toolbar() {
-  global $page, $privileges, $user, $enable_tshirt_size, $max_freeloadable_shifts, $enable_dect;
+  global $page, $privileges, $user, $enable_tshirt_size, $max_freeloadable_shifts, $enable_dect, $enable_unnecessary_Notifications;
   
   $toolbar_items = [];
   
