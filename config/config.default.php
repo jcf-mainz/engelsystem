@@ -3,8 +3,8 @@
 // Enable maintenance mode (showin a static page)
 $maintenance_mode = false;
 
-// URL to the helper faq and job description
-$faq_url = "https://jcf-fruehjahrssymposium.de";
+// URL to the angel faq and job description
+$faq_url = "https://jcf-fruehjahrssymposium.de/";
 
 // contact email address, linked on every page
 $contact_email = "mailto:erzengel@lists.ccc.de";
