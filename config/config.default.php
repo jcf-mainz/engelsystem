@@ -7,10 +7,10 @@ $maintenance_mode = false;
 $faq_url = "https://jcf-fruehjahrssymposium.de/";
 
 // contact email address, linked on every page
-$contact_email = "mailto:erzengel@lists.ccc.de";
+$contact_email = "mailto:fjs2017-guestservice@uni-mainz.de";
 
 // Default-Theme auf der Startseite, 1=style1.css usw.
-$default_theme = 1;
+$default_theme = 4;
 
 // Anzahl der News, die auf einer Seite ausgeben werden koennen...
 $DISPLAY_NEWS = 6;
@@ -31,6 +31,17 @@ define('MIN_PASSWORD_LENGTH', 8);
 
 // Wenn Engel beim Registrieren oder in ihrem Profil eine T-Shirt Größe angeben sollen, auf true setzen:
 $enable_tshirt_size = true;
+$enable_dect = true;
+$enable_jabber = true;
+$enable_planned_arrival_date = true;
+$enable_emailcheckbox = true;
+$enable_First_Last_Name = true;
+$enable_Hometown = true;
+$enable_description_jobs = true;
+$enable_age = true;
+$enable_phone = true;
+$enable_angeltypedescription = true;
+$enable_unnecessary_Notifications = false;
 
 // Number of shifts to freeload until angel is locked for shift signup.
 $max_freeloadable_shifts = 2;

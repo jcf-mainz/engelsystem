@@ -65,8 +65,9 @@ function admin_free() {
     $free_users_table[] = [
         'name' => User_Nick_render($usr),
         'shift_state' => User_shift_state_render($usr),
-        'dect' => $usr['DECT'],
-        'jabber' => $usr['jabber'],
+        // !! MANUELL entfernt !!
+		// 'dect' => $usr['DECT'],
+        // 'jabber' => $usr['jabber'],
         'email' => $usr['email'],
         'actions' => in_array('admin_user', $privileges) ? button(page_link_to('admin_user') . '&amp;id=' . $usr['UID'], _("edit"), 'btn-xs') : '' 
     ];
@@ -78,7 +79,7 @@ function admin_free() {
                   form_text('search', _("Search"), $search) 
               ]),
               div('col-md-4', [
-                  form_select('angeltype', _("Angeltype"), $angel_types, $_REQUEST['angeltype']) 
+                  form_select('angeltype', _("Helpertype"), $angel_types, $_REQUEST['angeltype']) 
               ]),
               div('col-md-2', [
                   form_checkbox('confirmed_only', _("Only confirmed"), isset($_REQUEST['confirmed_only'])) 
@@ -91,8 +92,9 @@ function admin_free() {
       table([
           'name' => _("Nick"),
           'shift_state' => '',
-          'dect' => _("DECT"),
-          'jabber' => _("Jabber"),
+          // !! MANUELL entfernt !! 
+		  // 'dect' => _("DECT"),
+          // 'jabber' => _("Jabber"),
           'email' => _("E-Mail"),
           'actions' => '' 
       ], $free_users_table) 

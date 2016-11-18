@@ -6,17 +6,17 @@
 $tshirt_sizes = [
     '' => _("Please select..."),
     'S' => "S",
+    'S-G' => "S Girl",
     'M' => "M",
+    'M-G' => "M Girl",
     'L' => "L",
+    'L-G' => "L Girl",
     'XL' => "XL",
+    'XL-G' => "XL Girl",
     '2XL' => "2XL",
     '3XL' => "3XL",
     '4XL' => "4XL",
-    '5XL' => "5XL",
-    'S-G' => "S Girl",
-    'M-G' => "M Girl",
-    'L-G' => "L Girl",
-    'XL-G' => "XL Girl" 
+    '5XL' => "5XL"
 ];
 
 /**
@@ -34,7 +34,7 @@ function User_registration_success_view($event_welcome_message) {
           div('col-md-4', [
               '<h2>' . _("Login") . '</h2>',
               form([
-                  form_text('nick', _("Nick"), ""),
+                  form_text('nick', _("Login-Name"), ""),
                   form_password('password', _("Password")),
                   form_submit('submit', _("Login")),
                   buttons([
@@ -43,13 +43,14 @@ function User_registration_success_view($event_welcome_message) {
                   info(_("Please note: You have to activate cookies!"), true) 
               ], page_link_to('login')) 
           ]),
-          div('col-md-4', [
-              '<h2>' . _("What can I do?") . '</h2>',
-              '<p>' . _("Please read about the jobs you can do to help us.") . '</p>',
-              buttons([
-                  button(page_link_to('angeltypes') . '&action=about', _("Teams/Job description") . ' &raquo;') 
-              ]) 
-          ]) 
+          // !!! MANUELL ENTFERNT !!!
+		  //div('col-md-4', [
+          //    '<h2>' . _("What can I do?") . '</h2>',
+          //    '<p>' . _("Please read about the jobs you can do to help us.") . '</p>',
+          //    buttons([
+          //        button(page_link_to('angeltypes') . '&action=about', _("Teams/Job description") . ' &raquo;') 
+          //    ]) 
+        //  ]) 
       ]) 
   ]);
 }
@@ -80,7 +81,7 @@ function User_edit_vouchers_view($user) {
       buttons([
           button(user_link($user), glyph('chevron-left') . _("back")) 
       ]),
-      info(sprintf(_("Angel should receive at least  %d vouchers."), User_get_eligable_voucher_count($user)), true),
+      info(sprintf(_("Helper should receive at least  %d vouchers."), User_get_eligable_voucher_count($user)), true),
       form([
           form_spinner('vouchers', _("Number of vouchers given out"), $user['got_voucher']),
           form_submit('submit', _("Save")) 
@@ -121,7 +122,8 @@ function Users_view($users, $order_by, $arrived_count, $active_count, $force_act
           'Nick' => Users_table_header_link('Nick', _('Nick'), $order_by),
           'Vorname' => Users_table_header_link('Vorname', _('Prename'), $order_by),
           'Name' => Users_table_header_link('Name', _('Name'), $order_by),
-          'DECT' => Users_table_header_link('DECT', _('DECT'), $order_by),
+          // !!! MANUELL entfernt !!!
+		  // 'DECT' => Users_table_header_link('DECT', _('DECT'), $order_by),
           'Gekommen' => Users_table_header_link('Gekommen', _('Arrived'), $order_by),
           'got_voucher' => Users_table_header_link('got_voucher', _('Voucher'), $order_by),
           'freeloads' => _('Freeloads'),
@@ -254,7 +256,7 @@ function User_view($user_source, $admin_user_privilege, $freeloader, $user_angel
               ($user_source['Gekommen'] && $admin_user_privilege && $user_source['Tshirt']) ? ' <span class="text-success">' . _("T-Shirt") . '</span>' : '' 
           ]),
           div('col-md-3', [
-              '<h4>' . _("Angeltypes") . '</h4>',
+              '<h4>' . _("Helpertypes") . '</h4>',
               User_angeltypes_render($user_angeltypes) 
           ]),
           div('col-md-3', [

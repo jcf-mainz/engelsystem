@@ -6,7 +6,7 @@ function settings_title() {
 
 function user_settings() {
   global $enable_tshirt_size, $tshirt_sizes, $themes, $locales;
-  global $user;
+  global $user, $enable_dect, $enable_jabber, $enable_planned_arrival_date, $enable_emailcheckbox, $enable_Hometown, $enable_description_jobs, $enable_age, $enable_phone;
   
   $msg = "";
   $nick = $user['Nick'];
@@ -55,14 +55,18 @@ function user_settings() {
     } elseif ($enable_tshirt_size) {
       $valid = false;
     }
-    
+    if ($enable_planned_arrival_date) {
     if (isset($_REQUEST['planned_arrival_date']) && DateTime::createFromFormat("Y-m-d", trim($_REQUEST['planned_arrival_date']))) {
       $planned_arrival_date = DateTime::createFromFormat("Y-m-d", trim($_REQUEST['planned_arrival_date']))->getTimestamp();
     } else {
       $valid = false;
       $msg .= error(_("Please enter your planned date of arrival."), true);
     }
-    
+    }
+	else
+	{}
+
+    if ($enable_planned_arrival_date) {
     if (isset($_REQUEST['planned_departure_date']) && $_REQUEST['planned_departure_date'] != '') {
       if (DateTime::createFromFormat("Y-m-d", trim($_REQUEST['planned_departure_date']))) {
         $planned_departure_date = DateTime::createFromFormat("Y-m-d", trim($_REQUEST['planned_departure_date']))->getTimestamp();
@@ -73,7 +77,10 @@ function user_settings() {
     } else {
       $planned_departure_date = null;
     }
-    
+    }
+	else
+	{}
+
     // Trivia
     if (isset($_REQUEST['lastname'])) {
       $lastname = strip_request_item('lastname');
@@ -178,18 +185,18 @@ function user_settings() {
                   form_text('nick', _("Nick"), $nick, true),
                   form_text('lastname', _("Last name"), $lastname),
                   form_text('prename', _("First name"), $prename),
-                  form_date('planned_arrival_date', _("Planned date of arrival") . ' ' . entry_required(), $planned_arrival_date, time()),
-                  form_date('planned_departure_date', _("Planned date of departure"), $planned_departure_date, time()),
-                  form_text('age', _("Age"), $age),
-                  form_text('tel', _("Phone"), $tel),
-                  form_text('dect', _("DECT"), $dect),
-                  form_text('mobile', _("Mobile"), $mobile),
+                  $enable_planned_arrival_date ? form_date('planned_arrival_date', _("Planned date of arrival"), $planned_arrival_date, time()) : '',
+                  $enable_planned_arrival_date ? form_date('planned_departure_date', _("Planned date of departure"), $planned_departure_date, time()) : '',
+                  $enable_age ? form_text('age', _("Age"), $age) : '',
+                  $enable_phone ? form_text('tel', _("Phone"), $tel) : '',
+                  $enable_dect ? form_text('dect', _("DECT"), $dect) : '',
+                  form_text('mobile', _("Cellphone (for Whatsapp-Helper-Group)"), $mobile),
                   form_text('mail', _("E-Mail") . ' ' . entry_required(), $mail),
-                  form_checkbox('email_shiftinfo', _("Please send me an email if my shifts change"), $email_shiftinfo),
-                  form_text('jabber', _("Jabber"), $jabber),
-                  form_text('hometown', _("Hometown"), $hometown),
+                  $enable_emailcheckbox ? form_checkbox('email_shiftinfo', _("Please send me an email if my shifts change"), $email_shiftinfo) : '',
+                  $enable_jabber ? form_text('jabber', _("Jabber"), $jabber) : '',
+                  $enable_Hometown ? form_text('hometown', _("Hometown"), $hometown) : '',
                   $enable_tshirt_size ? form_select('tshirt_size', _("Shirt size"), $tshirt_sizes, $tshirt_size) : '',
-                  form_info('', _('Please visit the helpertypes page to manage your angeltypes.')),
+                  form_info('', _('Please visit the helpertypes page to manage your helpertypes.')),
                   form_submit('submit', _("Save")) 
               ]) 
           ]),

@@ -40,7 +40,7 @@ function admin_active() {
     if (isset($_REQUEST['ack'])) {
       sql_query("UPDATE `User` SET `Aktiv` = 0 WHERE `Tshirt` = 0");
       $users = sql_select("
-          SELECT `User`.*, COUNT(`ShiftEntry`.`id`) as `shift_count`, ${shift_sum_formula} as `shift_length` 
+          SELECT `User`.*, COUNT(`ShiftEntry`.`id`) as `shift_count`, $shift_sum_formula as `shift_length` 
           FROM `User` 
           LEFT JOIN `ShiftEntry` ON `User`.`UID` = `ShiftEntry`.`UID` 
           LEFT JOIN `Shifts` ON `ShiftEntry`.`SID` = `Shifts`.`SID` 
@@ -67,20 +67,20 @@ function admin_active() {
     $user_source = User($user_id);
     if ($user_source != null) {
       sql_query("UPDATE `User` SET `Aktiv`=1 WHERE `UID`='" . sql_escape($user_id) . "' LIMIT 1");
-      engelsystem_log("User " . User_Nick_render($user_source) . " is active now.");
-      $msg = success(_("Angel has been marked as active."), true);
+      engelsystem_log("User " . User_Nick_render($user_source) . " is working now.");
+      $msg = success(_("Helper has been marked as working."), true);
     } else {
-      $msg = error(_("Angel not found."), true);
+      $msg = error(_("Helper not found."), true);
     }
   } elseif (isset($_REQUEST['not_active']) && preg_match("/^[0-9]+$/", $_REQUEST['not_active'])) {
     $user_id = $_REQUEST['not_active'];
     $user_source = User($user_id);
     if ($user_source != null) {
       sql_query("UPDATE `User` SET `Aktiv`=0 WHERE `UID`='" . sql_escape($user_id) . "' LIMIT 1");
-      engelsystem_log("User " . User_Nick_render($user_source) . " is NOT active now.");
-      $msg = success(_("Angel has been marked as not active."), true);
+      engelsystem_log("User " . User_Nick_render($user_source) . " is NOT working now.");
+      $msg = success(_("Helper has been marked as not working."), true);
     } else {
-      $msg = error(_("Angel not found."), true);
+      $msg = error(_("Helper not found."), true);
     }
   } elseif (isset($_REQUEST['tshirt']) && preg_match("/^[0-9]+$/", $_REQUEST['tshirt'])) {
     $user_id = $_REQUEST['tshirt'];
@@ -88,9 +88,9 @@ function admin_active() {
     if ($user_source != null) {
       sql_query("UPDATE `User` SET `Tshirt`=1 WHERE `UID`='" . sql_escape($user_id) . "' LIMIT 1");
       engelsystem_log("User " . User_Nick_render($user_source) . " has tshirt now.");
-      $msg = success(_("Angel has got a t-shirt."), true);
+      $msg = success(_("Helper has got a t-shirt."), true);
     } else {
-      $msg = error("Angel not found.", true);
+      $msg = error("Helper not found.", true);
     }
   } elseif (isset($_REQUEST['not_tshirt']) && preg_match("/^[0-9]+$/", $_REQUEST['not_tshirt'])) {
     $user_id = $_REQUEST['not_tshirt'];
@@ -98,14 +98,14 @@ function admin_active() {
     if ($user_source != null) {
       sql_query("UPDATE `User` SET `Tshirt`=0 WHERE `UID`='" . sql_escape($user_id) . "' LIMIT 1");
       engelsystem_log("User " . User_Nick_render($user_source) . " has NO tshirt.");
-      $msg = success(_("Angel has got no t-shirt."), true);
+      $msg = success(_("Helper has got no t-shirt."), true);
     } else {
-      $msg = error(_("Angel not found."), true);
+      $msg = error(_("Helper not found."), true);
     }
   }
   
   $users = sql_select("
-      SELECT `User`.*, COUNT(`ShiftEntry`.`id`) as `shift_count`, ${shift_sum_formula} as `shift_length` 
+      SELECT `User`.*, COUNT(`ShiftEntry`.`id`) as `shift_count`, $shift_sum_formula as `shift_length` 
       FROM `User` LEFT JOIN `ShiftEntry` ON `User`.`UID` = `ShiftEntry`.`UID` 
       LEFT JOIN `Shifts` ON `ShiftEntry`.`SID` = `Shifts`.`SID` 
       WHERE `User`.`Gekommen` = 1

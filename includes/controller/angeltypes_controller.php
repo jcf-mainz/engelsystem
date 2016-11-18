@@ -4,7 +4,7 @@
  * Text for Angeltype related links.
  */
 function angeltypes_title() {
-  return _("Angeltypes");
+  return _("Helpertypes");
 }
 
 /**
@@ -85,7 +85,7 @@ function angeltype_delete_controller() {
     }
     
     engelsystem_log("Deleted helpertype: " . AngelType_name_render($angeltype));
-    success(sprintf(_("Angeltype %s deleted."), AngelType_name_render($angeltype)));
+    success(sprintf(_("Helpertype %s deleted."), AngelType_name_render($angeltype)));
     redirect(page_link_to('angeltypes'));
   }
   
@@ -170,7 +170,7 @@ function angeltype_edit_controller() {
         engelsystem_log("Created helpertype: " . $name . ($restricted ? ", restricted" : "") . ($requires_driver_license ? ", requires driver license" : ""));
       }
       
-      success("Angel type saved.");
+      success("Helper type saved.");
       redirect(angeltype_link($angeltype_id));
     }
   }
@@ -281,7 +281,7 @@ function load_angeltype() {
     engelsystem_error("Unable to load angeltype.");
   }
   if ($angeltype == null) {
-    error(_("Angeltype doesn't exist."));
+    error(_("Helpertype doesn't exist."));
     redirect(page_link_to('angeltypes'));
   }
   
